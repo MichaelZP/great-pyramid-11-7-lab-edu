@@ -1,3 +1,100 @@
+# Publikacja edukacyjna GeoGebra G1/G2 — 2026-10-08
+
+Na późniejsze polecenie autora „opublikuj” przygotowano publikację na
+istniejącej, osobnej stronie edukacyjnej GitHub Pages:
+[otwórz model G2](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/education/geogebra/g2/).
+Widok automatycznie wczytuje zweryfikowany plik G2; udostępnia reset 11:7,
+widok 3D/kopii, pobieranie G1/G2, instrukcję, raporty i plan 13 pozycji.
+Link do modelu dodano do istniejącego pokazu, także w wersji EN.
+Nie zmieniono geometrii aplikacji ani pokazu. Nie wysyłano modelu na konto
+GeoGebra. Opisy wcześniejszych etapów niżej odnoszą się do chwili ich budowy.
+
+Lokalnie potwierdzono automatyczne wczytanie, przełączanie widoków i reset.
+Audyt obu paczek ZIP/XML PASS; pliki G1/G2 zachowują zweryfikowane sumy
+SHA-256. Workflow strony kontroluje dotychczasowy pokaz i obie paczki
+przed wdrożeniem. Publiczne działanie zostanie potwierdzone po wdrożeniu.
+Zakres G2: #1–10; #11–13 pozostają planem. Ograniczenia telefonu,
+dostępności, instalacji Classic 6 i offline pozostają aktualne.
+
+---
+
+# ETAP G2 — dziesięć proporcji i kopie odcinków, 2026-10-08
+
+Kontynuacja pierwszej rodziny z planu G1: dodano osobny
+[model G2](../education/geogebra/g2/README.md) z rzeczywistymi pozycjami
+**#1–10**, w tym nowymi #2–4 oraz #6–9. Gotowy plik G1 zachowano;
+kontrola SHA-256 potwierdza jego niezmienność.
+
+W G2 natywne przyciski przełączają jedną pozycję naraz i widok piramidy 3D
+albo osobny Graphics 2 z dwoma łańcuchami kopii. Każda kopia ma podpis źródła
+i odpowiadający kolor. Oba łańcuchy stosują jeden jawny współczynnik **1/s**;
+sumy licznika i mianownika są podane w jednostkach bryły. Suma h+2D jest
+opisana jako suma kopii, a nie dodatkowy istniejący odcinek piramidy.
+Suwaki q=B/h oraz s pozostają niezależne; B=11s, h=11s/q.
+Reset przywraca q=11/7, s=1, pozycję #2 γ i widok 3D.
+
+Oficjalny silnik GeoGebra Classic **5.4.920.0**: **12 849/12 849 PASS**,
+**64 konfiguracje** (16 q × 4 s), w tym przypadki po obu stronach granic
+tolerancji π i γ oraz 8258 porównań liczbowych. Największa różnica
+bezwzględna **1,42e−14**. Sprawdzono dziesięć wyników, błędów i klasyfikacji,
+każdą kopię względem źródła, ilorazy całych łańcuchów, zależności algebraiczne,
+widoczność i osiem zapisanych skryptów. Eksportowany
+[plik `.ggb`](../education/geogebra/g2/piramida-11-7-G2.ggb) ponownie wczytano
+z dysku do świeżej instancji i powtórzono kontrolę. Audyt ZIP/XML PASS.
+
+[Raport i ograniczenia](../education/geogebra/g2/VERIFICATION.md), źródła,
+polecenia i ustawienia są dołączone. Zachowano podpis Michała Przybylskiego —
+prylski.dev oraz GitHub MichaelZP; źródła stałych przypisano ich autorom.
+Dziesięć zgodności nie oznacza dziesięciu niezależnych odkryć.
+Brun jest porównaniem względem przyjętego oszacowania, z nieustalonym
+ścisłym błędem wartości referencyjnej.
+
+#11–12 (kąty) i #13 (osobny owal) pozostają w
+[planie rozszerzenia](../education/geogebra/EXPANSION-13.md).
+Nie sprawdzono osobnej instalacji Classic 6, telefonu, dostępności ani pracy
+offline. Odbiór autora pozostaje otwarty. Nie zmieniano aplikacji ani strony,
+nie publikowano na koncie GeoGebra i nie wykonano wdrożenia.
+
+---
+
+# ETAP G1 — dodatkowy model GeoGebra 3D, 2026-10-08
+
+Przygotowano lokalny model edukacyjny do oceny autora w
+[`education/geogebra/`](../education/geogebra/README.md), obok aplikacji.
+Rzeczywisty [plik `.ggb`](../education/geogebra/piramida-11-7-G1.ggb)
+wyeksportowano z oficjalnego silnika GeoGebra Classic **5.4.920.0** i
+ponownie wczytano do świeżej instancji przeglądarkowej z pliku na dysku.
+
+Kwadratowa podstawa, wierzchołek, wysokość, cztery apotemy i odcinki
+pomocnicze zależą od niezależnych suwaków **q=B/h** oraz **s**:
+B=11s, h=11s/q; początek q=11/7, s=1. Natywny reset przywraca 11:7.
+Jedna lekcja naraz pokazuje rzeczywiste pozycje **#1 pi**, **#10 phi** lub
+**#5 sqrt2**, odcinki, wzór, bieżący wynik, cel, błąd względny i próg 0,1%.
+Przełączniki sterują bryłą i dodatkowymi apotemami. √2 opisano jako
+tożsamość kwadratu; π/φ pozostają przybliżeniami, bez dowodu intencji.
+
+Porównanie z bieżącym `src/lib/pyramid/engine.ts`: **32 konfiguracje**
+(8 q × 4 s), **936/936 sprawdzeń PASS**, w tym 480 porównań liczbowych.
+Największa różnica bezwzględna 7,11e−15. Sprawdzono niezależność skali,
+widoczność, skrypty przycisków i reset po eksporcie/odczycie; ręcznie
+przesunięto suwaki i przełączono bryłę. Kontrola ZIP/XML zapisanego pliku PASS.
+
+[Raport i granice weryfikacji](../education/geogebra/VERIFICATION.md),
+[pełne polecenia](../education/geogebra/commands.txt), ustawienia, lokalny
+warsztat i [plan wszystkich 13 pozycji](../education/geogebra/EXPANSION-13.md)
+są dołączone. Dziesięć dalszych pozycji jest planem; `eggLW` pozostaje
+osobnym modelem owalu i przy 11:7 jest poza tolerancją 0,1%.
+Źródła przypisano autorom; zachowano podpis:
+**Koncepcja projektu: Michał Przybylski — prylski.dev**,
+GitHub: https://github.com/MichaelZP/.
+
+Nie zweryfikowano osobnej instalacji Classic 6, samodzielnego kalkulatora
+3D, telefonu, dostępności ani pracy offline. Warsztat ładuje silnik z sieci.
+Odbiór autora pozostaje otwarty. W G1 nie zmieniano aplikacji ani strony,
+nie publikowano na koncie GeoGebra i nie wykonano wdrożenia.
+
+---
+
 # ETAP 14 — odniesienia PL/EN, 2026-10-08
 
 Na zlecenie autora dodano pod sceną sekcję **Odniesienia i kontekst naukowy /
@@ -13,6 +110,15 @@ Testy PL/EN, zachowania preferencji języka i kompletności tłumaczeń:
 **3/3 PASS**. Browser lokalny: obie wersje językowe, poprawne bezpośrednie
 linki i ukrycie sekcji w kadrze nagrania PASS. Wdrożenie na osobną stronę
 edukacyjną wymaga potwierdzenia workflow i publicznego widoku.
+
+**Wdrożenie potwierdzone:** commit strony `77a2c38`,
+[workflow 37762992276](https://github.com/MichaelZP/great-pyramid-11-7-lab-edu/actions/runs/37762992276)
+PASS. Publiczny browser po odświeżeniu pokazuje oba odnośniki i pełne
+tłumaczenie EN, zachowany podpis autora i pusty alert błędu sceny.
+Viewport lokalny 320×740: clientWidth = scrollWidth = 305, bez poziomego
+przepełnienia. To sprawdzenie układu na komputerze, bez nowego testu
+fizycznego telefonu. [Widok online](../education/evidence/references-online-en.png),
+[wyniki sprawdzeń](../education/evidence/references-checks.json).
 
 # ETAP 14 — płaszczyzna między torusami, 2026-10-08
 
@@ -412,8 +518,8 @@ Nie opublikowano YouTube ani dodatkowych materiałów edukacyjnych.
 push gh-pages przywraca drzewo poprzedniej wersji
 `3d78300ef428153ec826261ed5cff5f6661325c8`. Próba w osobnej lokalnej kopii
 PASS: drzewo identyczne, bez force push. Zachowano także lokalny bundle/ZIP.
-Polecenia, dokładne wyniki i granice: [ETAP-13.md](ETAP-13.md),
-[opis wydania](RELEASE_NOTES.md), [dowody](etap-13/).
+Polecenia, dokładne wyniki i granice: [ETAP-13.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/ETAP-13.md),
+[opis wydania](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/RELEASE_NOTES.md), [dowody](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/etap-13).
 Poniższe wpisy są historią przygotowania i wcześniejszych etapów.
 
 # ETAP 13 — release preparation, 2026-10-07
@@ -450,7 +556,7 @@ merge. The three full-notice inventory gaps remain outside the shipped web
 artifact. Native notice audit and physical APK acceptance still block APK release.
 Remaining limits: separate prototypes, incomplete measured phone/native/fullscreen/
 accessibility evidence, library/large-chunk warnings, mathematical/historical
-uncertainties described in stage 12. See [release notes](RELEASE_NOTES.md).
+uncertainties described in stage 12. See [release notes](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/RELEASE_NOTES.md).
 Historical entries below retain their original evidence and publication scope.
 
 # ETAP 12 — częściowy odbiór telefonu, 2026-10-07
@@ -468,8 +574,8 @@ To częściowy odbiór **osobnego podglądu etapu 11**. Pomiary
 FPS/temperatury/pamięci, tło/wznowienie, pozostałe kontrolki, główna aplikacja,
 stożki i natywny APK pozostają niezweryfikowane na tym telefonie.
 Nie oznaczono całego odbioru ani wydania jako zaliczonego.
-[Raport telefonu](etap-12/phone-2026-10-07.md),
-[checklista](MANUAL_ACCEPTANCE.md). Historyczne wyniki poniżej zachowano.
+[Raport telefonu](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/etap-12/phone-2026-10-07.md),
+[checklista](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/MANUAL_ACCEPTANCE.md). Historyczne wyniki poniżej zachowano.
 
 # ETAP 12 — podgląd internetowy do odbioru, 2026-10-06
 
@@ -486,9 +592,9 @@ pakiety z brakującymi pełnymi notami mają **0 emitowanych modułów** w tym
 artefakcie; bramki pełnego npm/native audytu pozostają dla innych wydań.
 Nie przesłano oryginalnych XLSX ani prywatnej korespondencji. Wersja testowa
 jest udostępniana na aktualne polecenie autora, a odbiór fizyczny nadal czeka.
-[Instrukcja na telefon](MANUAL_ACCEPTANCE.md),
-[spis paczki](etap-12/web-preview-inventory.json),
-[materiały i licencje](THIRD_PARTY.md).
+[Instrukcja na telefon](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/MANUAL_ACCEPTANCE.md),
+[spis paczki](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/etap-12/web-preview-inventory.json),
+[materiały i licencje](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/THIRD_PARTY.md).
 
 # ETAP 12 — końcowy audyt i wersja do odbioru, 2026-10-06
 
@@ -530,9 +636,9 @@ i odbiór fizyczny. Zachowano podpis koncepcji; nie ustanowiono nowej licencji.
 Do autora: A/B, α, q, wygląd wirów, dokładne brzmienie hipotezy i dowody,
 licencja oraz ewentualna przyszła integracja podglądów.
 
-Materiały: [audyt](ETAP-12.md), [uruchomienie i checklista](MANUAL_ACCEPTANCE.md),
-[opis wydania](RELEASE_NOTES.md), [licencje i materiały](THIRD_PARTY.md),
-[dowody etapu 12](etap-12/). Następny krok: ręczny odbiór autora na telefonie.
+Materiały: [audyt](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/ETAP-12.md), [uruchomienie i checklista](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/MANUAL_ACCEPTANCE.md),
+[opis wydania](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/RELEASE_NOTES.md), [licencje i materiały](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/THIRD_PARTY.md),
+[dowody etapu 12](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/etap-12). Następny krok: ręczny odbiór autora na telefonie.
 Poniżej zachowano historyczne raporty z ich datami i ograniczeniami.
 
 # ETAP 11 — lokalna implementacja i kontrole, 2026-10-06
@@ -599,7 +705,7 @@ na nim NIEZWERYFIKOWANE. Brak pełnego nowego manualnego odbioru wszystkich
 lekcji głównej aplikacji; jej niezmieniony kod ma regresje PASS.
 
 Szczegóły mechanizmu, akceptacja i wszystkie granice:
-[plan-podwojnego-wiru.md](plan-podwojnego-wiru.md).
+[plan-podwojnego-wiru.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/plan-podwojnego-wiru.md).
 [Pomiar i kontrole](etap-11/browser-checks.json),
 [edukacyjny 390 px](etap-11/edukacyjny-390.jpg),
 [panel ustawień filmowych](etap-11/panel-filmowy.jpg),
@@ -675,7 +781,7 @@ funkcję z HTML bez zmiany wzorów. Etap 9 nadal zawiera animację od Golden
 Egg, zakresy/kadry, oznaczenia, L/W oraz osobne porównanie ze złotą elipsą.
 Dodano link między podglądami. Główna aplikacja i silnik bez zmian.
 Parametry, równania, zwroty i przebieg:
-[plan-podwojnego-wiru.md](plan-podwojnego-wiru.md).
+[plan-podwojnego-wiru.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/plan-podwojnego-wiru.md).
 
 ## Weryfikacja i granice dowodów
 
@@ -812,8 +918,8 @@ L/W nadal ma błąd 0,105620285%, poza 0,1%.
   `feature/android-offline`, HEAD `f8ed12762abf0612213d7d48ce44b9ce2c1c1075`.
 
 Podgląd: **http://127.0.0.1:8087/podglad.html**. Definicje i kolejność
-operacji: [animacja-stozka.md](animacja-stozka.md). Odbiór, w tym dalszy
-test fizycznego telefonu: [odbior-etapu-9.md](odbior-etapu-9.md).
+operacji: [animacja-stozka.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/animacja-stozka.md). Odbiór, w tym dalszy
+test fizycznego telefonu: [odbior-etapu-9.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/odbior-etapu-9.md).
 **Następny krok:** wykonać i zapisać fizyczny odbiór etapu 9 według instrukcji.
 Wybór A/B i α pozostaje osobną decyzją autora.
 
@@ -957,7 +1063,7 @@ opisów zakresu i dowodów. Nie wykonano commitów, push, publikacji ani merge.
 przeniesiono położenie pionowej osi, poziom lokalnego zera i kierunek cięcia
 na niezmienną piramidę B=11, h=7. Rzeczywisty owal pozostaje z etapu 7;
 ilustracyjna geometria jaja nie zastępuje przekroju. Dokładne współrzędne,
-adaptacja parametrów i kolejność operacji: [animacja-stozka.md](animacja-stozka.md).
+adaptacja parametrów i kolejność operacji: [animacja-stozka.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/animacja-stozka.md).
 
 Animowany jest cały pierwszy układ: powierzchnia, płaszczyzna, przekrój,
 linie i pozycje oznaczeń. Obrót R=I; ruch to przesunięcie i jednolita skala
@@ -1030,7 +1136,7 @@ objęła suwak, wpisanie mnożnika i zmianę zakresu.
 [Aktualny zrzut](etap-7/podglad-skala.png). Ten sam lokalny adres podglądu
 poniżej; bez publikacji i zmian w aplikacji.
 
-Aktualny zakres: [plan-stozka.md](plan-stozka.md), niezależne obliczenia i
+Aktualny zakres: [plan-stozka.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/plan-stozka.md), niezależne obliczenia i
 lokalny podgląd; bez zmiany aplikacji, animacji, commitów, push i publikacji.
 Gałąź `feature/android-offline`, początkowy HEAD `f8ed127`, drzewo aplikacji
 było czyste. Zastany stan nadrzędnego repozytorium pozostawiono bez zmian.
@@ -1110,7 +1216,7 @@ fixed-shell scrolling and unnecessary settled-height geometry uploads.
 |---|---|
 | Vitest | **87/87**, four files |
 | TypeScript / whitespace | `tsc --noEmit` and diff checks pass |
-| Independent Decimal audit | all 13 rows, both XLSX, both scans including RMS pass; [fresh evidence](audit-13/review-2026-10-06.json) |
+| Independent Decimal audit | all 13 rows, both XLSX, both scans including RMS pass; [fresh evidence](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/audit-13/review-2026-10-06.json) |
 | Comparisons | 11:7 **12/13**; Golden Egg **10/13**; 11:7 L/W error **0.105620285%**, unchanged |
 | Builds | web `dist/`, Android web assets `%TEMP%/pyramid-history-android-check`, Pages `%TEMP%/pyramid-history-pages-check`; expected `/`, `./`, `/great-pyramid-11-7-lab/` bases |
 | Browser | all 13 four-step lessons, 26 PL/EN history entries, nine tutorial steps; 1280×720, 320×740 and 390×844; no horizontal page overflow |
@@ -1119,7 +1225,7 @@ fixed-shell scrolling and unnecessary settled-height geometry uploads.
 | Android | no ADB device; no new native APK/AAB/install or physical UX/offline/FPS validation |
 
 Full scope, fixes, source checks, screenshots and limitations:
-[review report](REVIEW-13.md). [Release description](RELEASE_NOTES.md).
+[review report](REVIEW-13.md). [Release description](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/RELEASE_NOTES.md).
 CI now includes all three web build modes, without deployment.
 
 ## Remaining issues
@@ -1146,7 +1252,7 @@ LAN, `npm run dev` prints a phone-accessible address. The existing public Pages
 version and old Android artifacts do not include this draft update.
 
 **One next step:** perform and record the physical Android acceptance in
-[MANUAL_ACCEPTANCE.md](MANUAL_ACCEPTANCE.md), including timed playback with
+[MANUAL_ACCEPTANCE.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/MANUAL_ACCEPTANCE.md), including timed playback with
 reduced motion off and sustained animation behavior, before readiness review.
 
 Implementation commit `0730d406f538188b3d5070e44a008c449a0c076f` was pushed
@@ -1173,7 +1279,7 @@ in Polish and English. Expandable notes distinguish mathematics/model results,
 historical evidence and pyramid interpretation, without attributing builders’
 intent from numerical proximity. Fifteen scoped sources are accessible per row
 and in the app bibliography. The documentation shares the app’s source registry:
-[English history](HISTORY-13.md), [Polish history](historia-13-pozycji.md).
+[English history](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/HISTORY-13.md), [Polish history](historia-13-pozycji.md).
 
 The optional nine-step tutorial connects all thirteen positions and reuses their
 3D constructions. It supports skip/close, pause, resume, arbitrary step selection,
@@ -1191,7 +1297,7 @@ The final review also checks panel-only scrolling, fullscreen entry/exit and
 step navigation within fullscreen, with no new console errors.
 Timed playback under unrestricted motion and physical Android touch/offline checks
 remain separate. Details, screenshots
-and evidence limits: [update status](status-aktualizacji.md).
+and evidence limits: [update status](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/status-aktualizacji.md).
 
 No publication, commit, push, native packaging, sync or installation. Earlier
 uncommitted visualization and audit work was preserved.
@@ -1209,8 +1315,8 @@ Typecheck, 65 tests and local web/Android-assets/Pages builds pass. Browser revi
 includes manual steps 1–4 for every position. Timed playback without reduced
 motion and physical Android touch/offline checks remain separate validation.
 The mathematical engine, workbook and earlier audit findings are unchanged.
-See [preview, evidence and outstanding work](status-aktualizacji.md) and
-[architecture](RELATION-VISUALIZATION.md). No publication, commit, push, native
+See [preview, evidence and outstanding work](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/status-aktualizacji.md) and
+[architecture](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/RELATION-VISUALIZATION.md). No publication, commit, push, native
 packaging, sync or installation was performed.
 
 ## Previous update — interactive relation prototype, 2026-10-05
@@ -1219,8 +1325,8 @@ Implemented the audited phi `S/A` relation with labelled 3D segments, a common
 13-position selector/result panel, proportional length bars and a four-step
 explanation with pause/resume/manual navigation and return to the normal scene.
 The other twelve positions explicitly report that their 3D scenes are pending.
-See [current status and local preview instructions](status-aktualizacji.md) and
-[extension contract](RELATION-VISUALIZATION.md). Typecheck, 35 tests and local
+See [current status and local preview instructions](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/status-aktualizacji.md) and
+[extension contract](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/RELATION-VISUALIZATION.md). Typecheck, 35 tests and local
 web/Android-assets/Pages builds pass. Browser review covers desktop and narrow
 phone viewports; it does not establish physical Android UX/offline validation.
 No commit, push, publication, native packaging or installation was performed.
@@ -1228,7 +1334,7 @@ No commit, push, publication, native packaging or installation was performed.
 ## Previous update — mathematical audit, 2026-10-05
 
 Stage 1 has been completed with explicit unresolved findings. The current
-status is [status-aktualizacji.md](status-aktualizacji.md); the full audit is
+status is [status-aktualizacji.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/status-aktualizacji.md); the full audit is
 [matematyka-13-stalych.md](matematyka-13-stalych.md). Independent calculations
 confirm 12/13 comparisons within 0.1% for 11:7 and 10/13 for Golden Egg.
 Only the square-base sqrt(2) relation is an exact target identity for 11:7.
@@ -1267,7 +1373,7 @@ Golden Egg and a custom ratio. The UI contains models, constant comparisons,
 angle scan and a weighted verdict; English/Polish text and stereo controls exist.
 
 The code and mathematical documentation contain all **13** comparison rows.
-The complete sourced list and formulas are in [PLAN.md](PLAN.md).
+The complete sourced list and formulas are in [PLAN.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/PLAN.md).
 Existing regression expectations specify **12/13** within 0.1% for 11:7 and
 **10/13** for Golden Egg. The egg row is outside tolerance for 11:7 at about
 0.106%; Golden Egg's maximum row error is about 0.397%. These are software
@@ -1305,7 +1411,7 @@ Standard production flow: `npm run build`, then `npm run preview`.
 Vite base is `/` normally, `/great-pyramid-11-7-lab/` when
 `GITHUB_PAGES=true`, and `./` for `npm run build:android`.
 Capacitor consumes `dist/`. Android additionally requires JDK 21 and SDK 36
-(minimum Android SDK 24); see [ANDROID_OFFLINE.md](ANDROID_OFFLINE.md).
+(minimum Android SDK 24); see [ANDROID_OFFLINE.md](https://github.com/MichaelZP/great-pyramid-11-7-lab/blob/1ae5f97299ae20d1f04bf96516c7ded691af2f21/docs/ANDROID_OFFLINE.md).
 Android sync, signing, installation and publication are not part of this session.
 
 ## Verification boundaries

@@ -2,6 +2,17 @@
 
 **[Open online](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/)**
 
+**[Interactive GeoGebra 3D model G2](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/education/geogebra/g2/)**
+opens the verified `.ggb` file automatically. Independent shape and scale
+sliders, ten selectable comparisons, a 11:7 reset and a segment-copy view
+are included. [Download G2](education/geogebra/g2/piramida-11-7-G2.ggb),
+[G1](education/geogebra/piramida-11-7-G1.ggb),
+[instructions](education/geogebra/g2/README.md) and
+[verification](education/geogebra/g2/VERIFICATION.md).
+The browser engine requires internet. Positions #11–13 remain planned.
+Publication on this separate educational site was requested on 2026-10-08.
+No GeoGebra account upload is involved.
+
 A separate GitHub Pages site for the shared geometric construction and
 artistic vortex show. Select **Language → EN — English** or **PL — Polski**
 above the title. The website includes mirrored hyperbolic surfaces, actual

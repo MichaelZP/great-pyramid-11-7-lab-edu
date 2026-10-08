@@ -1,0 +1,5 @@
+SetValue(q, 11/7)
+SetValue(s, 1)
+SetValue(lesson, 1)
+SetValue(showBody, true)
+SetValue(showGuides, false)

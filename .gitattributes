@@ -1,0 +1,6 @@
+# Preserve the audited engine snapshot byte-for-byte on Windows and Linux.
+src/lib/pyramid/engine.ts -text whitespace=cr-at-eol
+*.ggb -text
+*.png -text
+# Markdown uses intentional two-space hard line breaks.
+*.md whitespace=-blank-at-eol

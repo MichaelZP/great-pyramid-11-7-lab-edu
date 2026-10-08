@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GeoGebra G1 — lokalny model do oceny</title>
+<style>body{font:16px system-ui;margin:16px;background:#f4f6fa;color:#172737}h1{font-size:22px;margin:0 0 8px}button,a{display:inline-block;padding:9px;margin:4px}button{cursor:pointer}#ggb{background:white;overflow:auto}pre{white-space:pre-wrap;max-height:230px;overflow:auto}#status{padding:8px}footer{margin-top:12px}input{width:110px}</style>
+<h1>Piramida 11:7 · GeoGebra 3D · ETAP G1</h1>
+<p>Lokalny model edukacyjny do oceny autora. Usługi GeoGebra dostarczają silnik; model nie jest publikowany na koncie.</p>
+<div id="status" role="status">Ładowanie silnika GeoGebra…</div>
+<nav><button id="build" disabled>Zbuduj model</button><button id="reset" disabled>Przywróć 11:7</button>
+<button id="test" disabled>Sprawdź model w GeoGebra</button><button id="export" disabled>Pobierz .ggb</button>
+<button id="report" disabled>Pobierz wynik kontroli JSON</button><button id="image" disabled>Zapisz widok modelu</button>
+<button id="loadSaved" disabled>Otwórz zapisany model G1</button>
+<label>Otwórz lokalny .ggb <input id="file" type="file" accept=".ggb" disabled></label></nav>
+<div><label>q <input id="qvalue" type="number" min="0.5" max="4" step="0.001" value="1.5714285714285714"></label>
+<label>s <input id="svalue" type="number" min="0.25" max="2" step="0.05" value="1"></label>
+<button id="apply" disabled>Zastosuj q i s</button></div>
+<div id="ggb"></div><pre id="checks" aria-label="Wyniki kontroli"></pre>
+<footer>Koncepcja projektu: Michał Przybylski — prylski.dev<br><a href="https://github.com/MichaelZP/">GitHub: MichaelZP</a>
+<a href="README.md">Instrukcja i ograniczenia</a></footer>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<script type="module" src="workbench.mjs"></script>
+</html>

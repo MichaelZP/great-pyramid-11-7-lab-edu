@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GeoGebra G2 — 10 proporcji</title>
+<style>body{font:16px system-ui;margin:16px;background:#f4f6fa;color:#172737}h1{font-size:22px;margin:0 0 8px}button,a{display:inline-block;padding:9px;margin:4px}button{cursor:pointer}#ggb{background:white;overflow:auto}pre{white-space:pre-wrap;max-height:230px;overflow:auto}#status{padding:8px}footer{margin-top:12px}select{max-width:330px}</style>
+<h1>Piramida 11:7 · GeoGebra 3D · ETAP G2</h1>
+<p>Dziesięć proporcji. Widok 3D i osobny widok kopii odcinków; jedna pozycja naraz.</p>
+<div id="status" role="status">Ładowanie silnika GeoGebra…</div>
+<nav><button id="build" disabled>Zbuduj G2</button><button id="loadSaved" disabled>Otwórz zapisany G2</button>
+<button id="test" disabled>Sprawdź G2</button><button id="reset" disabled>Przywróć 11:7</button>
+<button id="export" disabled>Zapisz .ggb</button><button id="report" disabled>Zapisz raport</button>
+<button id="image" disabled>Zapisz widok</button></nav>
+<div><select id="lessonValue" aria-label="Pozycja matematyczna" disabled>
+<option value="1">#1 π</option><option value="2" selected>#2 γ</option><option value="3">#3 √3</option>
+<option value="4">#4 √6</option><option value="5">#5 √2</option><option value="6">#6 √5</option>
+<option value="7">#7 Tribonacci</option><option value="8">#8 Brun</option><option value="9">#9 1/φ</option><option value="10">#10 φ</option>
+</select><button id="selectLesson" disabled>Wybierz pozycję</button><button id="view3d" disabled>Piramida 3D</button>
+<button id="copies" disabled>Kopie odcinków</button><label>Plik lokalny <input id="file" type="file" accept=".ggb" disabled></label></div>
+<div id="ggb"></div><pre id="checks" aria-label="Wyniki kontroli"></pre>
+<footer>Koncepcja projektu: Michał Przybylski — prylski.dev<br><a href="https://github.com/MichaelZP/">GitHub: MichaelZP</a>
+<a href="README.md">Instrukcja G2</a><a href="../index.html">G1</a></footer>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script><script type="module" src="workbench.mjs"></script>
+</html>

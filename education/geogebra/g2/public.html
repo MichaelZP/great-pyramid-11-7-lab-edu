@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Piramida 11:7 — interaktywny model GeoGebra 3D</title>
+<style>
+body{margin:0;background:#f4f6fa;color:#172737;font:16px/1.5 system-ui,sans-serif}main{max-width:1440px;margin:auto;padding:16px}
+h1{font-size:clamp(24px,4vw,34px);line-height:1.2;margin:12px 0}p{max-width:950px}nav{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+nav a,button{display:inline-block;border:1px solid #bac8d6;border-radius:6px;padding:9px 14px;background:white;color:#172737;text-decoration:none;font:inherit;cursor:pointer}
+button:disabled{opacity:.5;cursor:wait}a{color:#175ea6}#status{padding:10px;background:#e7eef8;border-radius:6px}#ggb{background:white;overflow:auto;min-height:300px;margin-top:16px}
+details{max-width:950px;padding:16px 0}footer{border-top:1px solid #bac8d6;padding-top:16px;margin-top:20px}.toolbar{display:flex;flex-wrap:wrap;gap:10px}
+</style></head>
+<body><main>
+<a href="../../index.html">← Pokaz edukacyjny / Educational show</a>
+<h1>Piramida 11:7 · GeoGebra 3D</h1>
+<p>Eksperymentuj z kształtem i skalą piramidy. Model G2 pokazuje pierwsze dziesięć pozycji projektu: π, γ, √3, √6, √2, √5, Tribonacci, Brun, 1/φ i φ. Wybierz jedną pozycję suwakiem w modelu.</p>
+<nav aria-label="Model i materiały"><a href="piramida-11-7-G2.ggb" download>Pobierz model G2 · .ggb</a><a href="../piramida-11-7-G1.ggb" download>Pobierz G1 · 3 pozycje</a><a href="README.md">Instrukcja</a><a href="VERIFICATION.md">Raport weryfikacji</a><a href="../EXPANSION-13.md">Plan wszystkich 13 pozycji</a></nav>
+<div id="status" role="status">Ładowanie GeoGebra… Silnik wymaga połączenia z internetem.</div>
+<div class="toolbar"><button id="reset" disabled>Przywróć piramidę 11:7</button><button id="view3d" disabled>Piramida 3D</button><button id="copies" disabled>Kopie odcinków</button></div>
+<div id="ggb" aria-label="Interaktywny model GeoGebra"></div>
+<details><summary>Jak korzystać i co oznaczają wyniki</summary>
+<p><strong>q = B/h</strong> określa kształt, a <strong>s</strong> skaluje całą bryłę: B = 11s, h = 11s/q. Początek: q = 11/7, s = 1, B = 11, h = 7. Zmiana samej skali nie zmienia bezwymiarowych proporcji.</p>
+<p>Wybór pozycji pokazuje odcinki, wzór, bieżący wynik, wzorzec, błąd względny i spełnienie tolerancji 0,1%. „Kopie” porównuje dwa łańcuchy odcinków we wspólnej skali 1/s; sumy są podane w jednostkach bryły. Nie są to dodatkowe naturalne odcinki piramidy.</p>
+<p>√2 to dokładna tożsamość kwadratu. Pozostałe zgodności przy 11:7 są porównaniami liczbowymi; wiele wyników jest algebraicznie zależnych. Brun używa przyjętego oszacowania, którego ścisły błąd nie jest ustalony. Zgodność nie dowodzi historycznej intencji ani funkcji fizycznej.</p>
+<p>Model sprawdzono w silniku przeglądarkowym dla 64 konfiguracji: 12 849/12 849 sprawdzeń PASS, także po ponownym otwarciu pliku. Nie sprawdzono osobnej instalacji Classic 6, telefonu, dostępności ani pracy offline. Wygodny odbiór wymaga szerokiego ekranu; na telefonie panel można przewijać. Dla dużej bryły oddal kamerę.</p>
+<p>Pozycje #11–12 (kąty) i #13 (osobny owal) pozostają planem. Model jest dodatkowym narzędziem edukacyjnym obok istniejącej aplikacji.</p>
+</details>
+<details><summary>Źródła i autorstwo</summary><p>Dobór proporcji i koncepcja: Michał Przybylski. <a href="../../../docs/matematyka-13-stalych.md">Zweryfikowana matematyka 13 pozycji</a> i <a href="../../../docs/historia-13-pozycji.md">rejestr źródeł</a> rozdzielają wyniki, historię i interpretację.</p>
+<p>Euklides — geometria klasyczna; Euler i Mascheroni — γ; M. Feinberg i OEIS A058265 — Tribonacci; Viggo Brun, Thomas R. Nicely i OEIS A065421 — oszacowanie B₂. <a href="https://www.geogebra.org/">GeoGebra Team</a> dostarcza silnik Classic/3D. Pełne przypisania i ograniczenia są w instrukcji i rejestrze źródeł.</p></details>
+<footer>Koncepcja projektu: Michał Przybylski — <a href="https://prylski.dev/">prylski.dev</a><br>GitHub: <a href="https://github.com/MichaelZP/">MichaelZP</a></footer>
+</main>
+<script src="https://www.geogebra.org/apps/deployggb.js" onerror="document.getElementById('status').textContent='Nie załadowano GeoGebra. Sprawdź połączenie lub pobierz plik .ggb.'"></script>
+<script type="module" src="viewer.mjs"></script>
+</body></html>

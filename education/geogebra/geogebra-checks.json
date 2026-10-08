@@ -1,0 +1,6236 @@
+{
+  "date": "2026-10-08",
+  "geogebraVersion": "5.4.920.0",
+  "engine": {
+    "head": "1ae5f97299ae20d1f04bf96516c7ded691af2f21",
+    "path": "src/lib/pyramid/engine.ts",
+    "sha256": "72496508b2d8c4911915ef44c77224ebd3cf79a055e887cf62388071dca2e7de"
+  },
+  "assertions": [
+    {
+      "name": "q independent",
+      "pass": true
+    },
+    {
+      "name": "s independent",
+      "pass": true
+    },
+    {
+      "name": "geometry absent from 2D: base",
+      "pass": true
+    },
+    {
+      "name": "geometry absent from 2D: b1",
+      "pass": true
+    },
+    {
+      "name": "geometry absent from 2D: b2",
+      "pass": true
+    },
+    {
+      "name": "geometry absent from 2D: hSeg",
+      "pass": true
+    },
+    {
+      "name": "geometry absent from 2D: sSeg",
+      "pass": true
+    },
+    {
+      "name": "geometry absent from 2D: dSeg",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 1.75,
+        "expected": 1.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=0.25: A",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=0.25: D",
+      "pass": true,
+      "details": {
+        "actual": 3.8890872965260113,
+        "expected": 3.8890872965260117,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "11:7, s=0.25: S",
+      "pass": true,
+      "details": {
+        "actual": 2.225561726845607,
+        "expected": 2.2255617268456067,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "11:7, s=0.25: E",
+      "pass": true,
+      "details": {
+        "actual": 2.6160561920570435,
+        "expected": 2.616056192057044,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "11:7, s=0.25: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=0.25: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.0004024994347707008,
+        "expected": 0.0004024994347707008,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=0.25: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=0.25: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "11:7, s=0.25: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "11:7, s=0.25: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=0.25: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.6185903467968048,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "11:7, s=0.25: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.0003438481829051007,
+        "expected": 0.0003438481829048262,
+        "delta": 2.7446577996470545e-16
+      }
+    },
+    {
+      "name": "11:7, s=0.25: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=0.25: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: apex height",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: base square",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=0.25: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 7,
+        "expected": 7,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1: A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1: D",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "11:7, s=1: S",
+      "pass": true,
+      "details": {
+        "actual": 8.902246907382429,
+        "expected": 8.902246907382427,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "11:7, s=1: E",
+      "pass": true,
+      "details": {
+        "actual": 10.464224768228174,
+        "expected": 10.464224768228176,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "11:7, s=1: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.0004024994347707008,
+        "expected": 0.0004024994347707008,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "11:7, s=1: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "11:7, s=1: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.6185903467968048,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "11:7, s=1: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.0003438481829051007,
+        "expected": 0.0003438481829048262,
+        "delta": 2.7446577996470545e-16
+      }
+    },
+    {
+      "name": "11:7, s=1: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: apex height",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: base square",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 10.5,
+        "expected": 10.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: A",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: D",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.33452377915607,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: S",
+      "pass": true,
+      "details": {
+        "actual": 13.353370361073642,
+        "expected": 13.35337036107364,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "11:7, s=1.5: E",
+      "pass": true,
+      "details": {
+        "actual": 15.696337152342263,
+        "expected": 15.696337152342261,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "11:7, s=1.5: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.0004024994347707008,
+        "expected": 0.0004024994347707008,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.6185903467968048,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "11:7, s=1.5: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.0003438481829049635,
+        "expected": 0.0003438481829048262,
+        "delta": 1.3725999503666486e-16
+      }
+    },
+    {
+      "name": "11:7, s=1.5: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=1.5: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: apex height",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: base square",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 14,
+        "expected": 14,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=2: A",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=2: D",
+      "pass": true,
+      "details": {
+        "actual": 31.11269837220809,
+        "expected": 31.112698372208094,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "11:7, s=2: S",
+      "pass": true,
+      "details": {
+        "actual": 17.804493814764857,
+        "expected": 17.804493814764854,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "11:7, s=2: E",
+      "pass": true,
+      "details": {
+        "actual": 20.92844953645635,
+        "expected": 20.928449536456352,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "11:7, s=2: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=2: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.0004024994347707008,
+        "expected": 0.0004024994347707008,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=2: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=2: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "11:7, s=2: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "11:7, s=2: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=2: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.6185903467968048,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "11:7, s=2: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.0003438481829051007,
+        "expected": 0.0003438481829048262,
+        "delta": 2.7446577996470545e-16
+      }
+    },
+    {
+      "name": "11:7, s=2: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "11:7, s=2: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: apex height",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: base square",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: A",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: D",
+      "pass": true,
+      "details": {
+        "actual": 3.8890872965260113,
+        "expected": 3.8890872965260117,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "q=1, s=0.25: S",
+      "pass": true,
+      "details": {
+        "actual": 3.074593469062211,
+        "expected": 3.074593469062211,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: E",
+      "pass": true,
+      "details": {
+        "actual": 3.36804839632687,
+        "expected": 3.3680483963268695,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "q=1, s=0.25: rPi",
+      "pass": true,
+      "details": {
+        "actual": 2,
+        "expected": 2,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.3633802276324186,
+        "expected": 0.3633802276324186,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=1, s=0.25: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=1, s=0.25: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.38196601125010515,
+        "expected": 0.38196601125010515,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=0.25: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: base square",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=0.25: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: D",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q=1, s=1: S",
+      "pass": true,
+      "details": {
+        "actual": 12.298373876248844,
+        "expected": 12.298373876248844,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: E",
+      "pass": true,
+      "details": {
+        "actual": 13.47219358530748,
+        "expected": 13.472193585307478,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q=1, s=1: rPi",
+      "pass": true,
+      "details": {
+        "actual": 2,
+        "expected": 2,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.3633802276324186,
+        "expected": 0.3633802276324186,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=1, s=1: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=1, s=1: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.38196601125010515,
+        "expected": 0.38196601125010515,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: base square",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: A",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: D",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.33452377915607,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: S",
+      "pass": true,
+      "details": {
+        "actual": 18.447560814373265,
+        "expected": 18.447560814373265,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: E",
+      "pass": true,
+      "details": {
+        "actual": 20.20829037796122,
+        "expected": 20.208290377961216,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "q=1, s=1.5: rPi",
+      "pass": true,
+      "details": {
+        "actual": 2,
+        "expected": 2,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.3633802276324186,
+        "expected": 0.3633802276324186,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.38196601125010515,
+        "expected": 0.38196601125010515,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=1.5: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: base square",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: A",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: D",
+      "pass": true,
+      "details": {
+        "actual": 31.11269837220809,
+        "expected": 31.112698372208094,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "q=1, s=2: S",
+      "pass": true,
+      "details": {
+        "actual": 24.596747752497688,
+        "expected": 24.596747752497688,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: E",
+      "pass": true,
+      "details": {
+        "actual": 26.94438717061496,
+        "expected": 26.944387170614956,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "q=1, s=2: rPi",
+      "pass": true,
+      "details": {
+        "actual": 2,
+        "expected": 2,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.3633802276324186,
+        "expected": 0.3633802276324186,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=1, s=2: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=1, s=2: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.38196601125010515,
+        "expected": 0.38196601125010515,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=1, s=2: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: base square",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: A",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: D",
+      "pass": true,
+      "details": {
+        "actual": 3.8890872965260113,
+        "expected": 3.8890872965260117,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "q=2, s=0.25: S",
+      "pass": true,
+      "details": {
+        "actual": 1.9445436482630056,
+        "expected": 1.9445436482630059,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=2, s=0.25: E",
+      "pass": true,
+      "details": {
+        "actual": 2.381569860407206,
+        "expected": 2.381569860407206,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: rPi",
+      "pass": true,
+      "details": {
+        "actual": 4,
+        "expected": 4,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.2732395447351627,
+        "expected": 0.2732395447351627,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=2, s=0.25: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=2, s=0.25: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=2, s=0.25: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.12596795110235798,
+        "expected": 0.12596795110235784,
+        "delta": 1.3877787807814457e-16
+      }
+    },
+    {
+      "name": "q=2, s=0.25: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=0.25: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: base square",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=0.25: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: D",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q=2, s=1: S",
+      "pass": true,
+      "details": {
+        "actual": 7.7781745930520225,
+        "expected": 7.778174593052023,
+        "delta": 8.881784197001252e-16
+      }
+    },
+    {
+      "name": "q=2, s=1: E",
+      "pass": true,
+      "details": {
+        "actual": 9.526279441628825,
+        "expected": 9.526279441628825,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: rPi",
+      "pass": true,
+      "details": {
+        "actual": 4,
+        "expected": 4,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.2732395447351627,
+        "expected": 0.2732395447351627,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=2, s=1: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=2, s=1: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=2, s=1: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.12596795110235798,
+        "expected": 0.12596795110235784,
+        "delta": 1.3877787807814457e-16
+      }
+    },
+    {
+      "name": "q=2, s=1: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: base square",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: A",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: D",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.33452377915607,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: S",
+      "pass": true,
+      "details": {
+        "actual": 11.667261889578034,
+        "expected": 11.667261889578034,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: E",
+      "pass": true,
+      "details": {
+        "actual": 14.289419162443238,
+        "expected": 14.289419162443236,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q=2, s=1.5: rPi",
+      "pass": true,
+      "details": {
+        "actual": 4,
+        "expected": 4,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.2732395447351627,
+        "expected": 0.2732395447351627,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.12596795110235784,
+        "expected": 0.12596795110235784,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=1.5: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: base square",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: A",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: D",
+      "pass": true,
+      "details": {
+        "actual": 31.11269837220809,
+        "expected": 31.112698372208094,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "q=2, s=2: S",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q=2, s=2: E",
+      "pass": true,
+      "details": {
+        "actual": 19.05255888325765,
+        "expected": 19.05255888325765,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: rPi",
+      "pass": true,
+      "details": {
+        "actual": 4,
+        "expected": 4,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.2732395447351627,
+        "expected": 0.2732395447351627,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=2, s=2: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=2, s=2: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=2, s=2: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.12596795110235798,
+        "expected": 0.12596795110235784,
+        "delta": 1.3877787807814457e-16
+      }
+    },
+    {
+      "name": "q=2, s=2: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=2, s=2: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: base square",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 0.9166666666666666,
+        "expected": 0.9166666666666666,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: A",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: D",
+      "pass": true,
+      "details": {
+        "actual": 3.8890872965260113,
+        "expected": 3.8890872965260117,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "q=3, s=0.25: S",
+      "pass": true,
+      "details": {
+        "actual": 1.6525443345876618,
+        "expected": 1.6525443345876618,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: E",
+      "pass": true,
+      "details": {
+        "actual": 2.149773889919072,
+        "expected": 2.149773889919072,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: rPi",
+      "pass": true,
+      "details": {
+        "actual": 6,
+        "expected": 6,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.9098593171027441,
+        "expected": 0.9098593171027441,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=3, s=0.25: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=3, s=0.25: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.25721558786090665,
+        "expected": 0.25721558786090665,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=0.25: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: base square",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=0.25: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 3.6666666666666665,
+        "expected": 3.6666666666666665,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: D",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q=3, s=1: S",
+      "pass": true,
+      "details": {
+        "actual": 6.610177338350647,
+        "expected": 6.610177338350647,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: E",
+      "pass": true,
+      "details": {
+        "actual": 8.599095559676288,
+        "expected": 8.599095559676288,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: rPi",
+      "pass": true,
+      "details": {
+        "actual": 6,
+        "expected": 6,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.9098593171027441,
+        "expected": 0.9098593171027441,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=3, s=1: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=3, s=1: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.25721558786090665,
+        "expected": 0.25721558786090665,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: base square",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: A",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: D",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.33452377915607,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: S",
+      "pass": true,
+      "details": {
+        "actual": 9.91526600752597,
+        "expected": 9.91526600752597,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: E",
+      "pass": true,
+      "details": {
+        "actual": 12.89864333951443,
+        "expected": 12.898643339514432,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q=3, s=1.5: rPi",
+      "pass": true,
+      "details": {
+        "actual": 6,
+        "expected": 6,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.9098593171027441,
+        "expected": 0.9098593171027441,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.25721558786090665,
+        "expected": 0.25721558786090665,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=1.5: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: base square",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 7.333333333333333,
+        "expected": 7.333333333333333,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: A",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: D",
+      "pass": true,
+      "details": {
+        "actual": 31.11269837220809,
+        "expected": 31.112698372208094,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "q=3, s=2: S",
+      "pass": true,
+      "details": {
+        "actual": 13.220354676701294,
+        "expected": 13.220354676701294,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: E",
+      "pass": true,
+      "details": {
+        "actual": 17.198191119352575,
+        "expected": 17.198191119352575,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: rPi",
+      "pass": true,
+      "details": {
+        "actual": 6,
+        "expected": 6,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.9098593171027441,
+        "expected": 0.9098593171027441,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q=3, s=2: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q=3, s=2: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.25721558786090665,
+        "expected": 0.25721558786090665,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q=3, s=2: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: apex height",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: base square",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 1.7507043740108488,
+        "expected": 1.7507043740108488,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: A",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: D",
+      "pass": true,
+      "details": {
+        "actual": 3.8890872965260113,
+        "expected": 3.8890872965260117,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: S",
+      "pass": true,
+      "details": {
+        "actual": 2.2261156315835704,
+        "expected": 2.2261156315835704,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: E",
+      "pass": true,
+      "details": {
+        "actual": 2.6165274325297485,
+        "expected": 2.6165274325297485,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.141592653589793,
+        "expected": 3.141592653589793,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.618993186606233,
+        "expected": 1.618993186606233,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.0005928168771530057,
+        "expected": 0.0005928168771530057,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=0.25: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: apex height",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: base square",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=0.25: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 7.002817496043395,
+        "expected": 7.002817496043395,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: D",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "exact pi, s=1: S",
+      "pass": true,
+      "details": {
+        "actual": 8.904462526334282,
+        "expected": 8.904462526334282,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: E",
+      "pass": true,
+      "details": {
+        "actual": 10.466109730118994,
+        "expected": 10.466109730118994,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.141592653589793,
+        "expected": 3.141592653589793,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "exact pi, s=1: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "exact pi, s=1: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.618993186606233,
+        "expected": 1.618993186606233,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.0005928168771530057,
+        "expected": 0.0005928168771530057,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: apex height",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: base square",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 10.504226244065093,
+        "expected": 10.504226244065093,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: A",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: D",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.33452377915607,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: S",
+      "pass": true,
+      "details": {
+        "actual": 13.35669378950142,
+        "expected": 13.356693789501422,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: E",
+      "pass": true,
+      "details": {
+        "actual": 15.699164595178491,
+        "expected": 15.69916459517849,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.141592653589793,
+        "expected": 3.141592653589793,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062328,
+        "expected": 1.618993186606233,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.0005928168771528685,
+        "expected": 0.0005928168771530057,
+        "delta": 1.3725999503666486e-16
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=1.5: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: apex height",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: base square",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=1.5: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 14.00563499208679,
+        "expected": 14.00563499208679,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: A",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: D",
+      "pass": true,
+      "details": {
+        "actual": 31.11269837220809,
+        "expected": 31.112698372208094,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "exact pi, s=2: S",
+      "pass": true,
+      "details": {
+        "actual": 17.808925052668563,
+        "expected": 17.808925052668563,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: E",
+      "pass": true,
+      "details": {
+        "actual": 20.932219460237988,
+        "expected": 20.932219460237988,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.141592653589793,
+        "expected": 3.141592653589793,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "exact pi, s=2: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "exact pi, s=2: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.618993186606233,
+        "expected": 1.618993186606233,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.0005928168771530057,
+        "expected": 0.0005928168771530057,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact pi, s=2: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: apex height",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: base square",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact pi, s=2: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 1.7490270180818448,
+        "expected": 1.7490270180818448,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: A",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: D",
+      "pass": true,
+      "details": {
+        "actual": 3.8890872965260113,
+        "expected": 3.8890872965260117,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: S",
+      "pass": true,
+      "details": {
+        "actual": 2.2247967345311053,
+        "expected": 2.2247967345311053,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: E",
+      "pass": true,
+      "details": {
+        "actual": 2.615405419811672,
+        "expected": 2.6154054198116725,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.144605511029693,
+        "expected": 3.144605511029693,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.0009590223087825513,
+        "expected": 0.0009590223087825513,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.6180339887498947,
+        "expected": 1.6180339887498947,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.3723111286221163e-16,
+        "expected": 1.3723111286221163e-16,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=0.25: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: apex height",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: base square",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=0.25: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 6.996108072327379,
+        "expected": 6.996108072327379,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: D",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "exact phi, s=1: S",
+      "pass": true,
+      "details": {
+        "actual": 8.899186938124421,
+        "expected": 8.899186938124421,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: E",
+      "pass": true,
+      "details": {
+        "actual": 10.461621679246688,
+        "expected": 10.46162167924669,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "exact phi, s=1: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.144605511029693,
+        "expected": 3.144605511029693,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.0009590223087825513,
+        "expected": 0.0009590223087825513,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "exact phi, s=1: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "exact phi, s=1: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.6180339887498947,
+        "expected": 1.6180339887498947,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.3723111286221163e-16,
+        "expected": 1.3723111286221163e-16,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: apex height",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: base square",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 10.49416210849107,
+        "expected": 10.49416210849107,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: A",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: D",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.33452377915607,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: S",
+      "pass": true,
+      "details": {
+        "actual": 13.348780407186633,
+        "expected": 13.348780407186634,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: E",
+      "pass": true,
+      "details": {
+        "actual": 15.692432518870035,
+        "expected": 15.692432518870035,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.144605511029693,
+        "expected": 3.144605511029693,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.0009590223087825513,
+        "expected": 0.0009590223087825513,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.618033988749895,
+        "expected": 1.6180339887498951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 1.3723111286221163e-16,
+        "delta": 1.3723111286221163e-16
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=1.5: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: apex height",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: base square",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=1.5: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 13.992216144654758,
+        "expected": 13.992216144654758,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: A",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: D",
+      "pass": true,
+      "details": {
+        "actual": 31.11269837220809,
+        "expected": 31.112698372208094,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "exact phi, s=2: S",
+      "pass": true,
+      "details": {
+        "actual": 17.798373876248842,
+        "expected": 17.798373876248842,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: E",
+      "pass": true,
+      "details": {
+        "actual": 20.923243358493377,
+        "expected": 20.92324335849338,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "exact phi, s=2: rPi",
+      "pass": true,
+      "details": {
+        "actual": 3.144605511029693,
+        "expected": 3.144605511029693,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.0009590223087825513,
+        "expected": 0.0009590223087825513,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: okPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "exact phi, s=2: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "exact phi, s=2: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.6180339887498947,
+        "expected": 1.6180339887498947,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.3723111286221163e-16,
+        "expected": 1.3723111286221163e-16,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "exact phi, s=2: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: apex height",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: base square",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "exact phi, s=2: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: A",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: D",
+      "pass": true,
+      "details": {
+        "actual": 3.8890872965260113,
+        "expected": 3.8890872965260117,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "q min, s=0.25: S",
+      "pass": true,
+      "details": {
+        "actual": 5.669270235224284,
+        "expected": 5.669270235224284,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: E",
+      "pass": true,
+      "details": {
+        "actual": 5.833630944789017,
+        "expected": 5.833630944789016,
+        "delta": 8.881784197001252e-16
+      }
+    },
+    {
+      "name": "q min, s=0.25: rPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.6816901138162094,
+        "expected": 0.6816901138162094,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q min, s=0.25: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q min, s=0.25: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.5482194158376132,
+        "expected": 1.5482194158376132,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=0.25: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: apex height",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: base square",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=0.25: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: D",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q min, s=1: S",
+      "pass": true,
+      "details": {
+        "actual": 22.677080940897135,
+        "expected": 22.677080940897135,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: E",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.334523779156065,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "q min, s=1: rPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.6816901138162094,
+        "expected": 0.6816901138162094,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q min, s=1: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q min, s=1: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.5482194158376132,
+        "expected": 1.5482194158376132,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: apex height",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: base square",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 33,
+        "expected": 33,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: A",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: D",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.33452377915607,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: S",
+      "pass": true,
+      "details": {
+        "actual": 34.0156214113457,
+        "expected": 34.0156214113457,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: E",
+      "pass": true,
+      "details": {
+        "actual": 35.0017856687341,
+        "expected": 35.0017856687341,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: rPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.6816901138162094,
+        "expected": 0.6816901138162094,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.5482194158376132,
+        "expected": 1.5482194158376132,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=1.5: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: apex height",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: base square",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=1.5: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 44,
+        "expected": 44,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: A",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: D",
+      "pass": true,
+      "details": {
+        "actual": 31.11269837220809,
+        "expected": 31.112698372208094,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "q min, s=2: S",
+      "pass": true,
+      "details": {
+        "actual": 45.35416188179427,
+        "expected": 45.35416188179427,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: E",
+      "pass": true,
+      "details": {
+        "actual": 46.66904755831214,
+        "expected": 46.66904755831213,
+        "delta": 7.105427357601002e-15
+      }
+    },
+    {
+      "name": "q min, s=2: rPi",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: errPi",
+      "pass": true,
+      "details": {
+        "actual": 0.6816901138162094,
+        "expected": 0.6816901138162094,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q min, s=2: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q min, s=2: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.5482194158376132,
+        "expected": 1.5482194158376132,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q min, s=2: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: apex height",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: base square",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q min, s=2: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 0.6875,
+        "expected": 0.6875,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: A",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: D",
+      "pass": true,
+      "details": {
+        "actual": 3.8890872965260113,
+        "expected": 3.8890872965260117,
+        "delta": 4.440892098500626e-16
+      }
+    },
+    {
+      "name": "q max, s=0.25: S",
+      "pass": true,
+      "details": {
+        "actual": 1.5372967345311055,
+        "expected": 1.5372967345311055,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: E",
+      "pass": true,
+      "details": {
+        "actual": 2.0625,
+        "expected": 2.0625,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: rPi",
+      "pass": true,
+      "details": {
+        "actual": 8,
+        "expected": 8,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: errPi",
+      "pass": true,
+      "details": {
+        "actual": 1.5464790894703255,
+        "expected": 1.5464790894703255,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q max, s=0.25: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q max, s=0.25: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.3090169943749474,
+        "expected": 0.3090169943749474,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=0.25: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: apex height",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: base square",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=0.25: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: D",
+      "pass": true,
+      "details": {
+        "actual": 15.556349186104045,
+        "expected": 15.556349186104047,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q max, s=1: S",
+      "pass": true,
+      "details": {
+        "actual": 6.149186938124422,
+        "expected": 6.149186938124422,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: E",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: rPi",
+      "pass": true,
+      "details": {
+        "actual": 8,
+        "expected": 8,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: errPi",
+      "pass": true,
+      "details": {
+        "actual": 1.5464790894703255,
+        "expected": 1.5464790894703255,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q max, s=1: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q max, s=1: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.3090169943749474,
+        "expected": 0.3090169943749474,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: apex height",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: base square",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 4.125,
+        "expected": 4.125,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: A",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: D",
+      "pass": true,
+      "details": {
+        "actual": 23.33452377915607,
+        "expected": 23.33452377915607,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: S",
+      "pass": true,
+      "details": {
+        "actual": 9.223780407186633,
+        "expected": 9.223780407186633,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: E",
+      "pass": true,
+      "details": {
+        "actual": 12.375,
+        "expected": 12.374999999999998,
+        "delta": 1.7763568394002505e-15
+      }
+    },
+    {
+      "name": "q max, s=1.5: rPi",
+      "pass": true,
+      "details": {
+        "actual": 8,
+        "expected": 8,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: errPi",
+      "pass": true,
+      "details": {
+        "actual": 1.5464790894703255,
+        "expected": 1.5464790894703255,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.4142135623730951,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.3090169943749474,
+        "expected": 0.3090169943749474,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=1.5: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: apex height",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: base square",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=1.5: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: A",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: D",
+      "pass": true,
+      "details": {
+        "actual": 31.11269837220809,
+        "expected": 31.112698372208094,
+        "delta": 3.552713678800501e-15
+      }
+    },
+    {
+      "name": "q max, s=2: S",
+      "pass": true,
+      "details": {
+        "actual": 12.298373876248844,
+        "expected": 12.298373876248844,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: E",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: rPi",
+      "pass": true,
+      "details": {
+        "actual": 8,
+        "expected": 8,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: errPi",
+      "pass": true,
+      "details": {
+        "actual": 1.5464790894703255,
+        "expected": 1.5464790894703255,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: okPi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: rSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "q max, s=2: errSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1.570092458683775e-16,
+        "expected": 0,
+        "delta": 1.570092458683775e-16
+      }
+    },
+    {
+      "name": "q max, s=2: okSqrt2",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: rPhi",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: errPhi",
+      "pass": true,
+      "details": {
+        "actual": 0.3090169943749474,
+        "expected": 0.3090169943749474,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: okPhi",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0
+      }
+    },
+    {
+      "name": "q max, s=2: hSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: aSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: dSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: sSeg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: s2Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: s3Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: s4Seg defined",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: apex height",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: base square",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: s2Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: s3Seg = S",
+      "pass": true
+    },
+    {
+      "name": "q max, s=2: s4Seg = S",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: hSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: hSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": true,
+        "expected": true
+      }
+    },
+    {
+      "name": "lesson 1: aSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: aSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "lesson 1: sSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: sSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "lesson 1: dSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: dSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "lesson 1: b2 condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: b2 visibility",
+      "pass": true,
+      "details": {
+        "visible": true,
+        "expected": true
+      }
+    },
+    {
+      "name": "lesson 2: hSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: hSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": true,
+        "expected": true
+      }
+    },
+    {
+      "name": "lesson 2: aSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: aSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": true,
+        "expected": true
+      }
+    },
+    {
+      "name": "lesson 2: sSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: sSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": true,
+        "expected": true
+      }
+    },
+    {
+      "name": "lesson 2: dSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: dSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "lesson 2: b2 condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: b2 visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "lesson 3: hSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: hSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "lesson 3: aSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: aSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "lesson 3: sSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: sSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "lesson 3: dSeg condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: dSeg visibility",
+      "pass": true,
+      "details": {
+        "visible": true,
+        "expected": true
+      }
+    },
+    {
+      "name": "lesson 3: b2 condition",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: b2 visibility",
+      "pass": true,
+      "details": {
+        "visible": false,
+        "expected": false
+      }
+    },
+    {
+      "name": "guides 0: s2Seg",
+      "pass": true
+    },
+    {
+      "name": "guides 0: s3Seg",
+      "pass": true
+    },
+    {
+      "name": "guides 0: s4Seg",
+      "pass": true
+    },
+    {
+      "name": "guides 1: s2Seg",
+      "pass": true
+    },
+    {
+      "name": "guides 1: s3Seg",
+      "pass": true
+    },
+    {
+      "name": "guides 1: s4Seg",
+      "pass": true
+    },
+    {
+      "name": "guides hidden outside phi",
+      "pass": true
+    },
+    {
+      "name": "body 0: base",
+      "pass": true
+    },
+    {
+      "name": "body 0: face1",
+      "pass": true
+    },
+    {
+      "name": "body 0: face2",
+      "pass": true
+    },
+    {
+      "name": "body 0: face3",
+      "pass": true
+    },
+    {
+      "name": "body 0: face4",
+      "pass": true
+    },
+    {
+      "name": "body 0: edge1",
+      "pass": true
+    },
+    {
+      "name": "body 0: edge2",
+      "pass": true
+    },
+    {
+      "name": "body 0: edge3",
+      "pass": true
+    },
+    {
+      "name": "body 0: edge4",
+      "pass": true
+    },
+    {
+      "name": "body 1: base",
+      "pass": true
+    },
+    {
+      "name": "body 1: face1",
+      "pass": true
+    },
+    {
+      "name": "body 1: face2",
+      "pass": true
+    },
+    {
+      "name": "body 1: face3",
+      "pass": true
+    },
+    {
+      "name": "body 1: face4",
+      "pass": true
+    },
+    {
+      "name": "body 1: edge1",
+      "pass": true
+    },
+    {
+      "name": "body 1: edge2",
+      "pass": true
+    },
+    {
+      "name": "body 1: edge3",
+      "pass": true
+    },
+    {
+      "name": "body 1: edge4",
+      "pass": true
+    },
+    {
+      "name": "native reset q",
+      "pass": true
+    },
+    {
+      "name": "native reset s",
+      "pass": true
+    },
+    {
+      "name": "native reset lesson",
+      "pass": true
+    },
+    {
+      "name": "native phiButton",
+      "pass": true
+    },
+    {
+      "name": "native sqrtButton",
+      "pass": true
+    },
+    {
+      "name": "native piButton",
+      "pass": true
+    },
+    {
+      "name": "export/reload B",
+      "pass": true
+    },
+    {
+      "name": "export/reload h",
+      "pass": true
+    },
+    {
+      "name": "export/reload native reset",
+      "pass": true
+    }
+  ],
+  "total": 936,
+  "passed": 936,
+  "initial": {
+    "q": 1.5714285714285714,
+    "s": 1,
+    "B": 11,
+    "h": 7,
+    "A": 5.5,
+    "D": 15.556349186104045,
+    "S": 8.902246907382429,
+    "E": 10.464224768228174,
+    "rPi": 3.142857142857143,
+    "rPhi": 1.6185903467968052,
+    "rSqrt2": 1.414213562373095,
+    "errPi": 0.0004024994347707008,
+    "errPhi": 0.0003438481829051007,
+    "errSqrt2": 1.570092458683775e-16,
+    "okPi": 1,
+    "okPhi": 1,
+    "okSqrt2": 1
+  }
+}
