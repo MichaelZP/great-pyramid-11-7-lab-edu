@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Etap 11 · przeciwbieżne wiry toroidalne · Piramida 11:7</title>
+<link rel="stylesheet" href="../etap-10/style.css?v=11"></head>
+<body><main>
+<header><p class="eyebrow">Piramida 11:7 / Etap 11 / Prototyp lokalny</p>
+<h1>Wizualizacja artystyczna przeciwbieżnych wirów toroidalnych</h1>
+<p>Inspiracja przepływami Naviera–Stokesa. To efekt prezentacyjny: nie rozwiązujemy tych równań i nie dowodzimy fizycznego działania piramidy. B = 11, h = 7.</p>
+<p class="note">Autor zaakceptował położenie torusów i oba zwroty 6 października 2026. Efekty etapu 11 wymagają odbioru artystycznego. Torusy odsłaniamy jako osobne obiekty; rzeczywiste przekroje zachowują swój kształt.</p></header>
+<section class="panel" aria-label="Sterowanie pokazem">
+<div class="timeline"><label for="progress">Przebieg pokazu <output id="progressValue">0%</output></label><input id="progress" type="range" min="0" max="100" step=".1" value="0"></div>
+<div class="controls"><button id="play">Odtwórz</button><button id="pause">Pauza</button><button id="reset">Reset</button><button id="circulate">Pokaż obiegi · 100%</button>
+<label class="check"><input id="reduced" type="checkbox">Ograniczony ruch</label></div>
+<p id="motionStatus" role="status"></p>
+<div class="controls">
+<label>Prędkość obiegu <output id="speedValue">1×</output><input id="speed" aria-label="Prędkość obiegu" type="range" min=".25" max="3" step=".25" value="1"></label>
+<label>Odległość środków [u] <output id="distanceValue">4</output><input id="distance" aria-label="Odległość środków torusów" type="range" min="2" max="8" step=".1" value="4"></label>
+<label>Widok<select id="view"><option value="perspective">Perspektywiczny</option><option value="side">Z boku · XZ</option><option value="top">Z góry · XY</option></select></label>
+<label>Widoczne układy<select id="systems"><option value="both">Oba</option><option value="first">T1 · pierwszy</option><option value="second">T2 · odbicie</option></select></label>
+</div>
+<div class="controls layers">
+<label class="check"><input id="pyramidLayer" type="checkbox" checked>Piramida</label>
+<label class="check"><input id="surfaceLayer" type="checkbox" checked>Powierzchnie</label>
+<label class="check"><input id="planeLayer" type="checkbox" checked>Płaszczyzny cięcia</label>
+<label class="check"><input id="sectionLayer" type="checkbox" checked>Rzeczywiste przekroje</label>
+<label class="check"><input id="torusLayer" type="checkbox" checked>Torusy</label>
+<label class="check"><input id="trajectoryLayer" type="checkbox" checked>Trajektorie i znaczniki</label>
+<label class="check"><input id="linksLayer" type="checkbox" checked>Powiązania schematyczne</label>
+</div></section>
+<section class="panel" aria-label="Efekty i jakość">
+<h2>Prezentacja</h2><div class="controls">
+<label>Tryb pokazu<select id="mode"><option value="education">Pokaz edukacyjny</option><option value="cinema">Pokaz filmowy</option></select></label>
+<label>Gęstość cząstek <output id="densityValue">25%</output><input id="density" aria-label="Gęstość cząstek" type="range" min="0" max="100" step="5" value="25"></label>
+<label>Długość smug [s obiegu] <output id="trailValue">0</output><input id="trail" aria-label="Długość smug" type="range" min="0" max="2" step=".1" value="0"></label>
+<label>Siła deformacji <output id="deformationValue">0</output><input id="deformation" aria-label="Siła deformacji" type="range" min="0" max="1" step=".05" value="0"></label>
+<label>Intensywność poświaty <output id="glowValue">0</output><input id="glow" aria-label="Intensywność poświaty" type="range" min="0" max="1" step=".05" value="0"></label>
+<label>Jakość<select id="quality"><option value="0">Niska</option><option value="1">Średnia</option><option value="2">Wysoka</option></select></label>
+<label class="check"><input id="particlesLayer" type="checkbox" checked>Cząstki i smugi</label>
+<label class="check"><input id="labelsLayer" type="checkbox" checked>Oznaczenia i strzałki</label>
+<label class="check"><input id="camera" type="checkbox">Włącz kamerę filmową</label>
+<button id="cameraReset">Reset kamery</button><button id="benchmark">Zmierz 30 nieruchomych klatek</button><button id="measure">Wyczyść pomiary</button>
+</div><p id="cameraStatus" role="status"></p><p id="qualityStatus" role="status"></p><details><summary>Pomiary techniczne podglądu</summary><output id="diagnostics"></output></details>
+<p>Deformacja jest efektem wizualnym, nie fizyczną miarą turbulencji. Zerowa deformacja zachowuje regularne trajektorie etapu 10. T1: okrągłe cząstki i ciągłe linie; T2: kwadratowe cząstki i przerywane linie. Smugi są próbkami tej samej trajektorii, nie obliczonym śladem płynu.</p>
+<p>W perspektywie przeciągnij scenę, aby obrócić kamerę; kółko przybliża. Po ustawieniu fokusu sceny strzałki obracają, +/− przybliżają. Ręczne sterowanie wyłącza kamerę filmową. Włącz ją ponownie świadomie, potem naciśnij Odtwórz. Pauza zatrzymuje ruch i kamerę; ograniczony ruch blokuje automatyczny pokaz. Zmiana rozstawu podczas obiegu działa płynnie i zachowuje szczelinę między torusami.</p>
+<p><a href="../etap-10/podglad.html">Zachowany podgląd etapu 10 →</a> · <a href="odbior.md">Instrukcja odbioru obu trybów →</a></p>
+</section><p id="error" role="alert"></p>
+<section class="panel scene-panel"><h2 id="viewTitle">Widok perspektywiczny</h2><canvas tabindex="0" style="touch-action:pan-y" id="scene" aria-label="Dwa torusy na osi piramidy z trajektoriami, strzałkami i znacznikami"></canvas>
+<div class="legend"><span class="first">T1 — linie ciągłe · θ+, ψ+</span><span class="second">T2 — linie przerywane · θ−, ψ−</span><span>┄ powiązanie umowne</span></div>
+<p id="parameters"></p><p id="stage"></p>
+<p>Widok z góry nakłada oba torusy, bo mają wspólną oś. Wybierz T1 lub T2, aby obejrzeć kierunek osobno. Na strzałkach θ wskazuje obieg wokół osi Z, a ψ obieg przez przekrój wokół kołowego rdzenia.</p></section>
+<div class="grid">
+<section class="panel"><h2>Kontrola z boku · XZ</h2><canvas id="side" class="small" aria-label="Widok z boku pokazujący przeciwne obiegi przez przekroje"></canvas><p>Przy X &gt; 0: T1 z zewnętrznego punktu ku +Z; T2 ku −Z. ψ mierzymy w płaszczyźnie (promień od osi, Z), od kierunku na zewnątrz.</p></section>
+<section class="panel"><h2>Kontrola z góry · XY</h2><canvas id="top" class="small" aria-label="Widok z góry pokazujący przeciwne obiegi wokół osi"></canvas><p>Patrząc z +Z: T1 θ+ ↺, T2 θ− ↻. +X jest w prawo, +Y w górę. Strzałki biegną na zewnętrznym okręgu T1 i wewnętrznym T2, aby rozdzielić nakładające się rzuty.</p></section>
+</div>
+<section class="panel"><h2>Konstrukcja źródłowa bez deformacji</h2>
+<div class="controls"><label>Cięcie<select id="preset"><option value="pyramid">α = β · 11:7</option><option value="golden">Złoty owal · L/W ≈ φ</option><option value="lange">α = 51,84°</option><option value="huntley">Kąt Huntleya</option><option value="custom">Własne parametry</option></select></label>
+<label>α [°]<input id="alpha" type="number" value="51.8427734126309" min="1" max="85" step=".00001"></label>
+<label>z₀ [u]<input id="z0" type="number" value="7.65" min="2" max="30" step=".01"></label>
+<label>Wariant końca<select id="variant"><option value="A">A · P = V, L = h</option><option value="B">B · P na h/2, L = h/2</option></select></label>
+<label>Skala końca q<input id="scaleFactor" type="number" value=".4" min=".005" max="2" step=".005"></label></div>
+<p id="sourceNumbers"></p><p>Pokaz wykorzystuje końcową pozycję etapu 9; q = 0,4 jest roboczym wyborem czytelności. Oba układy zachowują zr = 1, jednolitą skalę i odbicie w Z = 7. Powierzchnie mają skończony, otwarty wycinek siatki. Ich rozmiar nie wyznacza promieni torusów.</p>
+<p><a href="../etap-7/podglad.html">Otwórz zachowaną animację etapu 9 oraz porównanie ze złotą elipsą →</a></p>
+<details><summary>Przebieg, kierunki i ograniczenia</summary><p>0–25%: konstrukcja. 25–65%: odsłonięcie torusów. 45–75%: odsłonięcie trajektorii. 75–100%: łagodny start ruchu. Po 100% obieg trwa do pauzy. Suwak zatrzymuje pokaz i zeruje fazę znaczników; reset wraca do konstrukcji. Prędkość reguluje obiegi, a pokaz trwa 12 s.</p><p>Każdy torus ma trzy zamknięte trajektorie i trzy znaczniki. θ wykonuje jeden obieg, ψ dwa w tym samym czasie. Strzałki pomocnicze rozdzielają oba ruchy. Nie obliczamy zderzeń, mieszania ani równań przepływu. Deformacja i poświata są artystyczne.</p></details></section>
+<footer>Koncepcja: Michał Przybylski — <a href="https://prylski.dev/">prylski.dev</a>, <a href="https://github.com/MichaelZP/">https://github.com/MichaelZP/</a>.</footer>
+</main><script src="../etap-7/animation.js?v=9"></script><script src="../etap-7/section.js?v=10"></script><script src="../etap-10/vortex.js?v=11"></script><script src="particles.js?v=11"></script><script src="extension.js?v=11"></script><script src="../etap-10/preview.js?v=11"></script></body></html>

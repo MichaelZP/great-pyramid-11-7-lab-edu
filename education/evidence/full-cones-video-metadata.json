@@ -1,0 +1,15 @@
+{
+  "file": "education/demo-full-cones.webm",
+  "bytes": 4281583,
+  "frames": 756,
+  "minTimeMs": 0,
+  "maxTimeMs": 25970,
+  "codecs": [
+    "V_VP9"
+  ],
+  "width": 1280,
+  "height": 720,
+  "averageEncodedFramesPerSecond": 29.11,
+  "sha256": "2f527b60bf51ae0ca73ff1c6f4bc473a4f75e1ad4ff69c7ac36d7bc68589f5e4",
+  "ebmlComplete": true
+}

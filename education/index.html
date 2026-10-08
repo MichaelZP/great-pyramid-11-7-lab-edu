@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pełny pokaz · konstrukcja i wiry · Piramida 11:7</title>
+<link rel="stylesheet" href="../docs/etap-10/style.css"><link rel="stylesheet" href="show.css"></head>
+<body><main>
+<header><div class="language-control"><label for="language">Język / Language<select id="language"><option value="pl">PL — Polski</option><option value="en">EN — English</option></select></label></div><p class="eyebrow">Etap 14 · pokaz edukacyjny</p><h1>Konstrukcja i wiry na wspólnej scenie</h1>
+<p>Pięć odsłon na jednym zegarze. Piramida B = 11, h = 7; powierzchnie zr = 1, odbicie w Z = 7 i rzeczywiste owale. Torusy są osobnymi obiektami artystycznymi; nie wyprowadzono ich jako przekształcenia powierzchni ani rozwiązania przepływu.</p></header>
+<section id="scenePanel" class="panel scene-panel" aria-label="Wspólna scena">
+<h2 id="viewTitle">Widok perspektywiczny</h2>
+<div class="controls stereo-toolbar"><button id="crossEye" aria-pressed="false">Cross-eye 3D</button><button id="reverseDepth" aria-pressed="false" disabled>Odwróć głębię</button><button id="stereoFullscreen">Pełny ekran</button><button id="stereoTransport">Odtwórz scenę</button><label for="stereoDepth">Siła głębi <output id="stereoDepthValue">1×</output><input id="stereoDepth" type="range" min="0" max="2" step=".1" value="1" disabled></label></div>
+<p id="stereoInfo" role="status" hidden></p>
+<canvas tabindex="0" id="scene" aria-label="Piramida 11:7, dwie lustrzane powierzchnie hiperboliczne, płaszczyzny, rzeczywiste przekroje oraz dwa przeciwbieżne torusy"></canvas>
+<div class="legend"><span id="torusLegend1" class="first">T1: θ+ ↺, ψ+ · linie ciągłe</span><span id="torusLegend2" class="second">T2: θ− ↻, ψ− · linie przerywane</span></div><p id="stage" role="status"></p>
+</section>
+<section class="panel" aria-label="Sterowanie pokazem">
+<div class="controls"><button id="fullShow">Pełny pokaz</button><button id="play">Odtwórz</button><button id="pause">Pauza</button><button id="reset">Reset</button><button id="circulate">Pełna scena · 100%</button><button id="recordView">Kadr do nagrania</button></div>
+<div class="timeline"><label for="progress">Przebieg pokazu <output id="progressValue">0%</output></label><input id="progress" type="range" min="0" max="100" step=".1" value="0"></div>
+<p id="motionStatus" role="status"></p>
+<div class="controls"><label class="check"><input id="reduced" type="checkbox">Ograniczony ruch · klatki ręczne</label><label class="check"><input id="camera" type="checkbox">Powolny obrót kamery</label><button id="cameraReset">Reset kamery</button>
+<label>Widok<select id="view"><option value="perspective">Równoległy 3D</option><option value="side">Z boku · XZ</option><option value="top">Z góry · XY</option></select></label>
+<label>Kadr kamery<select id="cameraFrame"><option value="fixed">Stały · piramida zachowuje rozmiar</option><option value="fit">Dopasuj całe stożki</option></select></label>
+<label>Jakość<select id="quality"><option value="0">Niska · telefon</option><option value="1">Średnia</option><option value="2">Wysoka</option></select></label>
+<label>Ustawienie<select id="mode"><option value="education">Czytelna konstrukcja</option><option value="cinema">Nagranie · wszystkie warstwy</option></select></label></div>
+<div class="controls"><label for="scaleFactor">Skala stożków hiperbolicznych względem V <output id="scaleValue">5,5%</output><input id="scaleFactor" type="range" min=".005" max="2" step=".005" value=".055"></label><button id="scaleReset">Przywróć skalę · 5,5%</button><button id="referenceView">Widok jak na ilustracji</button>
+<label>Zakres powierzchni<select id="extent"><option value="infinite">Ku nieskończoności · jak na ilustracji</option><option value="full">Całe wycinki z podstawami</option><option value="section">Otoczenie przekrojów</option></select></label></div>
+<p>Skala 0,5–200% zmienia wyłącznie oba lustrzane stożki, ich płaszczyzny i rzeczywiste przekroje. W stałym kadrze piramida, torusy i kamera zachowują rozmiar. Duże powierzchnie mogą wychodzić poza kadr, jak na ilustracji. Osobna opcja kamery „Dopasuj całe stożki” obejmuje całość; +/− zmienia tylko przybliżenie kamery. Zmiana skali zatrzymuje pokaz.</p>
+<h2>Kierunki i wielkości wirów</h2>
+<div class="controls">
+<label>Stożek 1 · kierunek<select id="coneDirection1"><option value="1">Domyślny</option><option value="-1">Odwrócony</option></select></label>
+<label>Stożek 2 · kierunek<select id="coneDirection2"><option value="1">Lustrzany domyślny</option><option value="-1">Odwrócony</option></select></label>
+<label>Torus 1 · kierunek<select id="torusDirection1"><option value="1">θ+, ψ+ · ↺</option><option value="-1">θ−, ψ− · ↻</option></select></label>
+<label>Torus 2 · kierunek<select id="torusDirection2"><option value="-1">θ−, ψ− · ↻</option><option value="1">θ+, ψ+ · ↺</option></select></label>
+<label for="torusScale1">Wielkość torusa 1 <output id="torusScale1Value">100%</output><input id="torusScale1" type="range" min=".25" max="2" step=".05" value="1"></label>
+<label for="torusScale2">Wielkość torusa 2 <output id="torusScale2Value">100%</output><input id="torusScale2" type="range" min=".25" max="2" step=".05" value="1"></label>
+<label for="distance">Odległość środków torusów [u] <output id="distanceValue">4,0</output><input id="distance" type="range" min="2" max="8" step=".1" value="4"></label>
+<button id="motionDefaults">Domyślne wiry</button></div><p id="torusSettings"></p>
+<p>Kierunek torusa odwraca oba obiegi θ i ψ. Rozmiar skaluje R i r równomiernie; rozstaw przesuwa środki symetrycznie względem Z = 7. Stożki i piramida zachowują geometrię. Domyślne wiry przywracają rozmiar 100%, rozstaw 4 u i zaakceptowane kierunki. Zmiana kierunku, rozmiaru lub rozstawu zatrzymuje pokaz — użyj „Odtwórz”.</p>
+<h2>Złote jaja i przezroczystość</h2>
+<div class="controls">
+<label class="check"><input id="egg1Layer" type="checkbox">Złote jajo 1 · pełna bryła</label>
+<label class="check"><input id="egg2Layer" type="checkbox">Złote jajo 2 · pełna bryła</label>
+<label for="eggTransparency1">Przezroczystość jaja 1 <output id="eggTransparency1Value">65%</output><input id="eggTransparency1" type="range" min="0" max="100" step="5" value="65"></label>
+<label for="eggTransparency2">Przezroczystość jaja 2 <output id="eggTransparency2Value">65%</output><input id="eggTransparency2" type="range" min="0" max="100" step="5" value="65"></label>
+<label for="surfaceTransparency1">Przezroczystość stożka 1 <output id="surfaceTransparency1Value">0%</output><input id="surfaceTransparency1" type="range" min="0" max="100" step="5" value="0"></label>
+<label for="surfaceTransparency2">Przezroczystość stożka 2 <output id="surfaceTransparency2Value">0%</output><input id="surfaceTransparency2" type="range" min="0" max="100" step="5" value="0"></label></div>
+<p>Jaja są bryłami obrotowymi rzeczywistego owalu wokół jego długiej osi. Zachowują skalę stożków; przy 5,5% są małe. Zwiększ skalę, aby obejrzeć bryły. 100% przezroczystości ukrywa daną bryłę lub siatkę; 0% przywraca jej pełną intensywność. Przekroje i płaszczyzny mają osobne przełączniki.</p>
+<div class="controls layers">
+<label class="check"><input id="pyramidLayer" type="checkbox" checked>Piramida</label>
+<label class="check"><input id="guidesLayer" type="checkbox" checked>Linie konstrukcyjne</label>
+<label class="check"><input id="surfaceLayer" type="checkbox" checked>Powierzchnie stożków</label>
+<label class="check"><input id="planeLayer" type="checkbox" checked>Płaszczyzny cięcia</label>
+<label class="check"><input id="sectionLayer" type="checkbox" checked>Rzeczywiste przekroje</label>
+<label class="check"><input id="torusLayer" type="checkbox" checked>Torusy</label>
+<label class="check"><input id="trajectoryLayer" type="checkbox" checked>Obiegi i kierunki</label>
+<label class="check"><input id="particlesLayer" type="checkbox" checked>Cząstki i smugi torusów</label>
+<label class="check"><input id="coneParticlesLayer" type="checkbox" checked>Spirale po stożkach</label>
+<label class="check"><input id="labelsLayer" type="checkbox" checked>Oznaczenia</label></div>
+<details><summary>Efekty i pomiary</summary><div class="controls">
+<label>Prędkość obiegu <output id="speedValue">1×</output><input id="speed" type="range" min=".25" max="3" step=".25" value="1"></label>
+<label>Gęstość cząstek <output id="densityValue">35%</output><input id="density" type="range" min="0" max="60" step="5" value="35"></label>
+<label>Długość smug [s obiegu] <output id="trailValue">0.5</output><input id="trail" type="range" min="0" max="1" step=".1" value=".5"></label>
+<label>Poświata <output id="glowValue">0.1</output><input id="glow" type="range" min="0" max=".3" step=".05" value=".1"></label>
+<button id="benchmark">Zmierz 30 nieruchomych klatek</button><button id="measure">Wyczyść pomiary</button></div><p id="qualityStatus" role="status"></p><output id="diagnostics"></output></details>
+<p id="cameraStatus" role="status"></p><p>Przeciągnięcie, strzałki lub przybliżenie wyłączają automatyczny obrót. Na telefonie użyj przycisków +/− i przesuwaj scenę jednym palcem. Pauza zatrzymuje pokaz, cząstki i kamerę. Suwak wybiera nieruchomą klatkę; po 100% odtwarzanie utrzymuje obieg do pauzy.</p>
+<div class="controls"><button id="zoomIn" aria-label="Przybliż kamerę">+</button><button id="zoomOut" aria-label="Oddal kamerę">−</button><button id="recordDemo">Nagraj demo · 26 s</button><button id="stopRecording" disabled>Zakończ nagranie</button><a id="downloadVideo" hidden download="piramida-wspolny-pokaz.webm">Pobierz nagranie WebM</a></div><p id="recordStatus" role="status"></p>
+<p id="parameters"></p><p id="sourceNumbers"></p><p id="error" role="alert"></p>
+</section>
+<section class="panel"><h2>Geometria i granice interpretacji</h2><p>Zachowano wariant A, α = atan(14/11), z₀ = 7,65. Domyślne torusy mają środki Z = 5 i 9, R = 2,4 oraz r = 0,65; suwaki pozwalają zmienić ich rozmiar i rozstaw. Domyślny widok ilustracji używa q = 0,055. Suwak q stosuje istniejące jednolite skalowanie względem V; 100% odpowiada konstrukcji L = h. Zakresy z wcześniejszego podglądu pozwalają wybrać otwarte powierzchnie ku nieskończoności albo całe wycinki z okrągłymi podstawami. Okręgi oznaczają granice rysowanej siatki: nieskończona powierzchnia zr = 1 nie ma skończonej podstawy. Owal pozostaje rzeczywistym przecięciem, nie elipsą. L/W dla 11:7 pozostaje poza 0,1% od φ. Drugi układ jest odbiciem Z ↦ 14 − Z. Domyślny ruch jego cząstek także jest lustrzany, bez dodatkowego odwracania czasu; niezależne przełączniki pozwalają odwrócić każdy wir. Spirale są artystycznymi trajektoriami po powierzchniach, niezależnymi od torusów i bez solvera przepływu.</p>
+<p><a href="../docs/etap-7/podglad.html">Konstrukcja i przeniesienie etapu 9</a> · <a href="../docs/etap-11/podglad.html">Zachowany pokaz wirów</a> · <a href="README.md">Uruchomienie i nagranie</a></p></section>
+<footer>Koncepcja: Michał Przybylski — <a href="https://prylski.dev/">prylski.dev</a>.</footer>
+<!-- Fixed accepted geometry: shared renderer still reads the original inputs. -->
+<div hidden><input id="alpha" value="51.8427734126309"><input id="z0" value="7.65"><input id="deformation" value="0"><output id="deformationValue"></output><input id="linksLayer" type="checkbox"><select id="systems"><option value="both">Oba</option></select><select id="preset"><option value="pyramid">11:7</option></select><select id="variant"><option value="A">A</option></select></div>
+</main><button id="exitRecord" hidden>Wróć do sterowania · Esc</button>
+<script src="../docs/etap-7/animation.js"></script><script src="../docs/etap-7/section.js"></script><script src="../docs/etap-10/vortex.js"></script><script src="../docs/etap-11/particles.js"></script><script src="en.js"></script><script src="i18n.js"></script><script src="controls.js"></script><script src="stereo.js"></script><script src="show.js"></script><script src="../docs/etap-11/extension.js"></script><script src="../docs/etap-10/preview.js"></script></body></html>

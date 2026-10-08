@@ -1,0 +1,15 @@
+{
+  "file": "education/demo-spirals.webm",
+  "bytes": 9333610,
+  "frames": 764,
+  "minTimeMs": 0,
+  "maxTimeMs": 25939,
+  "codecs": [
+    "V_VP9"
+  ],
+  "width": 1280,
+  "height": 720,
+  "averageEncodedFramesPerSecond": 29.45,
+  "sha256": "129fdb0922627637c023b6cb3c32c567561b458a97c79d26aba5284fe50162c9",
+  "ebmlComplete": true
+}

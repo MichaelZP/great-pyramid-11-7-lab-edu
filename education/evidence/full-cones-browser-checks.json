@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "finiteExtent": "stage 7 full, zmin=min(0.08*z0,0.8*lo), zmax=max(1.5*z0,1.1*hi)",
+  "scale": 0.08,
+  "viewport": {
+    "width": 320,
+    "height": 844
+  },
+  "noHorizontalOverflow": true,
+  "scrollWidth": 305,
+  "minimumButtonHeight": 44,
+  "cpu": {
+    "samples": 30,
+    "quality": "medium",
+    "particles": 84,
+    "p50Ms": 3.6,
+    "p95Ms": 4.4,
+    "bufferBytes": 7680
+  },
+  "videoDecode": {
+    "width": 1280,
+    "height": 720,
+    "duration": 25.97,
+    "time": 25,
+    "readyState": 4,
+    "error": null
+  },
+  "physicalPhoneVerified": false
+}

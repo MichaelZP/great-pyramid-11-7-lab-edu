@@ -1,0 +1,1779 @@
+{
+  "date": "2026-10-06",
+  "url": "http://127.0.0.1:8088/etap-11/podglad.html",
+  "benchmarkMethod": "30 synchronous paused redraw calls per quality; CPU command submission for 3 canvases, not GPU completion or FPS; density100/trail2/deformation1/glow1; DPR1",
+  "benchmarks": [
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.5235987755982988,
+          "zoom": 1
+        },
+        "effective": 0,
+        "frames": 30,
+        "heapBytes": 19237408,
+        "p50": 5.200000047683716,
+        "p95": 8.5,
+        "particles": 96,
+        "samples": 30,
+        "selected": 0,
+        "timeMs": 3045.2999999523163,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "error": "",
+      "overflow": false,
+      "viewport": {
+        "dpr": 1,
+        "h": 1004,
+        "w": 908
+      }
+    },
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.5235987755982988,
+          "zoom": 1
+        },
+        "effective": 1,
+        "frames": 30,
+        "heapBytes": 22301323,
+        "p50": 7.900000095367432,
+        "p95": 14.400000095367432,
+        "particles": 240,
+        "samples": 30,
+        "selected": 1,
+        "timeMs": 4153.299999952316,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "error": "",
+      "overflow": false,
+      "viewport": {
+        "dpr": 1,
+        "h": 1004,
+        "w": 908
+      }
+    },
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.5235987755982988,
+          "zoom": 1
+        },
+        "effective": 2,
+        "frames": 30,
+        "heapBytes": 15176165,
+        "p50": 12.199999809265137,
+        "p95": 22.299999952316284,
+        "particles": 480,
+        "samples": 30,
+        "selected": 2,
+        "timeMs": 5306.799999952316,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "error": "",
+      "overflow": false,
+      "viewport": {
+        "dpr": 1,
+        "h": 1004,
+        "w": 908
+      }
+    },
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.5235987755982988,
+          "zoom": 1
+        },
+        "effective": 0,
+        "frames": 30,
+        "heapBytes": 24941997,
+        "p50": 5,
+        "p95": 11.400000095367432,
+        "particles": 96,
+        "samples": 30,
+        "selected": 0,
+        "timeMs": 7076.899999856949,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "error": "",
+      "overflow": false,
+      "viewport": {
+        "dpr": 1,
+        "h": 844,
+        "w": 390
+      }
+    },
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.5235987755982988,
+          "zoom": 1
+        },
+        "effective": 1,
+        "frames": 30,
+        "heapBytes": 34493086,
+        "p50": 6.700000047683716,
+        "p95": 10.599999904632568,
+        "particles": 240,
+        "samples": 30,
+        "selected": 1,
+        "timeMs": 7641.299999952316,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "error": "",
+      "overflow": false,
+      "viewport": {
+        "dpr": 1,
+        "h": 844,
+        "w": 390
+      }
+    },
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.5235987755982988,
+          "zoom": 1
+        },
+        "effective": 2,
+        "frames": 30,
+        "heapBytes": 30942276,
+        "p50": 11.199999809265137,
+        "p95": 19.399999856948853,
+        "particles": 480,
+        "samples": 30,
+        "selected": 2,
+        "timeMs": 8835.599999904633,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "error": "",
+      "overflow": false,
+      "viewport": {
+        "dpr": 1,
+        "h": 844,
+        "w": 390
+      }
+    }
+  ],
+  "browserChecks": [
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "side",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "top",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "perspective",
+      "width": 320
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "side",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "top",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 844,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "perspective",
+      "width": 390
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "0",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "25",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "50",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "75",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "education",
+      "overflow": false,
+      "progress": "100",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "side",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "top",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "0",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "25",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "50",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "75",
+      "view": "perspective",
+      "width": 844
+    },
+    {
+      "error": "",
+      "height": 390,
+      "mode": "cinema",
+      "overflow": false,
+      "progress": "100",
+      "view": "perspective",
+      "width": 844
+    }
+  ],
+  "layerChecks": [
+    {
+      "checked": false,
+      "error": "",
+      "id": "pyramidLayer"
+    },
+    {
+      "checked": false,
+      "error": "",
+      "id": "surfaceLayer"
+    },
+    {
+      "checked": false,
+      "error": "",
+      "id": "planeLayer"
+    },
+    {
+      "checked": false,
+      "error": "",
+      "id": "sectionLayer"
+    },
+    {
+      "checked": false,
+      "error": "",
+      "id": "torusLayer"
+    },
+    {
+      "checked": false,
+      "error": "",
+      "id": "trajectoryLayer"
+    },
+    {
+      "checked": false,
+      "error": "",
+      "id": "linksLayer"
+    },
+    {
+      "checked": false,
+      "error": "",
+      "id": "particlesLayer"
+    },
+    {
+      "checked": false,
+      "error": "",
+      "id": "labelsLayer"
+    }
+  ],
+  "memoryMethod": "20 batches of 30 paused draws, low quality, educational mode, no forced GC",
+  "memoryChecks": [
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 46325152,
+      "p50": 6,
+      "p95": 10.700000047683716,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 87176.09999990463,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 46289020,
+      "p50": 5.200000047683716,
+      "p95": 8.200000047683716,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 88222.39999985695,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 44242563,
+      "p50": 5.1000001430511475,
+      "p95": 10.800000190734863,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 89263.39999985695,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 51363888,
+      "p50": 5.400000095367432,
+      "p95": 9.599999904632568,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 90231.79999995232,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 50212642,
+      "p50": 5.1000001430511475,
+      "p95": 7.5,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 91225.59999990465,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 40193548,
+      "p50": 5.599999904632568,
+      "p95": 12.5,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 92257.39999985696,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 50274074,
+      "p50": 5.299999952316284,
+      "p95": 7,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 93230.69999980928,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 37693580,
+      "p50": 6.300000190734863,
+      "p95": 13,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 94280.69999980928,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 38155219,
+      "p50": 6,
+      "p95": 9.100000143051147,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 95282.59999990465,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 48339886,
+      "p50": 5.099999904632568,
+      "p95": 9.900000095367432,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 96247.79999995232,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 50341385,
+      "p50": 5.099999904632568,
+      "p95": 7.200000047683716,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 97233.5,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 33542409,
+      "p50": 5.199999809265137,
+      "p95": 8.5,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 98233.29999995232,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 30015421,
+      "p50": 4.700000047683716,
+      "p95": 9.100000143051147,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 99245.39999985696,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 50111788,
+      "p50": 8.900000095367432,
+      "p95": 15.600000143051147,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 100358.79999995232,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 42098797,
+      "p50": 7.799999952316284,
+      "p95": 11.600000143051147,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 101353.59999990465,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 49216799,
+      "p50": 5.099999904632568,
+      "p95": 8.899999856948853,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 102261.69999980928,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 47845840,
+      "p50": 4.800000190734863,
+      "p95": 8,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 103257.09999990465,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 45900068,
+      "p50": 5.1000001430511475,
+      "p95": 9.199999809265137,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 104263,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 49975129,
+      "p50": 4.700000047683716,
+      "p95": 8.400000095367432,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 105245.79999995232,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    },
+    {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 0,
+      "frames": 30,
+      "heapBytes": 49446591,
+      "p50": 4.8999998569488525,
+      "p95": 8.099999904632568,
+      "particles": 24,
+      "samples": 30,
+      "selected": 0,
+      "timeMs": 106246.89999985696,
+      "values": {
+        "deformation": 0,
+        "density": 25,
+        "distance": 4,
+        "glow": 0,
+        "trail": 0
+      }
+    }
+  ],
+  "cameraChecks": {
+    "start": {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5235987755982988,
+        "zoom": 1
+      },
+      "effective": 1,
+      "frames": 4,
+      "heapBytes": 20127413,
+      "p50": 10.900000095367432,
+      "p95": 19.799999952316284,
+      "particles": 168,
+      "samples": 4,
+      "selected": 1,
+      "timeMs": 1810.6000001430511,
+      "values": {
+        "deformation": 0,
+        "density": 70,
+        "distance": 4,
+        "glow": 0.25,
+        "trail": 0.7
+      }
+    },
+    "moving": {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5535987755982988,
+        "zoom": 1
+      },
+      "effective": 1,
+      "frames": 16,
+      "heapBytes": 26536268,
+      "p50": 6.400000095367432,
+      "p95": 19.799999952316284,
+      "particles": 168,
+      "samples": 16,
+      "selected": 1,
+      "timeMs": 9770.300000190737,
+      "values": {
+        "deformation": 0,
+        "density": 70,
+        "distance": 4,
+        "glow": 0.25,
+        "trail": 0.7
+      }
+    },
+    "paused": {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5595987755982988,
+        "zoom": 1
+      },
+      "effective": 1,
+      "frames": 17,
+      "heapBytes": 28291518,
+      "p50": 5.900000095367432,
+      "p95": 19.799999952316284,
+      "particles": 168,
+      "samples": 17,
+      "selected": 1,
+      "timeMs": 10677.700000047684,
+      "values": {
+        "deformation": 0,
+        "density": 70,
+        "distance": 4,
+        "glow": 0.25,
+        "trail": 0.7
+      }
+    },
+    "afterPausedRedraw": {
+      "bufferBytes": 7680,
+      "camera": {
+        "elevation": 0.5235987755982988,
+        "yaw": 0.5595987755982988,
+        "zoom": 1
+      },
+      "effective": 1,
+      "frames": 18,
+      "heapBytes": 29983125,
+      "p50": 4,
+      "p95": 4,
+      "particles": 168,
+      "samples": 1,
+      "selected": 1,
+      "timeMs": 10821.600000143051,
+      "values": {
+        "deformation": 0,
+        "density": 70,
+        "distance": 4,
+        "glow": 0.25,
+        "trail": 0.7
+      }
+    },
+    "manual": {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.6395987755982988,
+          "zoom": 1
+        },
+        "effective": 1,
+        "frames": 19,
+        "heapBytes": 31689312,
+        "p50": 7.799999952316284,
+        "p95": 7.799999952316284,
+        "particles": 168,
+        "samples": 2,
+        "selected": 1,
+        "timeMs": 10895.200000047684,
+        "values": {
+          "deformation": 0,
+          "density": 70,
+          "distance": 4,
+          "glow": 0.25,
+          "trail": 0.7
+        }
+      },
+      "enabled": false
+    }
+  },
+  "earlyAnimatedSamples": [
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.5235987755982988,
+          "zoom": 1
+        },
+        "effective": 2,
+        "frames": 1,
+        "heapBytes": 21653182,
+        "p50": 16.59999990463257,
+        "p95": 16.59999990463257,
+        "particles": 480,
+        "samples": 1,
+        "selected": 2,
+        "timeMs": 4758.799999952316,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "viewport": {
+        "dpr": 1,
+        "h": 1004,
+        "w": 908
+      }
+    },
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 0.9286167755982992,
+          "zoom": 1
+        },
+        "effective": 2,
+        "frames": 73,
+        "heapBytes": 15422695,
+        "p50": 11.700000047683716,
+        "p95": 29.799999952316284,
+        "particles": 480,
+        "samples": 73,
+        "selected": 2,
+        "timeMs": 72139.5,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "viewport": {
+        "dpr": 1,
+        "h": 1004,
+        "w": 908
+      }
+    },
+    {
+      "diagnostics": {
+        "bufferBytes": 7680,
+        "camera": {
+          "elevation": 0.5235987755982988,
+          "yaw": 1.014616775598299,
+          "zoom": 1
+        },
+        "effective": 1,
+        "frames": 1,
+        "heapBytes": 15568912,
+        "p50": 5.5,
+        "p95": 5.5,
+        "particles": 240,
+        "samples": 1,
+        "selected": 1,
+        "timeMs": 74279.70000004768,
+        "values": {
+          "deformation": 1,
+          "density": 100,
+          "distance": 4,
+          "glow": 1,
+          "trail": 2
+        }
+      },
+      "viewport": {
+        "dpr": 1,
+        "h": 1004,
+        "w": 908
+      }
+    }
+  ],
+  "logs": [],
+  "phone": {
+    "status": "NOT_VERIFIED",
+    "reason": "adb devices -l returned no devices"
+  },
+  "limitations": [
+    "Computer viewport tests do not validate physical phone performance.",
+    "In-app browser animated callbacks were approximately 1 Hz despite document.visibilityState=visible; these observations cannot establish real display FPS.",
+    "600 paused redraws and a bounded particle buffer do not prove absence of long-duration memory leaks.",
+    "Benchmark captures CPU draw submission; it omits later compositor/GPU work.",
+    "Saved cinematic screenshot captures the settings panel; native live scene screenshot and returned screenshot bytes differed. Educational scene screenshot was saved and inspected."
+  ]
+}

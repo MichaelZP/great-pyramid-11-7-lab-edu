@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-07",
+  "scope": "Local Vite preview, desktop browsers; no physical phone measurement",
+  "viewports": [[320,844],[390,844],[844,390],[1280,720]],
+  "checks": {
+    "finalLayersVisible": true,
+    "pause": true,
+    "manualZoomDisablesAutomaticCamera": true,
+    "resetCamera": true,
+    "reducedMotionPreference": true,
+    "qualitySelection": true,
+    "recordView": true,
+    "recordingReaches100Percent": true,
+    "consoleErrors": [],
+    "width320ScrollWidth": 305,
+    "width320ButtonsBelow44px": []
+  },
+  "cpuSample": {"viewportWidth":390,"quality":"medium","particles":84,"samples":120,"p50ms":2.6,"p95ms":3.5,"bufferBytes":7680,"meaning":"CPU Canvas draw time, not full frame time or physical phone FPS"},
+  "video": {"file":"../demo.webm","decoderError":null,"decodedWidth":1280,"decodedHeight":720,"readyState":4,"encodedFrames":775,"lastTimestampMs":25970},
+  "pending": ["Physical phone touch and gestures","Five-minute phone run","Phone FPS, GPU, temperature and memory measurements","Native fullscreen and APK"]
+}

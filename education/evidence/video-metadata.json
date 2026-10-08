@@ -1,0 +1,14 @@
+{
+  "bytes": 8332987,
+  "frames": 775,
+  "minTimeMs": 0.0,
+  "maxTimeMs": 25970.0,
+  "codecs": [
+    "V_VP9"
+  ],
+  "width": 1280,
+  "height": 720,
+  "averageEncodedFramesPerSecond": 29.84,
+  "sha256": "61517fde4d198123d173232a797dc6f1316be7ad78fd4b1e1678b44a7618928b",
+  "ebmlComplete": true
+}

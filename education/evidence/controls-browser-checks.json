@@ -1,0 +1,111 @@
+{
+  "controls": [
+    {
+      "checked": false,
+      "height": 39,
+      "id": "coneDirection1",
+      "label": "Stożek 1 · kierunekDomyślnyOdwrócony",
+      "value": "-1"
+    },
+    {
+      "checked": false,
+      "height": 39,
+      "id": "coneDirection2",
+      "label": "Stożek 2 · kierunekLustrzany domyślnyOdwrócony",
+      "value": "1"
+    },
+    {
+      "checked": false,
+      "height": 39,
+      "id": "torusDirection1",
+      "label": "Torus 1 · kierunekθ+, ψ+ · ↺θ−, ψ− · ↻",
+      "value": "1"
+    },
+    {
+      "checked": false,
+      "height": 39,
+      "id": "torusDirection2",
+      "label": "Torus 2 · kierunekθ−, ψ− · ↻θ+, ψ+ · ↺",
+      "value": "1"
+    },
+    {
+      "checked": false,
+      "height": 44,
+      "id": "torusScale1",
+      "label": "Wielkość torusa 1 150%",
+      "value": "1.5"
+    },
+    {
+      "checked": false,
+      "height": 44,
+      "id": "torusScale2",
+      "label": "Wielkość torusa 2 100%",
+      "value": "1"
+    },
+    {
+      "checked": false,
+      "height": 44,
+      "id": "distance",
+      "label": "Odległość środków torusów [u] 6.0",
+      "value": "6"
+    },
+    {
+      "checked": true,
+      "height": 20,
+      "id": "egg1Layer",
+      "label": "Złote jajo 1 · pełna bryła",
+      "value": "on"
+    },
+    {
+      "checked": true,
+      "height": 20,
+      "id": "egg2Layer",
+      "label": "Złote jajo 2 · pełna bryła",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "height": 44,
+      "id": "eggTransparency1",
+      "label": "Przezroczystość jaja 1 25%",
+      "value": "25"
+    },
+    {
+      "checked": false,
+      "height": 44,
+      "id": "eggTransparency2",
+      "label": "Przezroczystość jaja 2 55%",
+      "value": "55"
+    }
+  ],
+  "diagnostics": {
+    "bufferBytes": 7680,
+    "camera": {
+      "elevation": 0.28,
+      "yaw": 0.5163323129985824,
+      "zoom": 1
+    },
+    "effective": 0,
+    "frames": 30,
+    "heapBytes": 27962544,
+    "p50": 9.799999952316284,
+    "p95": 11.399999856948853,
+    "particles": 68,
+    "samples": 30,
+    "selected": 0,
+    "timeMs": 95525.19999980928,
+    "values": {
+      "deformation": 0,
+      "density": 35,
+      "distance": 6,
+      "glow": 0.1,
+      "trail": 0.5
+    }
+  },
+  "error": "",
+  "scrollWidth": 305,
+  "viewport": {
+    "height": 740,
+    "width": 320
+  }
+}

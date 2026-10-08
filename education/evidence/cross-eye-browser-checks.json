@@ -1,0 +1,39 @@
+{
+  "diagnostics": {
+    "bufferBytes": 7680,
+    "camera": {
+      "elevation": 0.28,
+      "yaw": 0.4363323129985824,
+      "zoom": 1
+    },
+    "effective": 0,
+    "frames": 30,
+    "heapBytes": 27342294,
+    "p50": 7.8999998569488525,
+    "p95": 9.700000047683716,
+    "particles": 136,
+    "samples": 30,
+    "selected": 0,
+    "timeMs": 113922.80000019072,
+    "values": {
+      "deformation": 0,
+      "density": 35,
+      "distance": 4,
+      "glow": 0.1,
+      "trail": 0.5
+    }
+  },
+  "error": "",
+  "reverse": "false",
+  "scrollWidth": 305,
+  "stereo": "true",
+  "strength": "1",
+  "viewport": {
+    "height": 740,
+    "width": 320
+  },
+  "notes": [
+    "Desktop browser with phone viewport; not physical-phone or GPU FPS evidence.",
+    "Fullscreen layout, playback, pause and depth reversal verified through UI."
+  ]
+}

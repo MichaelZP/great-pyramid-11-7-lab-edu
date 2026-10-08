@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pl">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etap 9 · dwa układy od Golden Egg do osi piramidy 11:7</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101b24;color:#e9f1f2;font:15px/1.55 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:28px}h1{font-size:clamp(24px,3vw,36px);line-height:1.2;margin:6px 0 14px}h2{font-size:18px;margin:0 0 14px}p{margin:10px 0}.eyebrow{color:#9db8c4;font-size:12px;letter-spacing:.16em;text-transform:uppercase}.muted{color:#abc0ca}.controls{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0}label{display:flex;flex-direction:column;gap:6px;font-size:13px}select,input{color:#e9f1f2;background:#233541;border:1px solid #526671;border-radius:7px;padding:9px;font:inherit}input[type=checkbox]{accent-color:#66ddce}label.check{flex-direction:row;align-items:center}input[type=number]{width:130px}input[type=range]{padding:0;width:170px}.grid{display:grid;grid-template-columns:1.2fr 1fr;gap:18px}.card{background:#172733;border:1px solid #344953;border-radius:14px;padding:20px;min-width:0}canvas{display:block;width:100%;height:480px;border-radius:8px;background:#12212c}#outline{height:310px}.legend{display:flex;gap:14px;flex-wrap:wrap;margin:12px 0;font-size:12px}.teal{color:#66ddce}.orange{color:#ffbb76}.gold{color:#e8d79c}.pink{color:#dbaaf7}table{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}td,th{text-align:right;padding:8px 5px;border-bottom:1px solid #344953}td:first-child,th:first-child{text-align:left}th{color:#abc0ca;font-weight:500}.pass{color:#66ddce}.fail{color:#ffbb76}code{font-size:13px;color:#cfdae1}a{color:#8ce4da}details{margin-top:16px}summary{cursor:pointer;color:#a8ddd7}#error{color:#ffbb76}.tablewrap{overflow-x:auto}footer{margin-top:22px;color:#abc0ca;font-size:12px}@media(max-width:800px){main{padding:16px}.grid{grid-template-columns:1fr}canvas{height:390px}.card{padding:14px}.controls{gap:12px}table{min-width:510px}}
+</style>
+<style>
+button{background:#233541;color:#e9f1f2;border:1px solid #526671;border-radius:7px;padding:10px 14px;min-height:44px;font:inherit;cursor:pointer}button:disabled{opacity:.5;cursor:default}.animation{margin:18px 0;padding:16px;border:1px solid #526671;border-radius:12px}.animation .controls{margin:12px 0}.animation #progress{width:min(380px,100%)}.animation label{min-height:32px}input[type=checkbox]{min-width:20px;min-height:20px}.animation label:first-child{flex:1;min-width:170px}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #66ddce;outline-offset:3px}@media(max-width:440px){.controls>label{max-width:100%}select{max-width:100%}.animation{padding:12px}.animation .controls{gap:8px}}
+</style>
+<main>
+<div class="eyebrow">Piramida 11:7 · Etap 9 · lokalny podgląd</div>
+<h1>Od Golden Egg do osi piramidy.</h1>
+<p class="muted">Powierzchnia <code>zr = k</code>, płaszczyzna i jej rzeczywisty przekrój. Piramida zawsze zachowuje B = 11, h = 7. Warianty położenia czekają na wybór autora.</p>
+<div class="controls">
+<label>Parametry cięcia<select id="preset"><option value="pyramid">α = β · piramida 11:7</option><option value="golden">L/W = φ · z₀ = 7,65</option><option value="lange">Lange · α = 51,84°</option><option value="huntley">α = θ · kąt Huntleya</option><option value="custom">Własne α i z₀</option></select></label>
+<label>Kąt α [°]<input id="alpha" type="number" min="1" max="85" step="0.00001"></label>
+<label>Wysokość z₀ [u]<input id="z0" type="number" min="2" max="30" step="0.01" value="7.65"></label>
+<label>Zakotwiczenie i skala<select id="variant"><option value="A">A · P = V, L = h</option><option value="B">B · P na osi, Z = h/2, L = h/2</option></select></label>
+<label>Końcowa skala powierzchni względem V <output id="scaleValue">8%</output><input id="shapeScale" type="range" min="-230" max="30" value="-110" step="1" aria-label="Skala powierzchni względem wierzchołka"></label>
+<label>Mnożnik skali<input id="scaleFactor" type="number" min="0.005" max="2" step="0.005" value="0.08"></label>
+<label>Zakres powierzchni<select id="extent"><option value="infinite">Bez podstawy · ku nieskończoności</option><option value="full">Wycinki z okrągłymi podstawami</option><option value="section">Otoczenie przekrojów</option></select></label>
+<label>Widok<select id="view"><option value="oblique">Perspektywa równoległa 3D</option><option value="front">Przekrój pionowy XZ</option></select></label>
+<label>Kadr<select id="framingMode"><option value="journey">Całe przejście · start Golden Egg</option><option value="stage7">Kadr etapu 7 · szczegóły końca</option></select></label>
+<label>Obrót widoku<input id="yaw" type="range" min="-80" max="80" value="25"></label>
+<label>Widoczne układy<select id="systems"><option value="first">Pierwszy</option><option value="second">Drugi · odbicie w Z = 7</option><option value="both" selected>Oba</option></select></label>
+</div>
+<section class="animation" aria-label="Sterowanie animacją">
+<label>Przebieg animacji <output id="progressValue">0%</output><input id="progress" type="range" min="0" max="100" step="0.1" value="0" aria-label="Przebieg animacji"></label>
+<div class="controls"><button id="play" type="button">Odtwórz</button><button id="reset" type="button">Reset · początek</button><button id="finish" type="button">Pozycja końcowa</button><label>Prędkość<select id="speed"><option value="0.5">0,5×</option><option value="1" selected>1× · 8 s</option><option value="2">2×</option><option value="4">4×</option></select></label><label class="check"><input id="reduced" type="checkbox">Ograniczony ruch · klatki ręczne</label></div>
+<div class="controls"><label class="check"><input id="surfaceLayer" type="checkbox" checked>Powierzchnia</label><label class="check"><input id="planeLayer" type="checkbox" checked>Płaszczyzna cięcia</label><label class="check"><input id="sectionLayer" type="checkbox" checked>Rzeczywisty przekrój</label><label class="check"><input id="guidesLayer" type="checkbox" checked>Linie konstrukcyjne</label><label class="check"><input id="labelsLayer" type="checkbox" checked>Oznaczenia</label></div>
+<p id="motionStatus" class="muted" role="status">Początek: położenie z widoku Golden Egg.</p>
+<p class="muted">Start zachowuje pełne odsunięcie Golden Egg od piramidy. Suwak skali ustala pozycję końcową, bez zmniejszania startu. Geometria owalu pochodzi z etapu 7. Osie pozostają pionowe; oba układy przesuwają się i skalują równomiernie na jednym zegarze. Pomarańczowy układ jest odbiciem aktualnej klatki w Z = 7.</p>
+</section>
+<p id="error" role="status"></p>
+<div class="grid">
+<section class="card"><h2>Powierzchnia, płaszczyzna, piramida</h2><canvas id="scene" aria-label="Podgląd obu powierzchni hiperbolicznych, przekrojów, piramidy i jej apotem"></canvas>
+<div class="legend"><span class="teal">● układ 1</span><span class="orange">● odbicie poziome</span><span class="gold">● wysokości ścian VM±</span><span class="pink">● oś i punkt P</span></div>
+<p id="placement" class="muted"></p><p id="framing" class="muted" role="status"></p><p id="asymptotes" class="muted"></p><p class="muted">Skala końca działa względem V; początek pozostaje w pełnym położeniu Golden Egg. Piramida i wybrany kadr pozostają stałe podczas ruchu. Powierzchnia zr = k nie ma skończonej podstawy: r → ∞ oznacza z → 0⁺. 0H to lokalne zero układu hiperboli, O to środek podstawy piramidy. Punkt 0H nie leży na powierzchni. Odbicie zawsze odbywa się w Z = h.</p></section>
+<section class="card"><h2>Obrys we własnej płaszczyźnie</h2><canvas id="outline" aria-label="Porównanie rzeczywistego owalu ze złotą elipsą bez rozciągania osi"></canvas>
+<div class="legend"><span class="teal">● owal</span><span class="gold">┄ elipsa a = φ, b = 1</span></div>
+<p class="muted">Środek zakresu długości wyrównany z (0,0). Jedna skala 2/W dla obu osi. Podobny obrys nie oznacza elipsy; odchylenie jest subtelne. Własności ognisk i kierownic dotyczą wzorca Huntleya.</p>
+<div class="tablewrap"><table><thead><tr><th>Porównanie</th><th>Wzorzec</th><th>Model</th><th>|Δ|</th><th>Błąd %</th><th>0,1%</th></tr></thead><tbody id="numbers"></tbody></table></div>
+<p id="dimensions" class="muted"></p><details><summary>Wzorzec i sposób pomiaru</summary><p><code>φ = (1+√5)/2; e = 1/√φ; c = √φ; d = φ^(3/2); ℓ = 1/φ.</code></p><p>Owal: L wzdłuż kierunku spadku płaszczyzny, W to największa prostopadła cięciwa. Złota elipsa: osie 2φ i 2. D_H jest liczony osobno w odtwarzalnym audycie; podgląd go nie przybliża na podstawie pikseli.</p></details></section>
+</div>
+<p><a href="../etap-10/podglad.html">Etap 10 · prototyp dwóch wirów toroidalnych →</a></p>
+<footer>Własności złotej elipsy: H. E. Huntley (1974). Materiał o powierzchni: <a href="https://www.sectioaurea.com/sectioaurea/the_golden_angle.htm">Christian Lange (2002)</a>. Koncepcja powiązania i animowania: Michał Przybylski — <a href="https://prylski.dev/">prylski.dev</a>, <a href="https://github.com/MichaelZP/">https://github.com/MichaelZP/</a>. Bez torusów, cząstek, wirów i twierdzeń fizycznych.</footer>
+</main>
+<script src="animation.js?v=9"></script>
+<script src="section.js?v=10"></script>
+<script>
+'use strict';
+const phi=(1+Math.sqrt(5))/2, theta=Math.acos(1/phi)*180/Math.PI, beta=Math.atan(14/11)*180/Math.PI;
+const $=id=>document.getElementById(id), fmt=(v,n=8)=>v.toFixed(n);
+function setup(id){const c=$(id),r=c.getBoundingClientRect(),d=devicePixelRatio||1;c.width=Math.round(r.width*d);c.height=Math.round(r.height*d);const ctx=c.getContext('2d');ctx.scale(d,d);ctx.clearRect(0,0,r.width,r.height);return{ctx,w:r.width,h:r.height}}
+function path(ctx,points,color,width=1,dash=[],fill=null){ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));if(fill){ctx.closePath();ctx.fillStyle=fill;ctx.fill()}ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dash);ctx.stroke();ctx.setLineDash([])}
+function drawScene(o){
+ const {ctx,w,h}=setup('scene'),factor=Number($('scaleFactor').value);
+ if(!(factor>=.005&&factor<=2))throw Error('Mnożnik skali musi mieścić się w zakresie 0,005–2.');
+ const frame=Stage8.pose(o,$('variant').value,factor,Number($('progress').value)/100),anchor=frame.anchor[2],s=frame.scale;
+ const systems=Stage8.visibleSystems($('systems').value),reflected=systems.includes(true),front=$('view').value==='front',yaw=Number($('yaw').value)*Math.PI/180,pitch=front?0:.28;
+ const transform=(p,mirror=false)=>Stage8.transform(p,o,frame,mirror);
+ const infinite=$('extent').value==='infinite',full=$('extent').value!=='section',zmax=full?Math.max(1.5*o.z0,1.1*o.hi):o.hi+1.25*(o.hi-o.lo),lines=[],baseLabels=[],arrows=[];
+ let system='pyramid';
+ function line(points,color,width=1,dash=[],fill=null){lines.push({points,color,width,dash,fill,system})}
+ const corners=[[-5.5,-5.5,0],[5.5,-5.5,0],[5.5,5.5,0],[-5.5,5.5,0]],V=[0,0,7],O=[0,0,0];
+ line([...corners,corners[0]],'#7193a3',1.4);for(const p of corners)line([p,V],'#7193a3',1.4);
+ if($('guidesLayer').checked)line([[0,0,-7],[0,0,21]],'#dbaaf7',1,[5,5]);
+ if(reflected)line([[-5.5,-5.5,7],[5.5,-5.5,7],[5.5,5.5,7],[-5.5,5.5,7],[-5.5,-5.5,7]],'#dbaaf780',1,[5,5],'#dbaaf708');
+ const Mminus=[-5.5,0,0],Mplus=[5.5,0,0];if($('guidesLayer').checked){line([Mminus,V],'#e8d79c',3);line([Mplus,V],'#e8d79c',3,[5,4]);for(const mirrored of systems)line([V,mirrored?Stage8.reflect([16.775,0,28.35]):[16.775,0,28.35]],'#9dea9c',1.5,[6,4]);}
+ for(const mirrored of systems){
+  system=mirrored?'second':'first';const labelStart=baseLabels.length,arrowStart=arrows.length;
+  const col=mirrored?'#ffbb76':'#66ddce',tr=p=>transform(p,mirrored);
+  const localScale=s;
+  const zmin=infinite?Math.min(.008*o.z0,localScale/24,.8*o.lo):full?Math.min(.08*o.z0,.8*o.lo):Math.max(o.lo/2,o.lo-1.25*(o.hi-o.lo));
+  if(infinite&&$('guidesLayer').checked){
+   const zero=tr([0,0,0]);
+   const guideScale=Stage8.pose(o,$('variant').value,1,0).scale,span=6/guideScale;line([[-span,-span,0],[span,-span,0],[span,span,0],[-span,span,0],[-span,-span,0]].map(tr),col+'50',1,[3,5],col+'06');
+   baseLabels.push([mirrored?'0H′ · z′ = 0':'0H · z = 0',zero,col,mirrored?9:-78,mirrored?-12:19]);
+    for(const [name,tip] of [['x',tr([6.5/guideScale,0,0])],['y',tr([0,6.5/guideScale,0])],['z',tr([0,0,4/guideScale])]]){
+     line([zero,tip],col+'95',1,[3,4]);arrows.push({from:zero,to:tip,col});baseLabels.push([mirrored?name+'′':name,tip,col,6,-5]);
+    }
+   if($('surfaceLayer').checked)for(const q of [0,Math.PI/2,Math.PI,3*Math.PI/2]){
+    const continuation=Array.from({length:17},(_,i)=>{const r=3.8+2.8*i/16;return tr([r*Math.cos(q)/guideScale,r*Math.sin(q)/guideScale,guideScale/r])});
+    line(continuation,col,1.5,[4,4]);arrows.push({from:continuation.at(-2),to:continuation.at(-1),col});
+   }
+  }
+  const zAt=t=>zmin*(zmax/zmin)**t;
+  if($('surfaceLayer').checked){for(let i=infinite?1:0;i<=20;i++){const z=zAt(i/20);line(Array.from({length:97},(_,j)=>{const q=2*Math.PI*j/96;return tr([Math.cos(q)/z,Math.sin(q)/z,z])}),col+'45')}
+  for(let j=0;j<16;j++){const q=2*Math.PI*j/16;line(Array.from({length:81},(_,i)=>{const z=zAt(i/80);return tr([Math.cos(q)/z,Math.sin(q)/z,z])}),col+'75')}}
+  const base=Array.from({length:97},(_,j)=>{const q=2*Math.PI*j/96;return tr([Math.cos(q)/zmin,Math.sin(q)/zmin,zmin])});
+  if(!infinite&&$('surfaceLayer').checked){line(base,col,2,[],col+'16');baseLabels.push([mirrored?'podstawa górna':'podstawa dolna',tr([0,0,zmin]),col,12,mirrored?-12:22]);}
+  const xm=Math.max(Math.abs((o.lo-o.z0)/o.t),Math.abs((o.hi-o.z0)/o.t))*1.25,ym=o.W*.7;
+  const plane=[[-xm,-ym],[xm,-ym],[xm,ym],[-xm,ym],[-xm,-ym]].map(([x,y])=>tr([x,y,o.z0+o.t*x]));
+  if($('planeLayer').checked){line(plane,col+'80',1,[],col+'0c');baseLabels.push([mirrored?'Π′(t)':'Π(t)',plane[2],col,8,-18]);}if($('sectionLayer').checked)line(o.points.map(tr),col,3);
+  if($('guidesLayer').checked){line([tr([(o.lo-o.z0)/o.t,0,o.lo]),tr([(o.hi-o.z0)/o.t,0,o.hi])],col,1,[4,4]);
+  const zx=(o.zm-o.z0)/o.t;line([tr([zx,-o.W/2,o.zm]),tr([zx,o.W/2,o.zm])],col,1,[4,4]);line([tr([0,0,0]),tr([0,0,zmax])],col,1,[3,5]);
+  baseLabels.push([mirrored?'L′(t)':'L(t)',tr([(o.hi-o.z0)/o.t,0,o.hi]),col,18,-8], [mirrored?'W′(t)':'W(t)',tr([zx,o.W/2,o.zm]),col,18,16]);}
+  baseLabels.push([mirrored?'Q′(t)':'Q(t)',tr([0,0,o.z0]),col,-45,-20]);
+  for(let i=labelStart;i<baseLabels.length;i++)baseLabels[i][5]=system;
+  for(let i=arrowStart;i<arrows.length;i++)arrows[i].system=system;
+ }
+ const journey=$('framingMode').value==='journey',cameraYaw=journey?yaw+Math.PI:yaw;
+ function raw([x,y,z]){const xx=front?(journey?-x:x):x*Math.cos(cameraYaw)-y*Math.sin(cameraYaw),depth=front?0:x*Math.sin(cameraYaw)+y*Math.cos(cameraYaw);return[xx, (z-7)*Math.cos(pitch)-depth*Math.sin(pitch)]}
+ // Both selectable cameras stay fixed through the entire animation and q edits.
+ // stage7 preserves the original framing and screen scale exactly.
+ const zoom=journey?Math.min((w-40)/38,(h-40)/52):Math.min((w-80)/18,(h-70)/28),center=journey?raw([8.4,0,7]):[0,0];
+ const project=p=>{const r=raw(p);return[w/2+(r[0]-center[0])*zoom,h/2-(r[1]-center[1])*zoom]};
+ for(const l of lines)path(ctx,l.points.map(project),l.color,l.width,l.dash,l.fill);
+ for(const arrow of arrows){const from=project(arrow.from),to=project(arrow.to),dx=to[0]-from[0],dy=to[1]-from[1],length=Math.hypot(dx,dy);if(length>1e-6&&to[0]>8&&to[0]<w-8&&to[1]>8&&to[1]<h-8){const ux=dx/length,uy=dy/length;path(ctx,[[to[0]-7*ux+3*uy,to[1]-7*uy-3*ux],to,[to[0]-7*ux-3*uy,to[1]-7*uy+3*ux]],arrow.col,1.5)}}
+ ctx.font='12px system-ui';const labels=[['V',V,'#e8d79c',9,-8],['O',O,'#dbaaf7',9,15],['h',[0,0,2.1],'#dbaaf7',-17,0],['M−',Mminus,'#e8d79c',-22,18],['M+',Mplus,'#e8d79c',4,18],...baseLabels];if(reflected)labels.push(['Σ: Z = 7',[5.5,-5.5,7],'#dbaaf7',-45,-8]);
+ const occupied=[];
+ if($('labelsLayer').checked)for(const [name,p,col,dx,dy] of labels){const q=project(p);if(q[0]<0||q[0]>w||q[1]<0||q[1]>h)continue;const width=ctx.measureText(name).width,x=Math.max(5,Math.min(w-width-5,q[0]+dx));let y=Math.max(15,Math.min(h-5,q[1]+dy));for(const shift of [0,16,-16,32,-32,48,-48,64,-64]){const yy=Math.max(15,Math.min(h-5,y+shift)),box=[x-3,yy-13,x+width+3,yy+3];if(!occupied.some(b=>box[0]<b[2]&&box[2]>b[0]&&box[1]<b[3]&&box[3]>b[1])){y=yy;occupied.push(box);break;}}ctx.fillStyle=col;ctx.beginPath();ctx.arc(...q,3,0,2*Math.PI);ctx.fill();if(Math.hypot(x-q[0],y-q[1])>25)path(ctx,[q,[x,y-4]],col+'70',.7);ctx.fillStyle='#12212ccc';ctx.fillRect(x-2,y-12,width+4,15);ctx.fillStyle=col;ctx.fillText(name,x,y);}
+ const clipped=lines.some(l=>l.points.some(p=>{const [x,y]=project(p);return x<0||x>w||y<0||y>h}));
+ $('scaleValue').textContent=`${fmt(factor*100,1)}%`;
+ const zeroPixel=project(transform([0,0,0])),zeroOutside=zeroPixel[1]<20||zeroPixel[1]>h-20;
+ $('framing').textContent=(journey?'Kadr całego przejścia.':'Kadr etapu 7: do obejrzenia pełnego startu wybierz „Całe przejście”.')+(infinite?' Powierzchnie rozszerzają się poza kadr bez zamykającego okręgu. Strzałki wskazują r → ∞; przerywane płaszczyzny są asymptotami, nie podstawami.'+(zeroOutside?' Lokalne zero jest poza kadrem.':''):clipped?' Część nieskończonej powierzchni wychodzi poza stały kadr.':' Widoczne wycinki mieszczą się w stałym kadrze.');
+ $('asymptotes').textContent=infinite?`Lokalne z = 0: Z = ${fmt(anchor-s*o.z0,3)}; odbite z′ = 0: Z = ${fmt(14-anchor+s*o.z0,3)}. Gdy r → 0⁺, lokalne z → ∞ — powierzchnia nie osiąga również osi.`:'';
+ $('placement').textContent=`Końcowa skala względem V: ${fmt(factor*100,1)}%. Q(t) = (${frame.anchor.map(v=>fmt(v,3)).join('; ')}); Q′(t) = (${Stage8.reflect(frame.anchor).map(v=>fmt(v,3)).join('; ')}); σ(t) = ${fmt(s,6)}; k(t) = σ²k = ${fmt(s*s,6)}. L(t) = L′(t) = ${fmt(s*o.L,3)}, W(t) = W′(t) = ${fmt(s*o.W,3)}. Kąt do osi = ${fmt(90-o.alpha,6)}°. Obrót układu = 0°. Odbicie aktualnej klatki: Z ↦ 14 − Z.`;
+ return {lines,labels:$('labelsLayer').checked?labels:[],arrows,frame,project};
+}
+function drawOutline(o){
+ const {ctx,w,h}=setup('outline'),scale=Math.min((w-72)/(2*Math.max(phi,o.ratio)),(h-70)/2),project=(u,v)=>[w/2+u*scale,h/2-v*scale];
+ path(ctx,[project(-1.9,0),project(1.9,0)],'#465e6c',1,[3,4]);path(ctx,[project(0,-1.15),project(0,1.15)],'#465e6c',1,[3,4]);
+ path(ctx,o.points.map(([x,y,z])=>project((z-(o.hi+o.lo)/2)/Math.sin(o.a)*2/o.W,y*2/o.W)),'#66ddce',2.5);
+ path(ctx,Array.from({length:361},(_,i)=>{const q=2*Math.PI*i/360;return project(phi*Math.cos(q),Math.sin(q))}),'#e8d79c',1.5,[5,4]);
+ ctx.fillStyle='#abc0ca';ctx.font='12px system-ui';ctx.fillText('W = 2 · wspólna skala',12,h-14);ctx.fillText('u',w-20,h/2-8);ctx.fillText('v',w/2+8,20);
+}
+function row(name,ref,val){const d=Math.abs(ref-val),e=d/Math.abs(ref)*100;return`<tr><td>${name}</td><td>${fmt(ref)}</td><td>${fmt(val)}</td><td>${fmt(d)}</td><td>${fmt(e,6)}</td><td class="${e<=.1?'pass':'fail'}">${e<=.1?'TAK':'NIE'}</td></tr>`}
+function redraw(){try{const o=section(Number($('alpha').value),Number($('z0').value));$('error').textContent='';drawScene(o);drawOutline(o);$('numbers').innerHTML=row('β względem θ [°]',theta,beta)+row('α względem β [°]',beta,o.alpha)+row('L/W względem φ',phi,o.ratio);$('dimensions').textContent=`L = ${fmt(o.L)} u; W = ${fmt(o.W)} u. Kąty: θ = ${fmt(theta)}°, β = ${fmt(beta)}°, α = ${fmt(o.alpha)}°. „TAK” oznacza zgodność w granicach tolerancji modelu.`}catch(e){$('error').textContent=e.message;for(const id of ['scene','outline'])setup(id);$('numbers').innerHTML='';$('dimensions').textContent='';$('placement').textContent='';$('framing').textContent='';$('asymptotes').textContent=''}}
+function preset(){const key=$('preset').value;if(key==='custom')return;$('alpha').value=String(({pyramid:beta,golden:51.795319255897588,lange:51.84,huntley:theta})[key]);$('z0').value='7.65';redraw()}
+const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
+$('reduced').checked=motionPreference.matches;
+const playback=Stage8.playback({request:cb=>requestAnimationFrame(cb),cancel:id=>cancelAnimationFrame(id),onFrame:t=>{$('progress').value=String(t*100);$('progressValue').value=`${fmt(t*100,1)}%`;redraw();if($('error').textContent)playback.pause();},onState:running=>{$('play').textContent=running?'Pauza':'Odtwórz';$('play').disabled=$('reduced').checked;$('motionStatus').textContent=$('reduced').checked?'Ograniczony ruch: wybierz klatkę suwakiem lub przyciskami.':running?'Odtwarzanie przejścia.':Number($('progress').value)===100?'Pozycja końcowa etapu 7.':Number($('progress').value)===0?'Początek: położenie z widoku Golden Egg.':'Pauza · klatka pośrednia.';}});
+$('play').addEventListener('click',()=>{if($('reduced').checked)return;if(playback.running)playback.pause();else playback.play();});
+$('progress').addEventListener('input',()=>playback.seek(Number($('progress').value)/100));
+$('reset').addEventListener('click',()=>playback.seek(0));
+$('finish').addEventListener('click',()=>playback.seek(1));
+$('speed').addEventListener('change',()=>playback.setSpeed(Number($('speed').value)));
+$('reduced').addEventListener('change',()=>playback.pause());
+motionPreference.addEventListener('change',e=>{if(e.matches){$('reduced').checked=true;playback.pause();}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)playback.pause();});
+window.addEventListener('pagehide',()=>playback.pause());
+$('shapeScale').value=String(Math.log10(Number($('scaleFactor').value))*100);
+$('shapeScale').addEventListener('input',()=>{$('scaleFactor').value=String(10**(Number($('shapeScale').value)/100));redraw()});
+$('scaleFactor').addEventListener('input',()=>{const factor=Number($('scaleFactor').value);if(factor>=.005&&factor<=2)$('shapeScale').value=String(Math.log10(factor)*100);redraw()});
+$('preset').addEventListener('change',()=>{playback.pause();preset();playback.seek(0);});for(const id of ['alpha','z0'])$(id).addEventListener('input',()=>{playback.pause();$('preset').value='custom';redraw();});$('variant').addEventListener('input',()=>playback.seek(0));for(const id of ['view','yaw','systems','extent','framingMode','surfaceLayer','planeLayer','sectionLayer','guidesLayer','labelsLayer'])$(id).addEventListener('input',redraw);for(const id of ['shapeScale','scaleFactor'])$(id).addEventListener('input',()=>playback.pause());window.addEventListener('resize',redraw);preset();playback.seek(0);
+</script>
+</html>

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-07",
+  "viewport": {
+    "width": 320,
+    "height": 844
+  },
+  "scrollWidth": 305,
+  "minimumButtonHeight": 44,
+  "stats": {
+    "timeMs": 51123.40000009537,
+    "frames": 30,
+    "selected": 1,
+    "effective": 1,
+    "p50": 4.599999904632568,
+    "p95": 5.599999904632568,
+    "samples": 30,
+    "particles": 168,
+    "bufferBytes": 7680,
+    "heapBytes": 9989777,
+    "camera": {
+      "yaw": 0.4363323129985824,
+      "elevation": 0.28,
+      "zoom": 1
+    },
+    "values": {
+      "distance": 4,
+      "deformation": 0,
+      "trail": 0.5,
+      "glow": 0.1,
+      "density": 35
+    }
+  },
+  "physicalPhoneVerified": false,
+  "videoDecode": {
+    "width": 1280,
+    "height": 720,
+    "duration": 25.939,
+    "time": 25,
+    "readyState": 4,
+    "error": null
+  }
+}

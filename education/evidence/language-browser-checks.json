@@ -1,0 +1,16 @@
+{
+  "error": "",
+  "lang": "en",
+  "progress": "100",
+  "recordStatus": "Recording saves only the scene and caption to a silent WebM file. It does not upload the file.",
+  "selected": "en",
+  "stage": "5 / Full shared scene · swirling particles.",
+  "stereo": "true",
+  "title": "Full show · construction and vortices · Pyramid 11:7",
+  "checks": [
+    "EN retained after page reload.",
+    "PL/EN switching while playing retained 100% progress and running state.",
+    "320×740 layout: scrollWidth 305; language selector height 44 px.",
+    "26/26 Node tests passed; physical-phone validation not claimed."
+  ]
+}
