@@ -12,7 +12,16 @@ GeoGebra. Opisy wcześniejszych etapów niżej odnoszą się do chwili ich budow
 Lokalnie potwierdzono automatyczne wczytanie, przełączanie widoków i reset.
 Audyt obu paczek ZIP/XML PASS; pliki G1/G2 zachowują zweryfikowane sumy
 SHA-256. Workflow strony kontroluje dotychczasowy pokaz i obie paczki
-przed wdrożeniem. Publiczne działanie zostanie potwierdzone po wdrożeniu.
+przed wdrożeniem. Publikacja `e674c90` zakończona sukcesem:
+[workflow 37783488627](https://github.com/MichaelZP/great-pyramid-11-7-lab-edu/actions/runs/37783488627)
+potwierdził 32/32 testy i audyt G1/G2 PASS. W publicznej stronie sprawdzono
+automatyczne wczytanie, widok kopii i reset. Przesunięcie q do 2,222
+zmieniło wynik γ na 0,610040263011; zmiana tylko s z 1 do 1,25 pozostawiła
+ten wynik i rysunek znormalizowanych kopii niezmienione, a sumy źródłowe
+wzrosły 1,25 razy. Reset przywrócił 11:7. Pokaz główny zwraca HTTP 200
+i zawiera link do GeoGebra. Pobrane publiczne pliki mają identyczne SHA-256:
+G1 `7b530e84bd80e63528eefe42c358d674d8ed9ad3d2a5655ad65e91af65d0a691`;
+G2 `c55940f50280cc95eb2a280abec63dad8c6bd33609fc59e7d8eba9c5cb8c4082`.
 Zakres G2: #1–10; #11–13 pozostają planem. Ograniczenia telefonu,
 dostępności, instalacji Classic 6 i offline pozostają aktualne.
 
