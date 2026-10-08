@@ -35,6 +35,8 @@
 <label for="torusScale2">Wielkość torusa 2 <output id="torusScale2Value">100%</output><input id="torusScale2" type="range" min=".25" max="2" step=".05" value="1"></label>
 <label for="distance">Odległość środków torusów [u] <output id="distanceValue">4,0</output><input id="distance" type="range" min="2" max="8" step=".1" value="4"></label>
 <button id="motionDefaults">Domyślne wiry</button></div><p id="torusSettings"></p>
+<div class="controls"><label for="midplaneTransparency">Przezroczystość płaszczyzny między torusami <output id="midplaneTransparencyValue">85%</output><input id="midplaneTransparency" type="range" min="0" max="100" step="5" value="85"></label></div>
+<p>Złoty dysk oznacza fragment płaszczyzny odniesienia w połowie odległości środków torusów. Dla symetrycznego rozstawu leży na Z = 7; jego promień dopasowuje się do większego torusa. Warstwa pojawia się razem z torusami.</p>
 <p>Kierunek torusa odwraca oba obiegi θ i ψ. Rozmiar skaluje R i r równomiernie; rozstaw przesuwa środki symetrycznie względem Z = 7. Stożki i piramida zachowują geometrię. Domyślne wiry przywracają rozmiar 100%, rozstaw 4 u i zaakceptowane kierunki. Zmiana kierunku, rozmiaru lub rozstawu zatrzymuje pokaz — użyj „Odtwórz”.</p>
 <h2>Złote jaja i przezroczystość</h2>
 <div class="controls">
@@ -52,6 +54,7 @@
 <label class="check"><input id="planeLayer" type="checkbox" checked>Płaszczyzny cięcia</label>
 <label class="check"><input id="sectionLayer" type="checkbox" checked>Rzeczywiste przekroje</label>
 <label class="check"><input id="torusLayer" type="checkbox" checked>Torusy</label>
+<label class="check"><input id="midplaneLayer" type="checkbox" checked>Płaszczyzna między torusami</label>
 <label class="check"><input id="trajectoryLayer" type="checkbox" checked>Obiegi i kierunki</label>
 <label class="check"><input id="particlesLayer" type="checkbox" checked>Cząstki i smugi torusów</label>
 <label class="check"><input id="coneParticlesLayer" type="checkbox" checked>Spirale po stożkach</label>

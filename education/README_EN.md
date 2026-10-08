@@ -72,6 +72,20 @@ changing the geometry, and checks local HTML links.
 - Quality and reduced motion controls are available. Reduced motion shows
   stationary frames; disable it deliberately to animate the show.
 
+## Plane between tori
+
+Enable the **Plane between tori** layer to show a golden disk halfway
+between the torus centers, at **Z = 7** with symmetric spacing. Its radius
+is 1.08 times the larger torus's outer radius. It follows torus size and
+stays independent of hyperbolic surface scaling. The layer appears with
+the tori in stage four and remains in the final scene and stereo pair.
+
+**Transparency of the plane between tori** defaults to 85%; 100% hides
+both fill and outline. The fill is drawn below construction, cuts and
+particles. Changing transparency pauses the shared show. The layer toggle
+changes visibility without changing the geometry, particle phases or
+vortex directions. The disk is a displayed portion of a reference plane.
+
 ## Cross-eye 3D
 
 Enable **Cross-eye 3D** to display the right-eye view on the left and the

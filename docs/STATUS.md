@@ -1,3 +1,26 @@
+# ETAP 14 — płaszczyzna między torusami, 2026-10-08
+
+Dodano warstwę **Płaszczyzna między torusami / Plane between tori**:
+złoty dysk w poziomej płaszczyźnie odniesienia, w połowie odległości
+środków. Dla zaakceptowanego symetrycznego rozstawu Z = 7. Promień =
+1,08 × max(R₁+r₁, R₂+r₂); nie zależy od skali stożków. Obwód jest
+próbkowany w 72 odcinkach i cache'owany, bez nowego renderera lub zegara.
+Wypełnienie pod konstrukcją/cząstkami, czytelny złoty obwód, osobny
+przełącznik i przezroczystość 0–100%, domyślnie 85%. Warstwa ujawnia się
+razem z torusami i zostaje w finale, stereo i nagraniu. Full show włącza
+warstwę, zachowując wybraną przezroczystość. Suwak zatrzymuje wspólny
+pokaz; przełącznik widoczności nie zmienia faz. To płaszczyzna odniesienia
+w prezentacji, bez dodawania twierdzeń o siłach lub funkcji piramidy.
+
+**32/32 testów podglądów PASS**, w tym położenie wszystkich punktów dysku,
+niezmienność geometrii pozostałych warstw, skala stożków/rozstaw bez zmiany
+dysku, dopasowanie do rozmiaru torusa, połowa środków przy innym Z,
+przezroczystość 0/100%, oba kadry stereo, jeden zegar, pauza i EN.
+Lokalny browser: włączenie/wyłączenie i 100%/85% przezroczystości bez błędu.
+[Widok lokalny](../education/evidence/midplane-local.png).
+Aktualizacja jest przeznaczona dla osobnej strony `great-pyramid-11-7-lab-edu`;
+główne laboratorium pozostaje oddzielne. Wynik wdrożenia należy potwierdzić.
+
 # ETAP 14 — osobna strona online, 2026-10-08
 
 Autor zlecił link online z końcówką `-edu`. Docelowy adres:
@@ -10,6 +33,25 @@ Wdrożenie Pages ma najpierw przejść testy podglądów. Główne laboratorium,
 jego gałąź Pages, APK oraz geometria i kierunki pozostają bez zmian.
 Instrukcje PL/EN zawierają osobny adres strony. Wpis opisuje przygotowanie;
 wynik wdrożenia i testu publicznego adresu należy sprawdzić przed ogłoszeniem.
+
+**Wdrożenie i publiczny podgląd potwierdzone.** Repozytorium strony:
+https://github.com/MichaelZP/great-pyramid-11-7-lab-edu,
+commit `3c462b2ed59d1d1339d87cf1346f34838eb7ff59`.
+[Workflow Pages 37748831938](https://github.com/MichaelZP/great-pyramid-11-7-lab-edu/actions/runs/37748831938)
+PASS: 31/31 testów, konfiguracja, artefakt i wdrożenie. HTTP 200 dla
+adresu głównego oraz `/education/`; adres główny otwiera scenę.
+Browser: PL, przełączenie EN, EN po odświeżeniu, pełna scena 100%,
+odtwarzanie, pauza i Cross-eye PASS; alert geometrii pusty, brak błędów
+konsoli. Viewport 320×740: scrollWidth 305, Canvas 271×430, język 44 px.
+To sprawdzenie układu na komputerze, bez nowego odbioru fizycznego telefonu.
+[Dowód](../education/evidence/online-checks.json),
+[widok strony](../education/evidence/online-site.png),
+[pełna scena stereo](../education/evidence/online-full-scene.png).
+Porównano 12 plików sceny i rendererów źródłowych z eksportem: identyczne.
+Eksporter odrzuca zajęty katalog oraz zagnieżdżenie w kopiowanym źródle;
+eksport domyślny i sprawdzenie lokalnych odnośników PASS. CI projektu źródłowego
+obejmuje eksport. Odczyt zdalnych refs potwierdził brak zmian w głównym
+laboratorium: main `554a3c4`, gh-pages `a600eb7`.
 
 # ETAP 14 — udostępnienie źródeł na GitHub, 2026-10-08
 

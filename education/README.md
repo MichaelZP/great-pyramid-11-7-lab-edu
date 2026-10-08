@@ -47,6 +47,20 @@ PL zachowuje wymagany podpis „Wizualizacja artystyczna przeciwbieżnych
 wirów toroidalnych”. Dokumentacja i osobne starsze podglądy pozostają
 w dotychczasowym języku; link do tej instrukcji oznaczono w EN jako Polish.
 
+### Płaszczyzna między torusami
+
+W warstwach zaznacz **Płaszczyzna między torusami**. Złoty dysk jest
+fragmentem poziomej płaszczyzny odniesienia w połowie odległości środków
+torusów: domyślnie i przy symetrycznych zmianach rozstawu **Z = 7**.
+Promień wynosi 1,08 razy większy promień zewnętrzny torusa, więc dopasowuje
+się do ich wielkości, niezależnie od skali stożków. Pojawia się w czwartej
+odsłonie razem z torusami i pozostaje widoczny w finale oraz Cross-eye.
+Suwak **Przezroczystość płaszczyzny między torusami** ma domyślnie 85%;
+100% ukrywa dysk i obwód. Wypełnienie jest rysowane pod konstrukcją,
+przekrojami i cząstkami. Zmiana przezroczystości zatrzymuje wspólny pokaz;
+przełącznik warstwy tylko zmienia jej widoczność. Geometria i zwroty wirów
+pozostają bez zmian.
+
 ### Cross-eye 3D
 
 Przycisk **Cross-eye 3D** nad sceną włącza parę stereoskopową: widok
@@ -262,7 +276,7 @@ Nowe testy wykonują rzeczywisty współdzielony renderer i kontrolki w
 symulatorze DOM, sprawdzają pięć faz, identyczność geometrii źródłowej,
 zwroty, finał, warstwy, pojedynczy zegar, pauzę kamery/cząstek, reset,
 ograniczony ruch, jakość i zachowanie ustawienia do filmu. Rozszerzenie
-sprawdzono w 26/26 testach (17 wspólnej sceny i 9 zastanych etapów 10–11),
+sprawdzono w 27/27 testach (18 wspólnej sceny i 9 zastanych etapów 10–11),
 w tym równanie powierzchni, okrągłe podstawy i pełny kadr przy q =
 0,005 / 0,08 / 0,4 / 1 / 2, obrotach i trzech widokach. Nowe testy
 porównują ekranowe współrzędne piramidy/torusów przy edycji q i zakresu,

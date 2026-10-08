@@ -21,7 +21,7 @@ The site copies the existing `education/` scene and stage 7–11 dependencies
 using `scripts/export-education.mjs` in the source project. It preserves
 the same geometry, renderer, particles and shared clock. It is separate
 from the main laboratory website and Android application. The Pages
-workflow runs 31 preview tests before deployment.
+workflow runs the preview tests before deployment.
 
 To serve this static repository locally, use any HTTP static server and
 open `/education/`. To develop the scene, use the source project's setup

@@ -46,6 +46,8 @@ function drawScene({id,view,o,d,ctx,w,h,source,project,accumulate=false}){
  const systems=$('systems').value,visible=t=>systems==='both'||systems===(t===1?'first':'second');
  const line=(points,color,width,layer,system=0,alpha=1,dash=[])=>{if(alpha<=0)return;records.push({points,layer,system,alpha});ctx.globalAlpha=alpha;stroke(ctx,points.map(project),color,width,dash);ctx.globalAlpha=1;};
  const label=(text,p,color,dx=8,dy=-8)=>{if(extension?.labels?.()===false)return;text=presentation?.i18n?.t(text)??text;const a=project(p);if(presentation&&(a[0]<0||a[0]>w||a[1]<0||a[1]>h-presentation.captionHeight))return;ctx.font='12px system-ui';const width=ctx.measureText(text).width,x=Math.max(4,Math.min(w-width-4,a[0]+dx)),y=Math.max(15,Math.min(h-(presentation?.captionHeight??0)-4,a[1]+dy));ctx.fillStyle='#0e202be8';ctx.fillRect(x-2,y-13,width+4,17);ctx.fillStyle=color;ctx.fillText(text,x,y);};
+ // A translucent reference plane is drawn below construction and particles.
+ presentation?.drawMidplane?.({ctx,project,pair,fade,line,label});
  if($('pyramidLayer').checked){
   const corners=[[-5.5,-5.5,0],[5.5,-5.5,0],[5.5,5.5,0],[-5.5,5.5,0]],V=[0,0,7];
   presentation?.pyramid?.({ctx,project,corners,V,fade});
@@ -129,5 +131,5 @@ $('reduced').addEventListener('change',()=>player.pause());preference.addEventLi
 document.addEventListener('visibilitychange',()=>{if(document.hidden)player.pause();});window.addEventListener('pagehide',()=>player.pause());
 for(const id of ['distance','alpha','z0','variant','scaleFactor'])$(id).addEventListener('input',()=>{if(presentation||id!=='distance'||!extension?.smoothDistance)player.pause();if(id==='alpha'||id==='z0')$('preset').value='custom';redraw();state(player.snapshot());});
 $('preset').addEventListener('change',()=>{player.pause();const value={pyramid:Math.atan(14/11)*180/Math.PI,golden:51.795319255897588,lange:51.84,huntley:Math.acos(2/(1+Math.sqrt(5)))*180/Math.PI}[$('preset').value];if(value!==undefined){$('alpha').value=String(value);$('z0').value='7.65';}redraw();state(player.snapshot());});
-for(const id of ['view','systems','pyramidLayer','surfaceLayer','planeLayer','sectionLayer','torusLayer','trajectoryLayer','linksLayer','guidesLayer','extent','cameraFrame','coneParticlesLayer'])$(id)?.addEventListener('input',()=>{if(['extent','coneParticlesLayer'].includes(id))player.pause();redraw();state(player.snapshot());});
+for(const id of ['view','systems','pyramidLayer','surfaceLayer','planeLayer','sectionLayer','torusLayer','midplaneLayer','trajectoryLayer','linksLayer','guidesLayer','extent','cameraFrame','coneParticlesLayer'])$(id)?.addEventListener('input',()=>{if(['extent','coneParticlesLayer'].includes(id))player.pause();redraw();state(player.snapshot());});
 window.addEventListener('resize',redraw);extension?.init?.({redraw,snapshot:()=>player.snapshot()});player.reset();presentation?.init?.({redraw,player,state});

@@ -1,6 +1,9 @@
 /* English copy for the local education preview. Mathematical symbols stay intact. */
 'use strict';
 globalThis.VortexEnglish={
+ 'Przezroczystość płaszczyzny między torusami':'Transparency of the plane between tori',
+ 'Płaszczyzna między torusami':'Plane between tori',
+ 'Złoty dysk oznacza fragment płaszczyzny odniesienia w połowie odległości środków torusów. Dla symetrycznego rozstawu leży na Z = 7; jego promień dopasowuje się do większego torusa. Warstwa pojawia się razem z torusami.':'The golden disk shows a portion of the reference plane halfway between the torus centers. With symmetric spacing it lies at Z = 7; its radius follows the larger torus. This layer appears together with the tori.',
  'Pełny pokaz · konstrukcja i wiry · Piramida 11:7':'Full show · construction and vortices · Pyramid 11:7',
  'Etap 14 · pokaz edukacyjny':'Stage 14 · educational show',
  'Konstrukcja i wiry na wspólnej scenie':'Construction and vortices in one scene',

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-08",
+  "site": "https://michaelzp.github.io/great-pyramid-11-7-lab-edu/",
+  "scene": "https://michaelzp.github.io/great-pyramid-11-7-lab-edu/education/",
+  "repository": "https://github.com/MichaelZP/great-pyramid-11-7-lab-edu",
+  "commit": "3c462b2ed59d1d1339d87cf1346f34838eb7ff59",
+  "deployment": "https://github.com/MichaelZP/great-pyramid-11-7-lab-edu/actions/runs/37748831938",
+  "previewTests": {"passed": 31, "failed": 0},
+  "http": {"root": 200, "scene": 200},
+  "browser": {
+    "polishLoaded": true,
+    "englishSwitchAndReload": true,
+    "fullSceneProgress": 100,
+    "stereo": true,
+    "playAndPause": true,
+    "geometryAlert": "",
+    "consoleErrors": [],
+    "phoneViewport": {"width": 320, "height": 740, "scrollWidth": 305, "canvasWidth": 271, "canvasHeight": 430, "languageHeight": 44}
+  },
+  "sameSourceFilesCompared": 12,
+  "limits": "Desktop browser and phone viewport checks only; no new physical-phone acceptance or FPS/thermal measurement.",
+  "mainLaboratoryRefs": {"main": "554a3c4e6846352f55065b32ceea5df182524da0", "gh-pages": "a600eb7eed17a695420eecfc4d41b848ef45a1d3"}
+}

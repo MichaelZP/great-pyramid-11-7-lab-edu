@@ -202,6 +202,25 @@ test('full-screen fallback exits with Escape and reduced motion retains stereo s
  p.event('stereoFullscreen','click');p.event('stereoFullscreen','click');assert.ok(!p.classes.has('scene-fullscreen'));p.get('reduced').checked=true;p.event('reduced','change');p.event('fullShow','click');assert.equal(p.pending.size,0);p.set('progress',100);assert.ok(p.scene().some(r=>r.pane===1&&r.layer==='coneParticles'));p.event('recordView','click');assert.ok(p.classes.has('recording-view'));assert.equal(p.c.VortexStereo.enabled(),true);p.event('exitRecord','click');assert.equal(p.c.VortexStereo.enabled(),true);
 });
 
+test('reference plane stays midway between tori, follows their radii and preserves source geometry, stereo and one clock',()=>{
+ const p=preview(390);p.set('progress',56);assert.ok(!p.scene().some(r=>r.layer==='midplane'));p.set('progress',100);
+ const keep=records=>JSON.stringify(records.filter(r=>r.layer!=='midplane')),before=keep(p.scene());
+ const disk=p.scene().find(r=>r.layer==='midplane');assert.equal(disk.points.length,73);
+ for(const point of disk.points){assert.equal(point[2],7);assert.ok(Math.abs(Math.hypot(point[0],point[1])-1.08*3.05)<1e-10);}
+ p.get('midplaneLayer').checked=false;p.event('midplaneLayer');assert.ok(!p.scene().some(r=>r.layer==='midplane'));assert.equal(keep(p.scene()),before);
+ p.get('midplaneLayer').checked=true;p.event('midplaneLayer');p.set('midplaneTransparency',100);assert.ok(!p.scene().some(r=>r.layer==='midplane'));assert.equal(keep(p.scene()),before);
+ p.set('midplaneTransparency',0);assert.equal(p.scene().find(r=>r.layer==='midplane').alpha,1);p.set('midplaneTransparency',85);
+ const original=JSON.stringify(p.scene().find(r=>r.layer==='midplane').points);p.set('distance',8);assert.equal(JSON.stringify(p.scene().find(r=>r.layer==='midplane').points),original);
+ p.set('scaleFactor',1);assert.equal(JSON.stringify(p.scene().find(r=>r.layer==='midplane').points),original);p.set('torusScale2',2);
+ const enlarged=p.scene().find(r=>r.layer==='midplane');for(const point of enlarged.points){assert.equal(point[2],7);assert.ok(Math.abs(Math.hypot(point[0],point[1])-1.08*6.1)<1e-10);}
+ const shifted=p.c.VortexControls.midplane([{center:[2,-3,5],R:2,r:.5},{center:[2,-3,13],R:3,r:.7}]);assert.deepEqual(Array.from(shifted.center),[2,-3,9]);assert.ok(shifted.points.every(point=>point[2]===9));
+ p.event('crossEye','click');const eyes=p.scene().filter(r=>r.layer==='midplane');assert.equal(eyes.length,2);assert.equal(JSON.stringify(eyes[0].points),JSON.stringify(eyes[1].points));assert.notEqual(eyes[0].eye,eyes[1].eye);
+ p.event('play','click');p.advance(0);p.advance(100);assert.equal(p.pending.size,1);const phase=p.snapshot().phase,buffer=p.c.VortexParticles.positions;
+ p.set('midplaneTransparency',60);assert.equal(p.pending.size,0);assert.equal(p.snapshot().phase,phase);assert.equal(p.c.VortexParticles.positions,buffer);
+ p.get('midplaneLayer').checked=false;p.event('midplaneLayer');p.event('fullShow','click');assert.equal(p.get('midplaneLayer').checked,true);p.event('pause','click');p.set('progress',100);
+ p.get('language').value='en';p.event('language','change');assert.equal(p.get('midplaneTransparencyValue').textContent,'60%');const labels=[];p.ctx.fillText=text=>labels.push(text);p.scene();assert.ok(labels.includes('Plane between tori · Z=7.0'));
+});
+
 test('PL/EN switches text and Canvas captions without changing geometry, clock, stereo or live camera state',()=>{
  const p=preview(1280);p.set('extent','section');p.set('scaleFactor',.4);p.event('circulate','click');p.event('crossEye','click');p.get('egg1Layer').checked=true;p.event('egg1Layer');p.set('torusScale2',1.5);p.set('coneDirection1',-1);p.get('camera').checked=true;p.event('camera','change');p.event('play','click');p.advance(0);p.advance(100);
  const scene=JSON.stringify(p.scene()),snapshot=JSON.stringify(p.snapshot()),camera=JSON.stringify(p.stats().camera),buffer=p.c.VortexParticles.positions;

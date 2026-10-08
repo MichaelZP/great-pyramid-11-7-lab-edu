@@ -10,6 +10,14 @@ globalThis.VortexPresentation=(()=>{
  function framing(source){if(get('cameraFrame').value==='fixed')return{radial:9,vertical:12};const pair=VortexControls.pair(Number(get('distance').value)),key=JSON.stringify(pair);if(boundsCache?.source!==source||boundsCache?.key!==key){let radial=Math.max(Math.hypot(5.5,5.5),...pair.map(t=>t.R+t.r)),vertical=Math.max(7.5,...pair.map(t=>Math.abs(t.center[2]-7)+t.r));for(const record of source.lines)for(const p of record.points){radial=Math.max(radial,Math.hypot(p[0],p[1]));vertical=Math.max(vertical,Math.abs(p[2]-7));}for(const face of VortexControls.eggs(source.section,source))for(const p of face.points){radial=Math.max(radial,Math.hypot(p[0],p[1]));vertical=Math.max(vertical,Math.abs(p[2]-7));}boundsCache={source,key,radial,vertical};}return boundsCache;}
 
  const sourceOptions=()=>({extent:get('extent').value});
+ function drawMidplane({ctx,project,pair,fade,line,label}){
+  const opacity=1-Number(get('midplaneTransparency').value)/100;
+  if(!get('midplaneLayer').checked||fade.torus<=0||opacity<=0)return;
+  const plane=VortexControls.midplane(pair),color='#e8c76b';
+  ctx.save();ctx.fillStyle=color;ctx.globalAlpha=fade.torus*opacity;ctx.beginPath();plane.points.map(project).forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.closePath();ctx.fill();ctx.restore();
+  line(plane.points,color,1.5,'midplane',0,fade.torus*Math.sqrt(opacity));
+  label(`Płaszczyzna między torusami · Z=${plane.center[2].toFixed(1)}`,[plane.center[0]+plane.radius,plane.center[1],plane.center[2]],color,8,18);
+ }
  function sourceGuides({line,label,source,o,fade}){if(!get('guidesLayer').checked||get('extent').value!=='infinite')return;const span=8*o.z0/7;for(const id of [1,2]){const opacity=id===1?fade.first:fade.second;if(opacity<=0)continue;const tr=p=>Stage8.transform(p,o,source.frame,id===2),color=id===1?'#70dfca':'#ffbe86';line([[-span,-span,0],[span,-span,0],[span,span,0],[-span,span,0],[-span,-span,0]].map(tr),color,.8,'asymptote',id,opacity*.25,[3,5]);line([[0,0,0],[0,0,o.z0]].map(tr),color,1,'coneAxis',id,opacity*.5,[3,4]);label(id===1?'0H · z = 0':'0H′ · z′ = 0',tr([0,0,0]),color,id===1?-80:8,id===1?20:-12);}}
  function drawParticles({ctx,project,visible,fade,current,records,colors,source,o,quality,density,trail}){
   if(!get('coneParticlesLayer').checked||fade.particles<=0)return 0;
@@ -29,10 +37,12 @@ globalThis.VortexPresentation=(()=>{
  function pyramid({ctx,project,corners,V}){ctx.save();ctx.fillStyle='#a9c8da';ctx.globalAlpha=.055;for(let i=0;i<4;i++){ctx.beginPath();[corners[i],corners[(i+1)%4],V].map(project).forEach((p,j)=>j?ctx.lineTo(...p):ctx.moveTo(...p));ctx.closePath();ctx.fill();}ctx.restore();}
  function guides({line,label}){if(!get('guidesLayer').checked)return;line([[-5.5,0,0],[0,0,7],[5.5,0,0]],'#e8d79c',1.7,'guides');line([[-5.5,-5.5,7],[5.5,-5.5,7],[5.5,5.5,7],[-5.5,5.5,7],[-5.5,-5.5,7]],'#b7a0ca',.8,'guides',0,.3,[4,5]);label('Σ: Z = 7',[5.5,-5.5,7],'#b7a0ca',-65,-8);}
  function caption({ctx,w,h}){ctx.save();ctx.fillStyle='#0e202bf2';ctx.fillRect(0,h-75,w,75);ctx.textAlign='center';ctx.fillStyle='#e5eef0';const lines=(w<550?['Wizualizacja artystyczna','przeciwbieżnych wirów toroidalnych']:['Wizualizacja artystyczna przeciwbieżnych wirów toroidalnych']).map(VortexI18n.t);let size=16;ctx.font=`${size}px system-ui`;while(lines.some(t=>ctx.measureText(t).width>w-20)&&size>11){size--;ctx.font=`${size}px system-ui`;}lines.forEach((t,i)=>ctx.fillText(t,w/2,h-(lines.length-i)*21-17));ctx.fillStyle='#b5c9d2';ctx.font=`${w<360?11:12}px system-ui`;ctx.fillText(VortexI18n.t('Koncepcja: Michał Przybylski — prylski.dev'),w/2,h-12);ctx.restore();}
- function preset(cinema){for(const key of ['pyramid','guides','surface','plane','section','torus','trajectory','particles','coneParticles','labels'])get(key+'Layer').checked=true;for(const [key,value] of Object.entries({density:cinema?45:35,trail:cinema?.6:.5,glow:cinema?.15:.1,deformation:0}))get(key).value=String(value);get('linksLayer').checked=false;}
+ function preset(cinema){for(const key of ['pyramid','guides','surface','plane','section','torus','midplane','trajectory','particles','coneParticles','labels'])get(key+'Layer').checked=true;for(const [key,value] of Object.entries({density:cinema?45:35,trail:cinema?.6:.5,glow:cinema?.15:.1,deformation:0}))get(key).value=String(value);get('linksLayer').checked=false;}
  function init({redraw,player,state}){
   VortexControls.init({redraw,player});
   VortexStereo.init({redraw});
+  const midplaneText=()=>VortexI18n.text('midplaneTransparencyValue',get('midplaneTransparency').value+'%');
+  get('midplaneTransparency').addEventListener('input',()=>{player.pause();midplaneText();redraw();});midplaneText();
   let recorder=null,stream=null,timer=null;const chunks=[];
   const setRecordView=value=>{document.body.classList.toggle('recording-view',value);get('exitRecord').hidden=!value;redraw();};
   function fullShow(){const automatic=get('camera').checked;player.reset();get('cameraReset').click();get('camera').checked=automatic&&!get('reduced').checked;preset(get('mode').value==='cinema');get('view').value='perspective';get('systems').value='both';redraw();if(!get('reduced').checked&&!get('error').textContent)player.play();}
@@ -68,5 +78,5 @@ globalThis.VortexPresentation=(()=>{
   window.addEventListener('pagehide',()=>{if(recorder?.state==='recording')stop();});
   VortexI18n.init({refresh:()=>{redraw();state(player.snapshot());}});
  }
- return{duration:20,captionHeight:75,i18n:VortexI18n,stereo:VortexStereo,update:VortexControls.update,pair:VortexControls.pair,motionTorus:VortexControls.motionTorus,motionPhase:t=>VortexControls.phase('torus',t.id),motionMultiplier:t=>VortexControls.multiplier('torus',t.id),drawEggs:VortexControls.drawEggs,sourceOptions,framing,drawParticles,sourceGuides,trail:.5,glow:.1,density:35,surfaceOpacity:.38,reveal,stage,sourceOpacity,pyramid,guides,caption,preset,init};
+ return{duration:20,captionHeight:75,i18n:VortexI18n,stereo:VortexStereo,update:VortexControls.update,pair:VortexControls.pair,motionTorus:VortexControls.motionTorus,motionPhase:t=>VortexControls.phase('torus',t.id),motionMultiplier:t=>VortexControls.multiplier('torus',t.id),drawEggs:VortexControls.drawEggs,drawMidplane,sourceOptions,framing,drawParticles,sourceGuides,trail:.5,glow:.1,density:35,surfaceOpacity:.38,reveal,stage,sourceOpacity,pyramid,guides,caption,preset,init};
 })();

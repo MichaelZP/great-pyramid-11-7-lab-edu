@@ -2,7 +2,7 @@
 'use strict';
 globalThis.VortexControls=(()=>{
  const get=id=>document.getElementById(id),TAU=Math.PI*2;
- const phases={cone1:0,cone2:0,torus1:0,torus2:0};let lastPhase=0,lastSeconds=0,eggCache;
+ const phases={cone1:0,cone2:0,torus1:0,torus2:0};let lastPhase=0,lastSeconds=0,eggCache,midplaneCache;
  const direction=(type,id)=>Number(get(type+'Direction'+id).value);
  const multiplier=(type,id)=>direction(type,id)/(type==='torus'&&id===2?-1:1);
  function update(current){
@@ -14,6 +14,11 @@ globalThis.VortexControls=(()=>{
  const motionTorus=t=>({...t,sign:t.id===1?1:-1});
  function pair(d){return Vortex.pair(d,{scales:[1,2].map(id=>Number(get('torusScale'+id).value)),signs:[1,2].map(id=>direction('torus',id))});}
  const opacity=(type,id)=>1-Number(get(type+'Transparency'+id).value)/100;
+ function midplane(pair){
+  const center=pair[0].center.map((v,k)=>(v+pair[1].center[k])/2),radius=1.08*Math.max(...pair.map(t=>t.R+t.r)),key=JSON.stringify([center,radius]);
+  if(midplaneCache?.key!==key)midplaneCache={key,center,radius,points:Vortex.loop(a=>[center[0]+radius*Math.cos(a),center[1]+radius*Math.sin(a),center[2]],72)};
+  return midplaneCache;
+ }
  // GoldenEggConstruct in PyramidCanvas.tsx revolves a half-oval profile
  // about its long axis. Here the profile comes directly from the shared
  // audited section, using its existing basis and current Stage8 frame.
@@ -41,5 +46,5 @@ globalThis.VortexControls=(()=>{
   get('distance').addEventListener('input',labels);
   get('motionDefaults').addEventListener('click',()=>{player.pause();for(const id of [1,2]){get('coneDirection'+id).value='1';get('torusDirection'+id).value=id===1?'1':'-1';get('torusScale'+id).value='1';}get('distance').value='4';get('distance').dispatchEvent(new Event('input'));labels();redraw();});labels();
  }
- return{update,phase,multiplier,direction,motionTorus,pair,opacity,eggs,drawEggs,init};
+ return{update,phase,multiplier,direction,motionTorus,pair,opacity,midplane,eggs,drawEggs,init};
 })();
