@@ -218,7 +218,7 @@ test('reference plane stays midway between tori, follows their radii and preserv
  p.event('play','click');p.advance(0);p.advance(100);assert.equal(p.pending.size,1);const phase=p.snapshot().phase,buffer=p.c.VortexParticles.positions;
  p.set('midplaneTransparency',60);assert.equal(p.pending.size,0);assert.equal(p.snapshot().phase,phase);assert.equal(p.c.VortexParticles.positions,buffer);
  p.get('midplaneLayer').checked=false;p.event('midplaneLayer');p.event('fullShow','click');assert.equal(p.get('midplaneLayer').checked,true);p.event('pause','click');p.set('progress',100);
- p.get('language').value='en';p.event('language','change');assert.equal(p.get('midplaneTransparencyValue').textContent,'60%');const labels=[];p.ctx.fillText=text=>labels.push(text);p.scene();assert.ok(labels.includes('Plane between tori · Z=7.0'));
+ p.get('language').value='en';p.event('language','change');assert.equal(p.get('midplaneTransparencyValue').textContent,'60%');const labels=[];p.ctx.fillText=text=>labels.push(text);p.scene();assert.ok(labels.includes('Z=7.0'));
 });
 
 test('PL/EN switches text and Canvas captions without changing geometry, clock, stereo or live camera state',()=>{

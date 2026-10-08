@@ -16,7 +16,7 @@ globalThis.VortexPresentation=(()=>{
   const plane=VortexControls.midplane(pair),color='#e8c76b';
   ctx.save();ctx.fillStyle=color;ctx.globalAlpha=fade.torus*opacity;ctx.beginPath();plane.points.map(project).forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.closePath();ctx.fill();ctx.restore();
   line(plane.points,color,1.5,'midplane',0,fade.torus*Math.sqrt(opacity));
-  label(`Płaszczyzna między torusami · Z=${plane.center[2].toFixed(1)}`,[plane.center[0]+plane.radius,plane.center[1],plane.center[2]],color,8,18);
+  label(`Z=${plane.center[2].toFixed(1)}`,[plane.center[0]+plane.radius,plane.center[1],plane.center[2]],color,8,18);
  }
  function sourceGuides({line,label,source,o,fade}){if(!get('guidesLayer').checked||get('extent').value!=='infinite')return;const span=8*o.z0/7;for(const id of [1,2]){const opacity=id===1?fade.first:fade.second;if(opacity<=0)continue;const tr=p=>Stage8.transform(p,o,source.frame,id===2),color=id===1?'#70dfca':'#ffbe86';line([[-span,-span,0],[span,-span,0],[span,span,0],[-span,span,0],[-span,-span,0]].map(tr),color,.8,'asymptote',id,opacity*.25,[3,5]);line([[0,0,0],[0,0,o.z0]].map(tr),color,1,'coneAxis',id,opacity*.5,[3,4]);label(id===1?'0H · z = 0':'0H′ · z′ = 0',tr([0,0,0]),color,id===1?-80:8,id===1?20:-12);}}
  function drawParticles({ctx,project,visible,fade,current,records,colors,source,o,quality,density,trail}){
