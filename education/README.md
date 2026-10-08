@@ -312,3 +312,23 @@ osobnego zlecenia. Statyczny eksport dla osobnego repozytorium wykonuje
 i zależności etapów 7–11 są kopiowane, a lokalne odnośniki HTML sprawdzane.
 
 Koncepcja: **Michał Przybylski — prylski.dev**.
+# Odniesienia / References
+
+Pod sceną znajduje się sekcja PL/EN z dwoma bezpośrednimi odnośnikami:
+
+- Powiązana wizualizacja: Giesbert Nijhuis, [Double Toroidal Vortex Based Particle](https://www.youtube.com/watch?v=yHo1zoxmAkM), opublikowana 28 października 2012 r.
+- Kontekst naukowy: Uniwersytet Warszawski, [Laserowe tornado](https://www.uw.edu.pl/laserowe-tornado/), 2 kwietnia 2026 r. — wiry optyczne generowane z wykorzystaniem toronów w ciekłych kryształach.
+
+Badania UW nie są symulowane w tej scenie. Odniesienia nie stanowią
+wyprowadzenia torusów z powierzchni hiperbolicznych ani potwierdzenia
+fizycznej funkcji piramidy. Podpis koncepcji Michała Przybylskiego —
+prylski.dev pozostaje przy scenie i w nagraniu. Sekcja odniesień jest
+ukryta razem z panelami w kadrze do nagrania.
+
+The PL/EN references section below the scene links directly to Nijhuis's
+2012 animation as a **related visualization** and the University of Warsaw's
+2026 article as **scientific context**. The linked research concerns optical
+vortices in liquid crystals. This artistic visualization does not simulate
+that experiment. These references do not establish a derivation of the tori
+from the hyperbolic surfaces or a physical function of the pyramid.
+The concept credit remains **Michał Przybylski — prylski.dev**.

@@ -1,3 +1,19 @@
+# ETAP 14 — odniesienia PL/EN, 2026-10-08
+
+Na zlecenie autora dodano pod sceną sekcję **Odniesienia i kontekst naukowy /
+References and scientific context**. Bezpośredni link do Giesberta Nijhuisa,
+**Double Toroidal Vortex Based Particle** (28 października 2012), jest opisany
+jako powiązana wizualizacja. Artykuł UW **Laserowe tornado** (2 kwietnia 2026)
+jest opisany jako kontekst naukowy dotyczący wirów optycznych w ciekłych
+kryształach. Krótka uwaga PL/EN wyjaśnia, że scena artystyczna nie symuluje
+opisanego eksperymentu. Zachowano podpis Michała Przybylskiego — prylski.dev.
+Sekcja jest ukryta w kadrze do nagrania przez istniejące reguły CSS.
+Zmiana dotyczy wyłącznie treści strony, bez zmian geometrii i animacji.
+Testy PL/EN, zachowania preferencji języka i kompletności tłumaczeń:
+**3/3 PASS**. Browser lokalny: obie wersje językowe, poprawne bezpośrednie
+linki i ukrycie sekcji w kadrze nagrania PASS. Wdrożenie na osobną stronę
+edukacyjną wymaga potwierdzenia workflow i publicznego widoku.
+
 # ETAP 14 — płaszczyzna między torusami, 2026-10-08
 
 Dodano warstwę **Płaszczyzna między torusami / Plane between tori**:
@@ -20,6 +36,16 @@ Lokalny browser: włączenie/wyłączenie i 100%/85% przezroczystości bez błę
 [Widok lokalny](../education/evidence/midplane-local.png).
 Aktualizacja jest przeznaczona dla osobnej strony `great-pyramid-11-7-lab-edu`;
 główne laboratorium pozostaje oddzielne. Wynik wdrożenia należy potwierdzić.
+
+**Wdrożono i sprawdzono online.** Commit strony `54071d1`,
+[workflow 37760097067](https://github.com/MichaelZP/great-pyramid-11-7-lab-edu/actions/runs/37760097067)
+PASS (32 testy przed wdrożeniem). HTML i `show.js` zwracają HTTP 200,
+publiczna strona zawiera nową warstwę i krótki podpis „Z=7.0”. Browser:
+pełna scena 100%, przełącznik off/on i stereo bez alertu/błędów konsoli.
+Viewport 320×740: scrollWidth 305. To test układu na komputerze,
+bez nowego pomiaru FPS ani odbioru fizycznego telefonu.
+[Widok online](../education/evidence/midplane-online.png),
+[dowód](../education/evidence/midplane-checks.json).
 
 # ETAP 14 — osobna strona online, 2026-10-08
 

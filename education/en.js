@@ -1,6 +1,12 @@
 /* English copy for the local education preview. Mathematical symbols stay intact. */
 'use strict';
 globalThis.VortexEnglish={
+ 'Odniesienia i kontekst naukowy':'References and scientific context',
+ 'Powiązana wizualizacja:':'Related visualization:',
+ 'Kontekst naukowy:':'Scientific context:',
+ 'Uniwersytet Warszawski':'University of Warsaw',
+ 'wiry optyczne generowane z wykorzystaniem toronów w ciekłych kryształach.':'optical vortices generated using liquid-crystal torons.',
+ 'Przywołane badania dotyczą wirów optycznych w ciekłych kryształach. Ta wizualizacja artystyczna nie symuluje opisanego eksperymentu.':'The linked research concerns optical vortices in liquid crystals. This artistic visualization does not simulate that experiment.',
  'Przezroczystość płaszczyzny między torusami':'Transparency of the plane between tori',
  'Płaszczyzna między torusami':'Plane between tori',
  'Złoty dysk oznacza fragment płaszczyzny odniesienia w połowie odległości środków torusów. Dla symetrycznego rozstawu leży na Z = 7; jego promień dopasowuje się do większego torusa. Warstwa pojawia się razem z torusami.':'The golden disk shows a portion of the reference plane halfway between the torus centers. With symmetric spacing it lies at Z = 7; its radius follows the larger torus. This layer appears together with the tori.',
