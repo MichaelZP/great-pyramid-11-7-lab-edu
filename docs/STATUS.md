@@ -1,3 +1,47 @@
+# ETAP G5 — udostępnienie zaakceptowanego G4 — 2026-10-13
+
+Autor zaakceptował G4 i zlecił publikację. Rzeczywisty materiał na koncie
+**mzprzybylski**: https://www.geogebra.org/m/rz4avuw8.
+Przesłano `piramida-11-7-G4.ggb`, 20562 bajtów / 338 obiektów, SHA-256
+`a6bdb540ed37407cafbc39fbd5bf20cbbf1968fa3ed5b84af6d5cb137a4eac2c`.
+Nie zmieniano konstrukcji ani nie eksportowano innej wersji do publikacji.
+G2 PL/EN na koncie obejmują 10 pozycji i pozostają osobnymi materiałami.
+
+Autor wybrał CC BY-NC-SA 4.0, następnie po obejrzeniu rozbieżnej odznaki
+platformy dodatkowo zaakceptował CC BY-SA 3.0 dla tego modelu i opisu.
+Obie licencje są podane w aktywności. Nie ustanowiono licencji całej aplikacji.
+Automatyczna kontrola odrzuciła próbę ograniczenia dostępu do Private;
+zmiany nie wykonano. Autor rozstrzygnął rozbieżność przez zgodę na drugą licencję.
+
+Sprawdzono otwarcie G4 z dysku, stan Public w Access Settings i działanie
+pod adresem GeoGebra: przejście #2→#10→#13, wyniki i oznaczenia, ukrycie bryły
+z dopasowaniem kamery, porównanie obrysów oraz reset. Opis, instrukcja,
+podpis, GitHub, Huntley, Lange i licencje są dostępne w aktywności.
+Anonimowy HTTP bez ciasteczek: 200, właściwy tytuł, brak ściany logowania
+w HTML. Nie jest to osobny anonimowy test renderowania JavaScript.
+Pobranie pakietu przez przeglądarkę nie zakończyło się, ale odczytano
+rzeczywisty adres .ggb używany przez publiczny applet i pobrano go anonimowo.
+20562 bajtów, identyczny SHA-256 i zgodność bajt w bajt z zaakceptowanym G4:
+PASS. Lokalny audyt archiwum G4 ponownie PASS.
+
+Dodano odnośnik PL/EN w panelu modeli aplikacji, README PL/EN i materiałach
+edukacyjnych. GeoGebra otwiera się w nowej karcie (`_blank`, `noopener noreferrer`);
+rzeczywiste kliknięcie pozostawia aplikację otwartą. Bez osadzania i bez zmian
+w silniku: SHA-256 bieżącego main engine.ts zgadza się z G4.
+87/87 testów aplikacji, TypeScript oraz build WWW, Android i Pages PASS.
+Publikacja strony i końcowe adresy/kontrole: do uzupełnienia po wdrożeniu.
+
+Koncepcja projektu: Michał Przybylski — prylski.dev
+GitHub: https://github.com/MichaelZP/. Made with GeoGebra®.
+Owal pozostaje owalem, #13 przy 11:7 poza 0,1%; zakotwiczenie jest regulowanym
+wariantem roboczym, wzorzec Bruna oszacowaniem. Telefon fizyczny, offline,
+inne wersje i czytelność natywnych kontrolek 320 px pozostają poza odbiorem.
+
+**Jeden następny krok:** sprawdzić publiczny model na urządzeniu autora.
+
+
+---
+
 # Publikacja edukacyjna GeoGebra G1/G2 — 2026-10-08
 
 Na późniejsze polecenie autora „opublikuj” przygotowano publikację na

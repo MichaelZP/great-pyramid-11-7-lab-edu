@@ -2,6 +2,13 @@
 
 **[Open online](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/)**
 
+**[Experiment in GeoGebra](https://www.geogebra.org/m/rz4avuw8)** — the accepted
+G4 model, all 13 comparisons, shape and uniform scale sliders, the actual
+surface section and a separate exact golden ellipse. [Instructions, file and
+licences](education/geogebra/g5/README.md). The main show remains independent.
+
+Historical G2 material:
+
 **[Interactive GeoGebra 3D model G2](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/education/geogebra/g2/)**
 opens the verified `.ggb` file automatically. Independent shape and scale
 sliders, ten selectable comparisons, a 11:7 reset and a segment-copy view

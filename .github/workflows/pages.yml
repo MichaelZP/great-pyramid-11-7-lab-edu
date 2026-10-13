@@ -32,6 +32,7 @@ jobs:
           node --check education/geogebra/g2/viewer.mjs
           python3 education/geogebra/verify-artifacts.py
           python3 education/geogebra/g2/verify-artifacts.py
+          python3 education/geogebra/g5/verify-approved.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

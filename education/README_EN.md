@@ -1,3 +1,5 @@
+[Experiment in GeoGebra](https://www.geogebra.org/m/rz4avuw8) · [G4: instrukcja / instructions](geogebra/g5/README.md).
+
 # Pyramid 11:7 — shared geometry and vortex preview
 
 Concept: **Michał Przybylski — [prylski.dev](https://prylski.dev)**.

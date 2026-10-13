@@ -1,3 +1,5 @@
+[Eksperymentuj w GeoGebra](https://www.geogebra.org/m/rz4avuw8) · [G4: instrukcja / instructions](geogebra/g5/README.md).
+
 # Etap 14 — wspólna scena konstrukcji i wirów
 
 Pokaz do oceny autora, aktualizacja 2026-10-08. Autor zlecił udostępnienie

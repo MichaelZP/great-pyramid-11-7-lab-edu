@@ -1,7 +1,7 @@
 /* English copy for the local education preview. Mathematical symbols stay intact. */
 'use strict';
 globalThis.VortexEnglish={
- 'GeoGebra 3D — eksperymentuj z proporcjami':'GeoGebra 3D — experiment with proportions',
+ 'Eksperymentuj w GeoGebra':'Experiment in GeoGebra',
  'Odniesienia i kontekst naukowy':'References and scientific context',
  'Powiązana wizualizacja:':'Related visualization:',
  'Kontekst naukowy:':'Scientific context:',
