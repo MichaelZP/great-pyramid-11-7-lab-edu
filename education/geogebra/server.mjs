@@ -1,11 +1,12 @@
-// Local-only authoring server. Saves only the explicitly named G1/G2 artifacts.
+// Local-only authoring server. Saves only the explicitly named G1/G2/G6 artifacts.
 import {createServer} from 'node:http';
 import {readFile,writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {resolve,sep,extname} from 'node:path';
 const root=fileURLToPath(new URL('.',import.meta.url));
 const allowed=new Set(['piramida-11-7-G1.ggb','geogebra-checks.json','model.png',
-  'g2/piramida-11-7-G2.ggb','g2/geogebra-checks.json','g2/model.png']);
+  'g2/piramida-11-7-G2.ggb','g2/geogebra-checks.json','g2/model.png',
+  'g6/piramida-11-7-G6.ggb','g6/geogebra-checks.json','g6/model.png']);
 const types={'.html':'text/html','.mjs':'text/javascript','.json':'application/json','.md':'text/plain','.txt':'text/plain','.png':'image/png','.ggb':'application/vnd.geogebra.file'};
 createServer(async(req,res)=>{
   try {

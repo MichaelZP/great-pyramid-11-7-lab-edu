@@ -188,6 +188,7 @@ Nie dołączono obcych artykułów, prywatnej korespondencji ani silnika GeoGebr
 Plan pełnych 13 pozycji: [EXPANSION-13.md](EXPANSION-13.md).
 
 Kontynuacja: [G2 — dziesięć pozycji i kopie odcinków](g2/README.md).
+Rozszerzenia geometryczne (złote jajo, kula wpisana, dlaczego 11:7): [G6](g6/README.md).
 Plik G1 zachowuje pierwotny zakres trzech lekcji.
 
 Publikacja zlecona 2026-10-08: [model G2 online](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/education/geogebra/g2/)

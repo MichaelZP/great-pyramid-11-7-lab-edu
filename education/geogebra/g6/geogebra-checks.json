@@ -1,0 +1,5898 @@
+{
+  "date": "2026-10-19",
+  "geogebraVersion": "5.4.920.0",
+  "reference": {
+    "app": "MichaelZP/great-pyramid-11-7-lab",
+    "commit": "644dc99a62aba0c106a10818fee6a4c6ac8d1e79",
+    "path": "docs/geometric-extensions/reference-values.json",
+    "sha256": "b146651e3d8a67c0fc1a12e1a7cc9a500c244594909747b8d071ca9b1659c105"
+  },
+  "configurationCount": 28,
+  "total": 645,
+  "passed": 645,
+  "initial": {
+    "q": 1.5714285714285714,
+    "s": 1,
+    "z0": 7.65,
+    "lesson": 1,
+    "B": 11,
+    "h": 7,
+    "A": 5.5,
+    "S": 8.902246907382429,
+    "t": 1.2727272727272727,
+    "limitSA": 1.6185903467968052,
+    "a": -0.13369259587256094,
+    "b": 0.12799343469346627,
+    "xm": -0.002846874223384196,
+    "L": 0.42356248296574533,
+    "W": 0.26149981398457606,
+    "LW": 1.6197429608524623,
+    "errLW": 0.0010562028452120087,
+    "errLimit": 0.0003438481829051007,
+    "auxLen": 0.2616860305660272,
+    "LWmeasured": 1.619742960852462,
+    "auxMeasured": 1.6185903467968052,
+    "r": 2.673193998657622,
+    "OI": 2.673193998657622,
+    "VI": 4.326806001342378,
+    "VIoverOI": 1.618590346796805,
+    "MT": 5.499999999999999,
+    "VT": 3.4022469073824286,
+    "MToverVT": 1.6165787345021085,
+    "MO": 5.5,
+    "IT": 2.673193998657622,
+    "dF1": 2.673193998657622,
+    "dF2": 2.673193998657622,
+    "dF3": 2.673193998657622,
+    "dF4": 2.673193998657622,
+    "dBase": 2.673193998657622,
+    "errVIOI": 0.0003438481829049635,
+    "errMTVT": 0.0008993965874046343,
+    "rPi": 3.142857142857143,
+    "rPhi": 1.6185903467968052,
+    "errPi": 0.0004024994347707008,
+    "errPhi": 0.0003438481829051007
+  },
+  "assertions": [
+    {
+      "name": "q independent slider",
+      "pass": true
+    },
+    {
+      "name": "s independent slider",
+      "pass": true
+    },
+    {
+      "name": "z0 independent slider",
+      "pass": true
+    },
+    {
+      "name": "lesson independent slider",
+      "pass": true
+    },
+    {
+      "name": "sphereStep independent slider",
+      "pass": true
+    },
+    {
+      "name": "pick independent slider",
+      "pass": true
+    },
+    {
+      "name": "oval is a curve, not a conic/ellipse",
+      "pass": true,
+      "details": "curvecartesian"
+    },
+    {
+      "name": "egg section uses the true formula",
+      "pass": true,
+      "details": "1 / (z0 + t x)² - x²"
+    },
+    {
+      "name": "ref model B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref model h",
+      "pass": true,
+      "details": {
+        "actual": 7,
+        "expected": 7,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref model A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref model S",
+      "pass": true,
+      "details": {
+        "actual": 8.902246907382429,
+        "expected": 8.902246907382429,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref model t",
+      "pass": true,
+      "details": {
+        "actual": 1.2727272727272727,
+        "expected": 1.2727272727272727,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref egg S/A limit",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.618590346796805,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref egg φ",
+      "pass": true,
+      "details": {
+        "actual": 1.618033988749895,
+        "expected": 1.618033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref egg limit error %",
+      "pass": true,
+      "details": {
+        "actual": 0.03438481829051007,
+        "expected": 0.034384818290501565,
+        "delta": 8.507083926190262e-15,
+        "tolerance": 1e-9
+      }
+    },
+    {
+      "name": "z0=7.65: domain ok",
+      "pass": true
+    },
+    {
+      "name": "ref z0=7.65: a",
+      "pass": true,
+      "details": {
+        "actual": -0.13369259587256094,
+        "expected": -0.13369259587256108,
+        "delta": 1.3877787807814457e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=7.65: b",
+      "pass": true,
+      "details": {
+        "actual": 0.12799343469346627,
+        "expected": 0.1279934346934661,
+        "delta": 1.6653345369377348e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=7.65: L",
+      "pass": true,
+      "details": {
+        "actual": 0.42356248296574533,
+        "expected": 0.4235624829657453,
+        "delta": 5.551115123125783e-17,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=7.65: W",
+      "pass": true,
+      "details": {
+        "actual": 0.26149981398457606,
+        "expected": 0.2614998139845761,
+        "delta": 5.551115123125783e-17,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=7.65: LW",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524618,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=7.65: xWmax",
+      "pass": true,
+      "details": {
+        "actual": -0.002846874223384196,
+        "expected": -0.002846874223392924,
+        "delta": 8.728261169377305e-15,
+        "tolerance": 1e-9
+      }
+    },
+    {
+      "name": "ref z0=7.65: error %",
+      "pass": true,
+      "details": {
+        "actual": 0.10562028452120087,
+        "expected": 0.1056202845211713,
+        "delta": 2.957356581845261e-14,
+        "tolerance": 1e-8
+      }
+    },
+    {
+      "name": "z0=7.65: L/W measured from drawn segments",
+      "pass": true,
+      "details": {
+        "actual": 1.619742960852462,
+        "expected": 1.6197429608524618,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "z0=7.65: dashed line L/(S/A) measured",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.618590346796805,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "z0=7.65: L/W > S/A > φ",
+      "pass": true
+    },
+    {
+      "name": "z0=7.65: oval / limit line visible",
+      "pass": true
+    },
+    {
+      "name": "z0=15.3: domain ok",
+      "pass": true
+    },
+    {
+      "name": "ref z0=15.3: a",
+      "pass": true,
+      "details": {
+        "actual": -0.06571874839253672,
+        "expected": -0.06571874839253679,
+        "delta": 6.938893903907228e-17,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=15.3: b",
+      "pass": true,
+      "details": {
+        "actual": 0.06500793556970644,
+        "expected": 0.06500793556970594,
+        "delta": 4.996003610813204e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=15.3: L",
+      "pass": true,
+      "details": {
+        "actual": 0.21159294873004347,
+        "expected": 0.21159294873004278,
+        "delta": 6.938893903907228e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=15.3: W",
+      "pass": true,
+      "details": {
+        "actual": 0.1307208864340223,
+        "expected": 0.1307208864340223,
+        "delta": 0,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=15.3: LW",
+      "pass": true,
+      "details": {
+        "actual": 1.618662131983316,
+        "expected": 1.6186621319833108,
+        "delta": 5.329070518200751e-15,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=15.3: xWmax",
+      "pass": true,
+      "details": {
+        "actual": -0.0003553853944809211,
+        "expected": -0.00035538539448092124,
+        "delta": 1.6263032587282567e-19,
+        "tolerance": 1e-9
+      }
+    },
+    {
+      "name": "ref z0=15.3: error %",
+      "pass": true,
+      "details": {
+        "actual": 0.03882138680575584,
+        "expected": 0.03882138680542927,
+        "delta": 3.265721026934898e-13,
+        "tolerance": 1e-8
+      }
+    },
+    {
+      "name": "z0=15.3: L/W measured from drawn segments",
+      "pass": true,
+      "details": {
+        "actual": 1.6186621319833159,
+        "expected": 1.6186621319833108,
+        "delta": 5.10702591327572e-15,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "z0=15.3: dashed line L/(S/A) measured",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.618590346796805,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "z0=15.3: L/W > S/A > φ",
+      "pass": true
+    },
+    {
+      "name": "z0=15.3: oval / limit line visible",
+      "pass": true
+    },
+    {
+      "name": "z0=30.6: domain ok",
+      "pass": true
+    },
+    {
+      "name": "ref z0=30.6: a",
+      "pass": true,
+      "details": {
+        "actual": -0.0327242789603947,
+        "expected": -0.0327242789603942,
+        "delta": 4.996003610813204e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=30.6: b",
+      "pass": true,
+      "details": {
+        "actual": 0.03263543967048488,
+        "expected": 0.03263543967048484,
+        "delta": 3.469446951953614e-17,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=30.6: L",
+      "pass": true,
+      "details": {
+        "actual": 0.10579060964529698,
+        "expected": 0.10579060964529612,
+        "delta": 8.604228440844963e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=30.6: W",
+      "pass": true,
+      "details": {
+        "actual": 0.06535953750038294,
+        "expected": 0.06535953750038294,
+        "delta": 0,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=30.6: LW",
+      "pass": true,
+      "details": {
+        "actual": 1.618594832386584,
+        "expected": 1.6185948323865706,
+        "delta": 1.3322676295501878e-14,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "ref z0=30.6: xWmax",
+      "pass": true,
+      "details": {
+        "actual": -0.00004441948082028261,
+        "expected": -0.00004441948082130604,
+        "delta": 1.0234258644541139e-15,
+        "tolerance": 1e-9
+      }
+    },
+    {
+      "name": "ref z0=30.6: error %",
+      "pass": true,
+      "details": {
+        "actual": 0.034662042984794146,
+        "expected": 0.03466204298398083,
+        "delta": 8.133146933708701e-13,
+        "tolerance": 1e-8
+      }
+    },
+    {
+      "name": "z0=30.6: L/W measured from drawn segments",
+      "pass": true,
+      "details": {
+        "actual": 1.6185948323865842,
+        "expected": 1.6185948323865706,
+        "delta": 1.354472090042691e-14,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "z0=30.6: dashed line L/(S/A) measured",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968055,
+        "expected": 1.618590346796805,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "z0=30.6: L/W > S/A > φ",
+      "pass": true
+    },
+    {
+      "name": "z0=30.6: oval / limit line visible",
+      "pass": true
+    },
+    {
+      "name": "sweep z0=2.26: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 2.1202795852240817
+      }
+    },
+    {
+      "name": "sweep z0=2.26: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 2.1202795852240817,
+        "expected": 2.120279585224082,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "sweep z0=3: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 1.676808980589174
+      }
+    },
+    {
+      "name": "sweep z0=3: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 1.676808980589174,
+        "expected": 1.676808980589174,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "sweep z0=5: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 1.625015321049099
+      }
+    },
+    {
+      "name": "sweep z0=5: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 1.625015321049099,
+        "expected": 1.6250153210490992,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "sweep z0=7.65: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 1.6197429608524623
+      }
+    },
+    {
+      "name": "sweep z0=7.65: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524623,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "sweep z0=10: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 1.6189841292619664
+      }
+    },
+    {
+      "name": "sweep z0=10: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 1.6189841292619664,
+        "expected": 1.6189841292619664,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "sweep z0=15.3: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 1.618662131983316
+      }
+    },
+    {
+      "name": "sweep z0=15.3: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 1.618662131983316,
+        "expected": 1.618662131983316,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "sweep z0=20: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 1.618614928599772
+      }
+    },
+    {
+      "name": "sweep z0=20: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 1.618614928599772,
+        "expected": 1.6186149285997722,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "sweep z0=30.6: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 1.618594832386584
+      }
+    },
+    {
+      "name": "sweep z0=30.6: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 1.618594832386584,
+        "expected": 1.618594832386584,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "sweep z0=40: L/W decreasing toward S/A",
+      "pass": true,
+      "details": {
+        "lw": 1.618591883044018
+      }
+    },
+    {
+      "name": "sweep z0=40: L/W vs independent solver",
+      "pass": true,
+      "details": {
+        "actual": 1.618591883044018,
+        "expected": 1.618591883044018,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "z0Min = 2√t",
+      "pass": true,
+      "details": {
+        "actual": 2.256304299271065,
+        "expected": 2.256304299271065,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "domain guard z0=1: eggOK false",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=1: L/W undefined",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=1: oval hidden",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=1: message shown",
+      "pass": true,
+      "details": "Brak owalu: potrzeba z0² > 4t (z0 > 2.256304)"
+    },
+    {
+      "name": "domain guard z0=2: eggOK false",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=2: L/W undefined",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=2: oval hidden",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=2: message shown",
+      "pass": true,
+      "details": "Brak owalu: potrzeba z0² > 4t (z0 > 2.256304)"
+    },
+    {
+      "name": "domain guard z0=2.25: eggOK false",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=2.25: L/W undefined",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=2.25: oval hidden",
+      "pass": true
+    },
+    {
+      "name": "domain guard z0=2.25: message shown",
+      "pass": true,
+      "details": "Brak owalu: potrzeba z0² > 4t (z0 > 2.256304)"
+    },
+    {
+      "name": "ref sphere r",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref sphere OI",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref sphere VI",
+      "pass": true,
+      "details": {
+        "actual": 4.326806001342378,
+        "expected": 4.326806001342378,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref sphere VIoverOI",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.618590346796805,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref sphere MT",
+      "pass": true,
+      "details": {
+        "actual": 5.499999999999999,
+        "expected": 5.5,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref sphere VT",
+      "pass": true,
+      "details": {
+        "actual": 3.4022469073824286,
+        "expected": 3.4022469073824277,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref sphere MToverVT",
+      "pass": true,
+      "details": {
+        "actual": 1.6165787345021085,
+        "expected": 1.6165787345021092,
+        "delta": 6.661338147750939e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref sphere VI/OI error %",
+      "pass": true,
+      "details": {
+        "actual": 0.03438481829049635,
+        "expected": 0.034384818290501565,
+        "delta": 5.218048215738236e-15,
+        "tolerance": 1e-9
+      }
+    },
+    {
+      "name": "ref sphere MT/VT error %",
+      "pass": true,
+      "details": {
+        "actual": 0.08993965874046343,
+        "expected": 0.08993965874041657,
+        "delta": 4.686528942698942e-14,
+        "tolerance": 1e-9
+      }
+    },
+    {
+      "name": "ref sphere VI/VO",
+      "pass": true,
+      "details": {
+        "actual": 0.6181151430489111,
+        "expected": 0.6181151430489111,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref T along base",
+      "pass": true,
+      "details": {
+        "actual": 2.101981464374531,
+        "expected": 2.1019814643745307,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref T height",
+      "pass": true,
+      "details": {
+        "actual": 4.324750863523324,
+        "expected": 4.324750863523325,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "T x",
+      "pass": true,
+      "details": {
+        "actual": 0,
+        "expected": 0,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "I = (0,0,r)",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "tangency dF1 = r",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "tangency dF2 = r",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "tangency dF3 = r",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "tangency dF4 = r",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "tangency dBase = r",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "tangency IT = r",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "MT = MO = A",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.499999999999999,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "scene base 2 (r · 2/11)",
+      "pass": true,
+      "details": {
+        "actual": 0.486035272483204,
+        "expected": 0.486035272483204,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref 2B/h",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref 2B/h error %",
+      "pass": true,
+      "details": {
+        "actual": 0.04024994347707008,
+        "expected": 0.0402499434770682,
+        "delta": 1.880440247958859e-15,
+        "tolerance": 1e-9
+      }
+    },
+    {
+      "name": "ref S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.618590346796805,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "ref S/A error %",
+      "pass": true,
+      "details": {
+        "actual": 0.03438481829051007,
+        "expected": 0.034384818290501565,
+        "delta": 8.507083926190262e-15,
+        "tolerance": 1e-9
+      }
+    },
+    {
+      "name": "11/7 inside π interval",
+      "pass": true
+    },
+    {
+      "name": "11/7 inside φ interval",
+      "pass": true
+    },
+    {
+      "name": "table 3:2: π error",
+      "pass": true,
+      "details": {
+        "actual": 0.04507034144862791,
+        "expected": 0.04507034144862795,
+        "delta": 3.469446951953614e-17,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 3:2: φ error",
+      "pass": true,
+      "details": {
+        "actual": 0.030056647916491423,
+        "expected": 0.030056647916491423,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 3:2: 2B/h",
+      "pass": true,
+      "details": {
+        "actual": 3,
+        "expected": 3,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 3:2: S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6666666666666667,
+        "expected": 1.6666666666666667,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 8:5: π error",
+      "pass": true,
+      "details": {
+        "actual": 0.018591635788130226,
+        "expected": 0.018591635788130244,
+        "delta": 1.734723475976807e-17,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 8:5: φ error",
+      "pass": true,
+      "details": {
+        "actual": 0.010662896769561999,
+        "expected": 0.010662896769561999,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 8:5: 2B/h",
+      "pass": true,
+      "details": {
+        "actual": 3.2,
+        "expected": 3.2,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 8:5: S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6007810593582121,
+        "expected": 1.6007810593582121,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 11:7: π error",
+      "pass": true,
+      "details": {
+        "actual": 0.0004024994347707579,
+        "expected": 0.0004024994347707008,
+        "delta": 5.713745448998608e-17,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 11:7: φ error",
+      "pass": true,
+      "details": {
+        "actual": 0.0003438481829049635,
+        "expected": 0.0003438481829049635,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 11:7: 2B/h",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 11:7: S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.618590346796805,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 14:9: π error",
+      "pass": true,
+      "details": {
+        "actual": 0.009702576317095613,
+        "expected": 0.009702576317095634,
+        "delta": 2.0816681711721685e-17,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 14:9: φ error",
+      "pass": true,
+      "details": {
+        "actual": 0.0066673797837531,
+        "expected": 0.0066673797837531,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 14:9: 2B/h",
+      "pass": true,
+      "details": {
+        "actual": 3.111111111111111,
+        "expected": 3.111111111111111,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 14:9: S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6288220358559113,
+        "expected": 1.6288220358559113,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 19:12: π error",
+      "pass": true,
+      "details": {
+        "actual": 0.007981306248670536,
+        "expected": 0.007981306248670453,
+        "delta": 8.326672684688674e-17,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 19:12: φ error",
+      "pass": true,
+      "details": {
+        "actual": 0.004299891985198072,
+        "expected": 0.004299891985198072,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 19:12: 2B/h",
+      "pass": true,
+      "details": {
+        "actual": 3.1666666666666665,
+        "expected": 3.1666666666666665,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 19:12: S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6110766173698912,
+        "expected": 1.6110766173698912,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 25:16: π error",
+      "pass": true,
+      "details": {
+        "actual": 0.005281605675654076,
+        "expected": 0.0052816056756541125,
+        "delta": 3.642919299551295e-17,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "table 25:16: φ error",
+      "pass": true,
+      "details": {
+        "actual": 0.0038820269744236405,
+        "expected": 0.0038820269744236405,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 25:16: 2B/h",
+      "pass": true,
+      "details": {
+        "actual": 3.125,
+        "expected": 3.125,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "pick 25:16: S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6243152403397563,
+        "expected": 1.6243152403397563,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 1.75,
+        "expected": 1.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 0.6682984996644055,
+        "expected": 0.6682984996644055,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 0.6682984996644055,
+        "expected": 0.6682984996644055,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 0.6682984996644055,
+        "expected": 0.6682984996644055,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 0.6682984996644055,
+        "expected": 0.6682984996644055,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 0.6682984996644055,
+        "expected": 0.6682984996644055,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 0.6682984996644055,
+        "expected": 0.6682984996644055,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.6185903467968052,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 1.3749999999999998,
+        "expected": 1.375,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=0.25: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524623,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "11:7, s=0.25: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 7,
+        "expected": 7,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.6185903467968052,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 5.499999999999999,
+        "expected": 5.5,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524623,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "11:7, s=1: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.618590346796805,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6165787345021085,
+        "expected": 1.6165787345021085,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.6185903467968052,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524623,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 10.5,
+        "expected": 10.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 4.009790997986434,
+        "expected": 4.009790997986433,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 4.009790997986434,
+        "expected": 4.009790997986433,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 4.009790997986434,
+        "expected": 4.009790997986433,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 4.009790997986434,
+        "expected": 4.009790997986433,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 4.009790997986433,
+        "expected": 4.009790997986433,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 4.009790997986433,
+        "expected": 4.009790997986433,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.618590346796805,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524623,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "11:7, s=1.5: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=1.5: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.618590346796805,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6165787345021092,
+        "expected": 1.6165787345021085,
+        "delta": 6.661338147750939e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.6185903467968052,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=1.5: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524623,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 14,
+        "expected": 14,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 5.346387997315244,
+        "expected": 5.346387997315244,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 5.346387997315244,
+        "expected": 5.346387997315244,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 5.346387997315244,
+        "expected": 5.346387997315244,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 5.346387997315244,
+        "expected": 5.346387997315244,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 5.346387997315244,
+        "expected": 5.346387997315244,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 5.346387997315244,
+        "expected": 5.346387997315244,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.6185903467968052,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 10.999999999999998,
+        "expected": 11,
+        "delta": 1.7763568394002505e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 3.142857142857143,
+        "expected": 3.142857142857143,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524623,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "11:7, s=2: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "11:7, s=2: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.618590346796805,
+        "expected": 1.618590346796805,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6165787345021085,
+        "expected": 1.6165787345021085,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6185903467968052,
+        "expected": 1.6185903467968052,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "11:7, s=2: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524623,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 0.8497967345311057,
+        "expected": 0.8497967345311054,
+        "delta": 3.3306690738754696e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 0.8497967345311057,
+        "expected": 0.8497967345311054,
+        "delta": 3.3306690738754696e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 0.8497967345311057,
+        "expected": 0.8497967345311054,
+        "delta": 3.3306690738754696e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 0.8497967345311057,
+        "expected": 0.8497967345311054,
+        "delta": 3.3306690738754696e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 0.8497967345311054,
+        "expected": 0.8497967345311054,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 0.8497967345311056,
+        "expected": 0.8497967345311054,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 1.3749999999999998,
+        "expected": 1.375,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 2,
+        "expected": 2,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=0.25: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 2.2400219571452396,
+        "expected": 2.2400219571452396,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=1, s=0.25: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 3.399186938124423,
+        "expected": 3.3991869381244215,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 3.399186938124423,
+        "expected": 3.3991869381244215,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 3.399186938124423,
+        "expected": 3.3991869381244215,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 3.399186938124423,
+        "expected": 3.3991869381244215,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 3.3991869381244215,
+        "expected": 3.3991869381244215,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 3.3991869381244224,
+        "expected": 3.3991869381244215,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 5.499999999999999,
+        "expected": 5.5,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 2,
+        "expected": 2,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 2.2400219571452396,
+        "expected": 2.2400219571452396,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=1, s=1: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 3.3991869381244215,
+        "expected": 3.3991869381244215,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 0.8090169943749472,
+        "expected": 0.8090169943749472,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.2400219571452396,
+        "expected": 2.2400219571452396,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 5.0987804071866325,
+        "expected": 5.0987804071866325,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 5.0987804071866325,
+        "expected": 5.0987804071866325,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 5.0987804071866325,
+        "expected": 5.0987804071866325,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 5.0987804071866325,
+        "expected": 5.0987804071866325,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 5.0987804071866325,
+        "expected": 5.0987804071866325,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 5.098780407186633,
+        "expected": 5.0987804071866325,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 2,
+        "expected": 2,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 2.2400219571452396,
+        "expected": 2.2400219571452396,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=1, s=1.5: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=1.5: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 3.3991869381244215,
+        "expected": 3.3991869381244215,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 0.8090169943749475,
+        "expected": 0.8090169943749472,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=1.5: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.2400219571452396,
+        "expected": 2.2400219571452396,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 6.798373876248846,
+        "expected": 6.798373876248843,
+        "delta": 2.6645352591003757e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 6.798373876248846,
+        "expected": 6.798373876248843,
+        "delta": 2.6645352591003757e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 6.798373876248846,
+        "expected": 6.798373876248843,
+        "delta": 2.6645352591003757e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 6.798373876248846,
+        "expected": 6.798373876248843,
+        "delta": 2.6645352591003757e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 6.798373876248843,
+        "expected": 6.798373876248843,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 6.798373876248845,
+        "expected": 6.798373876248843,
+        "delta": 1.7763568394002505e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 10.999999999999998,
+        "expected": 11,
+        "delta": 1.7763568394002505e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 2,
+        "expected": 2,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 2.2400219571452396,
+        "expected": 2.2400219571452396,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=1, s=2: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=1, s=2: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 3.3991869381244215,
+        "expected": 3.3991869381244215,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 0.8090169943749472,
+        "expected": 0.8090169943749472,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.23606797749979,
+        "expected": 2.23606797749979,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=1, s=2: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.2400219571452396,
+        "expected": 2.2400219571452396,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 1.7507043740108488,
+        "expected": 1.7507043740108488,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 0.6684646538845953,
+        "expected": 0.6684646538845953,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 0.6684646538845953,
+        "expected": 0.6684646538845953,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 0.6684646538845953,
+        "expected": 0.6684646538845953,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 0.6684646538845953,
+        "expected": 0.6684646538845953,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 0.6684646538845953,
+        "expected": 0.6684646538845953,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 0.6684646538845953,
+        "expected": 0.6684646538845953,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062328,
+        "expected": 1.618993186606233,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 1.3749999999999998,
+        "expected": 1.375,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 3.141592653589793,
+        "expected": 3.141592653589793,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.6201470192971392,
+        "expected": 1.6201470192971392,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=pi/2, s=0.25: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=pi/2, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 7.002817496043395,
+        "expected": 7.002817496043395,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383812,
+        "expected": 2.6738586155383812,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383812,
+        "expected": 2.6738586155383812,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383812,
+        "expected": 2.6738586155383812,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383812,
+        "expected": 2.6738586155383812,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383812,
+        "expected": 2.6738586155383812,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383812,
+        "expected": 2.6738586155383812,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062328,
+        "expected": 1.618993186606233,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 5.499999999999999,
+        "expected": 5.5,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 3.141592653589793,
+        "expected": 3.141592653589793,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.6201470192971392,
+        "expected": 1.6201470192971392,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=pi/2, s=1: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383812,
+        "expected": 2.6738586155383812,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062328,
+        "expected": 1.6189931866062328,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6155266675594946,
+        "expected": 1.6155266675594946,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.618993186606233,
+        "expected": 1.618993186606233,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6201470192971392,
+        "expected": 1.6201470192971392,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 10.504226244065093,
+        "expected": 10.504226244065093,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 4.010787923307571,
+        "expected": 4.010787923307572,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 4.010787923307571,
+        "expected": 4.010787923307572,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 4.010787923307571,
+        "expected": 4.010787923307572,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 4.010787923307571,
+        "expected": 4.010787923307572,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 4.010787923307572,
+        "expected": 4.010787923307572,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 4.010787923307571,
+        "expected": 4.010787923307572,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062326,
+        "expected": 1.6189931866062328,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 3.141592653589793,
+        "expected": 3.141592653589793,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.6201470192971392,
+        "expected": 1.6201470192971392,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=pi/2, s=1.5: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383817,
+        "expected": 2.6738586155383812,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062326,
+        "expected": 1.6189931866062328,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.615526667559495,
+        "expected": 1.6155266675594946,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062328,
+        "expected": 1.618993186606233,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=1.5: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6201470192971392,
+        "expected": 1.6201470192971392,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 14.00563499208679,
+        "expected": 14.00563499208679,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 5.3477172310767624,
+        "expected": 5.3477172310767624,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 5.3477172310767624,
+        "expected": 5.3477172310767624,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 5.3477172310767624,
+        "expected": 5.3477172310767624,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 5.3477172310767624,
+        "expected": 5.3477172310767624,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 5.3477172310767624,
+        "expected": 5.3477172310767624,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 5.3477172310767624,
+        "expected": 5.3477172310767624,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062328,
+        "expected": 1.618993186606233,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 10.999999999999998,
+        "expected": 11,
+        "delta": 1.7763568394002505e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 3.141592653589793,
+        "expected": 3.141592653589793,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.6201470192971392,
+        "expected": 1.6201470192971392,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=pi/2, s=2: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.6738586155383812,
+        "expected": 2.6738586155383812,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6189931866062328,
+        "expected": 1.6189931866062328,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6155266675594946,
+        "expected": 1.6155266675594946,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.618993186606233,
+        "expected": 1.618993186606233,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=pi/2, s=2: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.6201470192971392,
+        "expected": 1.6201470192971392,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 0.5695436482630056,
+        "expected": 0.5695436482630057,
+        "delta": 1.1102230246251565e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 0.5695436482630056,
+        "expected": 0.5695436482630057,
+        "delta": 1.1102230246251565e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 0.5695436482630056,
+        "expected": 0.5695436482630057,
+        "delta": 1.1102230246251565e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 0.5695436482630056,
+        "expected": 0.5695436482630057,
+        "delta": 1.1102230246251565e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 0.5695436482630057,
+        "expected": 0.5695436482630057,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 0.5695436482630057,
+        "expected": 0.5695436482630057,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.414213562373095,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 4,
+        "expected": 4,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=0.25: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.4148343830254217,
+        "expected": 1.4148343830254217,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=2, s=0.25: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 2.2781745930520225,
+        "expected": 2.278174593052023,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 2.2781745930520225,
+        "expected": 2.278174593052023,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 2.2781745930520225,
+        "expected": 2.278174593052023,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 2.2781745930520225,
+        "expected": 2.278174593052023,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 2.278174593052023,
+        "expected": 2.278174593052023,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 2.278174593052023,
+        "expected": 2.278174593052023,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.414213562373095,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 4,
+        "expected": 4,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.4148343830254217,
+        "expected": 1.4148343830254217,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=2, s=1: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.278174593052023,
+        "expected": 2.278174593052023,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.414213562373095,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.4142135623730954,
+        "expected": 2.4142135623730954,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.414213562373095,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.4148343830254217,
+        "expected": 1.4148343830254217,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 3.417261889578034,
+        "expected": 3.4172618895780342,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 3.417261889578034,
+        "expected": 3.4172618895780342,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 3.417261889578034,
+        "expected": 3.4172618895780342,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 3.417261889578034,
+        "expected": 3.4172618895780342,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 3.4172618895780342,
+        "expected": 3.4172618895780342,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 3.417261889578034,
+        "expected": 3.4172618895780342,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.4142135623730951,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 4,
+        "expected": 4,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.4148343830254217,
+        "expected": 1.4148343830254217,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=2, s=1.5: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=1.5: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.278174593052023,
+        "expected": 2.278174593052023,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.414213562373095,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.4142135623730954,
+        "expected": 2.4142135623730954,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.4142135623730951,
+        "expected": 1.414213562373095,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=1.5: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.4148343830254217,
+        "expected": 1.4148343830254217,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 4.556349186104045,
+        "expected": 4.556349186104046,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 4.556349186104045,
+        "expected": 4.556349186104046,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 4.556349186104045,
+        "expected": 4.556349186104046,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 4.556349186104045,
+        "expected": 4.556349186104046,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 4.556349186104046,
+        "expected": 4.556349186104046,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 4.556349186104046,
+        "expected": 4.556349186104046,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.414213562373095,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 4,
+        "expected": 4,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.4148343830254217,
+        "expected": 1.4148343830254217,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=2, s=2: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=2, s=2: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 2.278174593052023,
+        "expected": 2.278174593052023,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.414213562373095,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 2.4142135623730954,
+        "expected": 2.4142135623730954,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.414213562373095,
+        "expected": 1.414213562373095,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=2, s=2: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.4148343830254217,
+        "expected": 1.4148343830254217,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 0.9166666666666666,
+        "expected": 0.9166666666666666,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 0.4163165018814926,
+        "expected": 0.4163165018814926,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 0.4163165018814926,
+        "expected": 0.4163165018814926,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 0.4163165018814926,
+        "expected": 0.4163165018814926,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 0.4163165018814926,
+        "expected": 0.4163165018814926,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 0.4163165018814926,
+        "expected": 0.4163165018814926,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 0.41631650188149266,
+        "expected": 0.4163165018814926,
+        "delta": 5.551115123125783e-17,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 1.3749999999999998,
+        "expected": 1.375,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 6,
+        "expected": 6,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=0.25: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.2020846106200123,
+        "expected": 1.2020846106200123,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=3, s=0.25: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 3.6666666666666665,
+        "expected": 3.6666666666666665,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259704,
+        "expected": 1.6652660075259704,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259704,
+        "expected": 1.6652660075259704,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259704,
+        "expected": 1.6652660075259704,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259704,
+        "expected": 1.6652660075259704,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259704,
+        "expected": 1.6652660075259704,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259706,
+        "expected": 1.6652660075259704,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 5.499999999999999,
+        "expected": 5.5,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 6,
+        "expected": 6,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.2020846106200123,
+        "expected": 1.2020846106200123,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=3, s=1: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259704,
+        "expected": 1.6652660075259704,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.954163456597989,
+        "expected": 4.954163456597989,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2020846106200123,
+        "expected": 1.2020846106200123,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 2.4978990112889567,
+        "expected": 2.4978990112889554,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 2.4978990112889567,
+        "expected": 2.4978990112889554,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 2.4978990112889567,
+        "expected": 2.4978990112889554,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 2.4978990112889567,
+        "expected": 2.4978990112889554,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 2.4978990112889554,
+        "expected": 2.4978990112889554,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 2.4978990112889563,
+        "expected": 2.4978990112889554,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546636,
+        "expected": 1.2018504251546631,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 6,
+        "expected": 6,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.2020846106200123,
+        "expected": 1.2020846106200123,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=3, s=1.5: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=1.5: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259702,
+        "expected": 1.6652660075259704,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546636,
+        "expected": 1.2018504251546631,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.9541634565979935,
+        "expected": 4.954163456597989,
+        "delta": 4.440892098500626e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=1.5: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2020846106200123,
+        "expected": 1.2020846106200123,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 7.333333333333333,
+        "expected": 7.333333333333333,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 3.330532015051941,
+        "expected": 3.330532015051941,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 3.330532015051941,
+        "expected": 3.330532015051941,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 3.330532015051941,
+        "expected": 3.330532015051941,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 3.330532015051941,
+        "expected": 3.330532015051941,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 3.330532015051941,
+        "expected": 3.330532015051941,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 3.3305320150519413,
+        "expected": 3.330532015051941,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 10.999999999999998,
+        "expected": 11,
+        "delta": 1.7763568394002505e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 6,
+        "expected": 6,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.2020846106200123,
+        "expected": 1.2020846106200123,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=3, s=2: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=3, s=2: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 1.6652660075259704,
+        "expected": 1.6652660075259704,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.954163456597989,
+        "expected": 4.954163456597989,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2018504251546631,
+        "expected": 1.2018504251546631,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=3, s=2: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.2020846106200123,
+        "expected": 1.2020846106200123,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 1.073567558806071,
+        "expected": 1.073567558806071,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 1.073567558806071,
+        "expected": 1.073567558806071,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 1.073567558806071,
+        "expected": 1.073567558806071,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 1.073567558806071,
+        "expected": 1.073567558806071,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 1.073567558806071,
+        "expected": 1.073567558806071,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 1.0735675588060707,
+        "expected": 1.073567558806071,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 1.375,
+        "expected": 1.375,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 4.153119447455316,
+        "expected": 4.153119447455316,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=0.5, s=0.25: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=0.5, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224284,
+        "expected": 4.294270235224284,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224284,
+        "expected": 4.294270235224284,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224284,
+        "expected": 4.294270235224284,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224284,
+        "expected": 4.294270235224284,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224284,
+        "expected": 4.294270235224284,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224283,
+        "expected": 4.294270235224284,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 4.153119447455316,
+        "expected": 4.153119447455316,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=0.5, s=1: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=0.5, s=1: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224284,
+        "expected": 4.294270235224284,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 0.32019410160110384,
+        "expected": 0.32019410160110384,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.153119447455316,
+        "expected": 4.153119447455316,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 33,
+        "expected": 33,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 6.441405352836425,
+        "expected": 6.441405352836425,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 6.441405352836425,
+        "expected": 6.441405352836425,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 6.441405352836425,
+        "expected": 6.441405352836425,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 6.441405352836425,
+        "expected": 6.441405352836425,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 6.441405352836425,
+        "expected": 6.441405352836425,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 6.441405352836425,
+        "expected": 6.441405352836425,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 4.153119447455316,
+        "expected": 4.153119447455316,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=0.5, s=1.5: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224283,
+        "expected": 4.294270235224284,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 0.32019410160110373,
+        "expected": 0.32019410160110384,
+        "delta": 1.1102230246251565e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=1.5: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.153119447455316,
+        "expected": 4.153119447455316,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 44,
+        "expected": 44,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 8.588540470448567,
+        "expected": 8.588540470448567,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 8.588540470448567,
+        "expected": 8.588540470448567,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 8.588540470448567,
+        "expected": 8.588540470448567,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 8.588540470448567,
+        "expected": 8.588540470448567,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 8.588540470448567,
+        "expected": 8.588540470448567,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 8.588540470448566,
+        "expected": 8.588540470448567,
+        "delta": 1.7763568394002505e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 1,
+        "expected": 1,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 4.153119447455316,
+        "expected": 4.153119447455316,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=0.5, s=2: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=0.5, s=2: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 4.294270235224284,
+        "expected": 4.294270235224284,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 0.32019410160110384,
+        "expected": 0.32019410160110384,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.123105625617661,
+        "expected": 4.123105625617661,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=0.5, s=2: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 4.153119447455316,
+        "expected": 4.153119447455316,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: B",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: h",
+      "pass": true,
+      "details": {
+        "actual": 0.6875,
+        "expected": 0.6875,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 0.324593469062211,
+        "expected": 0.3245934690622108,
+        "delta": 1.6653345369377348e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 0.324593469062211,
+        "expected": 0.3245934690622108,
+        "delta": 1.6653345369377348e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 0.324593469062211,
+        "expected": 0.3245934690622108,
+        "delta": 1.6653345369377348e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 0.324593469062211,
+        "expected": 0.3245934690622108,
+        "delta": 1.6653345369377348e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 0.3245934690622108,
+        "expected": 0.3245934690622108,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 0.3245934690622108,
+        "expected": 0.3245934690622108,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 1.3749999999999998,
+        "expected": 1.375,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 8,
+        "expected": 8,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=0.25: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.1181564762054215,
+        "expected": 1.1181564762054215,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=4, s=0.25: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=4, s=1: B",
+      "pass": true,
+      "details": {
+        "actual": 11,
+        "expected": 11,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: h",
+      "pass": true,
+      "details": {
+        "actual": 2.75,
+        "expected": 2.75,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 1.298373876248844,
+        "expected": 1.2983738762488433,
+        "delta": 6.661338147750939e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 1.298373876248844,
+        "expected": 1.2983738762488433,
+        "delta": 6.661338147750939e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 1.298373876248844,
+        "expected": 1.2983738762488433,
+        "delta": 6.661338147750939e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 1.298373876248844,
+        "expected": 1.2983738762488433,
+        "delta": 6.661338147750939e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 1.2983738762488433,
+        "expected": 1.2983738762488433,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 1.2983738762488433,
+        "expected": 1.2983738762488433,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 5.499999999999999,
+        "expected": 5.5,
+        "delta": 8.881784197001252e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 8,
+        "expected": 8,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.1181564762054215,
+        "expected": 1.1181564762054215,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=4, s=1: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=4, s=1: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 1.2983738762488433,
+        "expected": 1.2983738762488433,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 8.472135954999578,
+        "expected": 8.472135954999578,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.1181564762054215,
+        "expected": 1.1181564762054215,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: B",
+      "pass": true,
+      "details": {
+        "actual": 16.5,
+        "expected": 16.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: h",
+      "pass": true,
+      "details": {
+        "actual": 4.125,
+        "expected": 4.125,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 1.947560814373265,
+        "expected": 1.9475608143732652,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 1.947560814373265,
+        "expected": 1.9475608143732652,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 1.947560814373265,
+        "expected": 1.9475608143732652,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 1.947560814373265,
+        "expected": 1.9475608143732652,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 1.9475608143732652,
+        "expected": 1.9475608143732652,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 1.947560814373265,
+        "expected": 1.9475608143732652,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.1180339887498947,
+        "expected": 1.118033988749895,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 8.25,
+        "expected": 8.25,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 8,
+        "expected": 8,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.1181564762054215,
+        "expected": 1.1181564762054215,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=4, s=1.5: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=4, s=1.5: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 1.2983738762488435,
+        "expected": 1.2983738762488433,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.1180339887498947,
+        "expected": 1.118033988749895,
+        "delta": 2.220446049250313e-16,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 8.472135954999578,
+        "expected": 8.472135954999578,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=1.5: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.1181564762054215,
+        "expected": 1.1181564762054215,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: B",
+      "pass": true,
+      "details": {
+        "actual": 22,
+        "expected": 22,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: h",
+      "pass": true,
+      "details": {
+        "actual": 5.5,
+        "expected": 5.5,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: tangency dF1",
+      "pass": true,
+      "details": {
+        "actual": 2.596747752497688,
+        "expected": 2.5967477524976865,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: tangency dF2",
+      "pass": true,
+      "details": {
+        "actual": 2.596747752497688,
+        "expected": 2.5967477524976865,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: tangency dF3",
+      "pass": true,
+      "details": {
+        "actual": 2.596747752497688,
+        "expected": 2.5967477524976865,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: tangency dF4",
+      "pass": true,
+      "details": {
+        "actual": 2.596747752497688,
+        "expected": 2.5967477524976865,
+        "delta": 1.3322676295501878e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: tangency dBase",
+      "pass": true,
+      "details": {
+        "actual": 2.5967477524976865,
+        "expected": 2.5967477524976865,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: tangency IT",
+      "pass": true,
+      "details": {
+        "actual": 2.5967477524976865,
+        "expected": 2.5967477524976865,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: VI/OI = S/A",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: MT = MO",
+      "pass": true,
+      "details": {
+        "actual": 10.999999999999998,
+        "expected": 11,
+        "delta": 1.7763568394002505e-15,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: 2B/h = 2q",
+      "pass": true,
+      "details": {
+        "actual": 8,
+        "expected": 8,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: L/W independent",
+      "pass": true,
+      "details": {
+        "actual": 1.1181564762054215,
+        "expected": 1.1181564762054215,
+        "delta": 0,
+        "tolerance": 1e-10
+      }
+    },
+    {
+      "name": "q=4, s=2: L/W > S/A",
+      "pass": true
+    },
+    {
+      "name": "q=4, s=2: r scales with s",
+      "pass": true,
+      "details": {
+        "actual": 1.2983738762488433,
+        "expected": 1.2983738762488433,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: VIoverOI scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: MToverVT scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 8.472135954999578,
+        "expected": 8.472135954999578,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: rPhi scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.118033988749895,
+        "expected": 1.118033988749895,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "q=4, s=2: L/W scale invariant",
+      "pass": true,
+      "details": {
+        "actual": 1.1181564762054215,
+        "expected": 1.1181564762054215,
+        "delta": 0,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "name": "lesson 1: oval",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: ball",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: bars",
+      "pass": true
+    },
+    {
+      "name": "lesson 1: credit visible",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: oval",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: ball",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: bars",
+      "pass": true
+    },
+    {
+      "name": "lesson 2: credit visible",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: oval",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: ball",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: bars",
+      "pass": true
+    },
+    {
+      "name": "lesson 3: credit visible",
+      "pass": true
+    },
+    {
+      "name": "toggle limit line off",
+      "pass": true
+    },
+    {
+      "name": "toggle limit line on",
+      "pass": true
+    },
+    {
+      "name": "toggle sphere off",
+      "pass": true
+    },
+    {
+      "name": "toggle body off",
+      "pass": true
+    },
+    {
+      "name": "toggle body on",
+      "pass": true
+    },
+    {
+      "name": "sphere step 1: T",
+      "pass": true
+    },
+    {
+      "name": "sphere step 1: OI",
+      "pass": true
+    },
+    {
+      "name": "sphere step 2: T",
+      "pass": true
+    },
+    {
+      "name": "sphere step 2: OI",
+      "pass": true
+    },
+    {
+      "name": "sphere step 3: T",
+      "pass": true
+    },
+    {
+      "name": "sphere step 3: OI",
+      "pass": true
+    },
+    {
+      "name": "sphere step 4: T",
+      "pass": true
+    },
+    {
+      "name": "sphere step 4: OI",
+      "pass": true
+    },
+    {
+      "name": "step + wraps 4 → 1",
+      "pass": true
+    },
+    {
+      "name": "step + 1 → 2",
+      "pass": true
+    },
+    {
+      "name": "native eggButton",
+      "pass": true
+    },
+    {
+      "name": "native sphereButton",
+      "pass": true
+    },
+    {
+      "name": "native whyButton",
+      "pass": true
+    },
+    {
+      "name": "EN title",
+      "pass": true
+    },
+    {
+      "name": "PL title",
+      "pass": true
+    },
+    {
+      "name": "native reset",
+      "pass": true
+    },
+    {
+      "name": "export/reload L/W",
+      "pass": true,
+      "details": {
+        "actual": 1.6197429608524623,
+        "expected": 1.6197429608524618,
+        "delta": 4.440892098500626e-16,
+        "tolerance": 1e-11
+      }
+    },
+    {
+      "name": "export/reload r",
+      "pass": true,
+      "details": {
+        "actual": 2.673193998657622,
+        "expected": 2.673193998657622,
+        "delta": 0,
+        "tolerance": 2e-12
+      }
+    },
+    {
+      "name": "export/reload native reset",
+      "pass": true
+    },
+    {
+      "name": "export/reload script resetButton",
+      "pass": true
+    },
+    {
+      "name": "export/reload script eggButton",
+      "pass": true
+    },
+    {
+      "name": "export/reload script sphereButton",
+      "pass": true
+    },
+    {
+      "name": "export/reload script whyButton",
+      "pass": true
+    },
+    {
+      "name": "export/reload script nextStepButton",
+      "pass": true
+    }
+  ]
+}

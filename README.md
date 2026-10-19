@@ -7,6 +7,13 @@ G4 model, all 13 comparisons, shape and uniform scale sliders, the actual
 surface section and a separate exact golden ellipse. [Instructions, file and
 licences](education/geogebra/g5/README.md). The main show remains independent.
 
+**[Geometric extensions — three lessons (PL/EN)](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/education/rozszerzenia.html)**:
+the golden egg ratio limit, the inscribed sphere and why 11:7, with collapsible
+proofs. New separate GeoGebra model **[G6](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/education/geogebra/g6/)**
+([download](education/geogebra/g6/piramida-11-7-G6.ggb),
+[instructions](education/geogebra/g6/README.md),
+[verification](education/geogebra/g6/VERIFICATION.md)); G1, G2 and G4 are unchanged.
+
 Historical G2 material:
 
 **[Interactive GeoGebra 3D model G2](https://michaelzp.github.io/great-pyramid-11-7-lab-edu/education/geogebra/g2/)**
