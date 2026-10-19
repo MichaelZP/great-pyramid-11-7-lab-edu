@@ -2,6 +2,7 @@
 'use strict';
 globalThis.VortexEnglish={
  'Eksperymentuj w GeoGebra':'Experiment in GeoGebra',
+ 'Rozszerzenia geometryczne · G6':'Geometric extensions · G6',
  'Odniesienia i kontekst naukowy':'References and scientific context',
  'Powiązana wizualizacja:':'Related visualization:',
  'Kontekst naukowy:':'Scientific context:',

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,"><title>Rozszerzenia geometryczne · Piramida 11:7</title>
+<link rel="stylesheet" href="../docs/etap-10/style.css"><link rel="stylesheet" href="show.css"><link rel="stylesheet" href="extensions.css"></head>
+<body><main>
+<header><div class="language-control"><label for="language">Język / Language<select id="language"><option value="pl">PL — Polski</option><option value="en">EN — English</option></select></label></div>
+<p class="eyebrow"><span data-lang="pl">Rozszerzenia geometryczne · trzy lekcje</span><span data-lang="en" hidden>Geometric extensions · three lessons</span></p>
+<h1><span data-lang="pl">Złote jajo, kula wpisana i dlaczego 11:7</span><span data-lang="en" hidden>Golden egg, inscribed sphere and why 11:7</span></h1>
+<p><span data-lang="pl">Piramida B = 11, h = 7. Najpierw proste wyjaśnienie, potem rysunek z suwakami; dowody są zwinięte. Te same wartości co w aplikacji i w modelu GeoGebra G6. To model matematyczny — zgodności liczbowe nie mówią nic o intencjach budowniczych.</span><span data-lang="en" hidden>Pyramid B = 11, h = 7. A simple explanation first, then a drawing with sliders; proofs are collapsed. The same values as in the app and in the GeoGebra G6 model. This is a mathematical model — numerical agreements say nothing about the builders' intent.</span></p>
+<nav class="lesson-nav"><a href="#egg">1 · L/W → S/A</a><a href="#sphere">2 · r, VI/OI</a><a href="#why">3 · 11:7</a><a href="geogebra/g6/">GeoGebra G6</a><a href="index.html"><span data-lang="pl">Pełny pokaz</span><span data-lang="en" hidden>Full show</span></a></nav></header>
+
+<section class="panel" aria-label="Kształt">
+<div class="controls"><label for="q">q = B/h <output id="qValue">1,571</output><input id="q" type="range" min="0.5" max="4" step="0.001" value="1.5714285714285714"></label>
+<button id="resetAll">Reset 11:7</button></div>
+<p id="shape" role="status"></p></section>
+
+<section id="egg" data-lesson="egg" class="panel">
+<h2><span data-lang="pl">1. Granica proporcji złotego jaja</span><span data-lang="en" hidden>1. The golden egg ratio limit</span></h2>
+<p data-lang="pl">Tniemy powierzchnię z·r = 1 płaszczyzną o nachyleniu ściany piramidy. Przekrój to owal o długości L i szerokości W. Gdy przesuwamy płaszczyznę wyżej (większe z₀), owal maleje, a jego proporcja L/W zbliża się do granicy S/A = √(1+t²), gdzie t = h/A. Dla 11:7 ta granica jest o 0,034% powyżej φ, więc samo L/W nigdy nie osiąga φ — zbliża się do niej, zatrzymując się tuż nad nią.</p>
+<p data-lang="en" hidden>We cut the surface z·r = 1 with a plane tilted like the pyramid's face. The section is an oval of length L and width W. Moving the plane higher (larger z₀) makes the oval smaller, and its ratio L/W approaches the limit S/A = √(1+t²), where t = h/A. For 11:7 that limit is 0.034% above φ, so L/W itself never reaches φ — it gets closer and stops just above it.</p>
+<div class="controls"><label for="z0">z₀ <output id="z0Value">7,65</output><input id="z0" type="range" min="1" max="40" step="0.05" value="7.65"></label>
+<button data-z0="7.65">z₀ = 7,65</button><button data-z0="15.3">15,3</button><button data-z0="30.6">30,6</button><label class="check"><input id="limitLine" type="checkbox" checked><span data-lang="pl">Linia granicy L/(S/A)</span><span data-lang="en" hidden>Limit line L/(S/A)</span></label></div>
+<svg id="eggSvg" class="lesson-svg" viewBox="-220 -150 440 300" role="img" aria-label="Rzeczywisty owal przekroju"></svg>
+<p id="eggValues" role="status"></p>
+<details><summary><span data-lang="pl">Dowód i szczegóły</span><span data-lang="en" hidden>Proof and details</span></summary>
+<div data-lang="pl"><p>Na płaszczyźnie z = z₀ + t·x punkt powierzchni spełnia (z₀ + t·x)²(x² + y²) = 1. Krańce owalu (y = 0) to x(z₀ + t·x) = ±1, czyli a, b = (−z₀ ± √(z₀² ∓ 4t))/(2t); owal istnieje tylko dla z₀² &gt; 4t (dla 11:7: z₀ &gt; 2,256304299271). Długość w płaszczyźnie L = (b − a)·√(1 + t²); szerokość W = 2·max y, gdzie maksimum spełnia x(z₀ + t·x)³ + t = 0.</p>
+<p>Dla dużego z₀ mamy b − a ≈ 2/z₀ i W ≈ 2/z₀, więc L/W → √(1 + t²) = S/A, bo t = h/A. Przy 11:7: S/A = 1,618590346797; z₀ = 7,65: L/W = 1,619742961 (0,1056% od φ); z₀ = 15,3: 1,618662132; z₀ = 30,6: 1,618594832. Owal rysujemy w jego płaszczyźnie w jednej skali — to nie elipsa. Złotą granicę S/A = φ dałoby nachylenie θ = 51,827292373°, a 11:7 ma 51,842773413°.</p></div>
+<div data-lang="en" hidden><p>On the plane z = z₀ + t·x a surface point satisfies (z₀ + t·x)²(x² + y²) = 1. The oval's ends (y = 0) are x(z₀ + t·x) = ±1, i.e. a, b = (−z₀ ± √(z₀² ∓ 4t))/(2t); the oval exists only for z₀² &gt; 4t (for 11:7: z₀ &gt; 2.256304299271). Length in the plane L = (b − a)·√(1 + t²); width W = 2·max y, where the maximum satisfies x(z₀ + t·x)³ + t = 0.</p>
+<p>For large z₀, b − a ≈ 2/z₀ and W ≈ 2/z₀, so L/W → √(1 + t²) = S/A because t = h/A. For 11:7: S/A = 1.618590346797; z₀ = 7.65: L/W = 1.619742961 (0.1056% from φ); z₀ = 15.3: 1.618662132; z₀ = 30.6: 1.618594832. The oval is drawn in its own plane at one scale — it is not an ellipse. A golden limit S/A = φ would need a slope θ = 51.827292373°; 11:7 has 51.842773413°.</p></div></details>
+</section>
+
+<section id="sphere" data-lesson="sphere" class="panel">
+<h2><span data-lang="pl">2. Kula wpisana i złoty podział</span><span data-lang="en" hidden>2. Inscribed sphere and the golden section</span></h2>
+<p data-lang="pl">Do piramidy można włożyć jedną największą kulę dotykającą podstawy i wszystkich czterech ścian. W przekroju przez środek to okrąg wpisany w trójkąt o bokach podstawy i dwóch apotemach. Jego środek I dzieli wysokość tak, że VI/OI = S/A — to ta sama proporcja co wcześniej, więc to ta sama rodzina φ, a nie nowe, niezależne potwierdzenie.</p>
+<p data-lang="en" hidden>One largest sphere fits inside the pyramid, touching the base and all four faces. In the central section it is the circle inscribed in the triangle formed by the base and two apothems. Its centre I divides the height so that VI/OI = S/A — the same ratio as before, so it is the same φ family, not a new independent confirmation.</p>
+<div class="controls"><button data-step="1">1 · <span data-lang="pl">kula</span><span data-lang="en" hidden>sphere</span></button><button data-step="2">2 · OI, VI</button><button data-step="3">3 · T, MT, VT</button><button data-step="4">4 · φ</button></div>
+<svg id="sphereSvg" class="lesson-svg" viewBox="-170 -20 340 265" role="img" aria-label="Przekrój osiowy z okręgiem wpisanym"></svg>
+<p id="sphereValues" role="status"></p>
+<details><summary><span data-lang="pl">Dowód i szczegóły</span><span data-lang="en" hidden>Proof and details</span></summary>
+<div data-lang="pl"><p>W przekroju osiowym trójkąt ma podstawę B, wysokość h i boki S = √(A² + h²), A = B/2. Promień okręgu wpisanego to pole przez połowę obwodu: r = A·h/(A + S). Dwusieczna kąta przy M przecina oś w I, więc z twierdzenia o dwusiecznej VI/OI = MV/MO = S/A. Punkt styczności T leży na MV; styczne z M są równe, więc MT = MO = A i VT = S − A.</p>
+<p>Dla 11:7: r = 2,673193998658; VI/OI = 1,618590346797 (0,0344% od φ); MT = 5,5; VT = 3,402246907; MT/VT = 1,616578735 (0,0899% od φ); VI/VO = 0,618115143.</p></div>
+<div data-lang="en" hidden><p>In the axial section the triangle has base B, height h and sides S = √(A² + h²), A = B/2. The inradius is area over semi-perimeter: r = A·h/(A + S). The bisector of the angle at M meets the axis at I, so by the angle-bisector theorem VI/OI = MV/MO = S/A. The tangency point T lies on MV; tangents from M are equal, so MT = MO = A and VT = S − A.</p>
+<p>For 11:7: r = 2.673193998658; VI/OI = 1.618590346797 (0.0344% from φ); MT = 5.5; VT = 3.402246907; MT/VT = 1.616578735 (0.0899% from φ); VI/VO = 0.618115143.</p></div></details>
+</section>
+
+<section id="why" data-lesson="why" class="panel">
+<h2><span data-lang="pl">3. Dlaczego proporcja 11:7?</span><span data-lang="en" hidden>3. Why the 11:7 ratio?</span></h2>
+<p data-lang="pl">Jedno nachylenie daje naraz dwie wartości: 2B/h (blisko π) i S/A (blisko φ). Spośród ułamków o mianowniku do 20 tylko 11/7 mieści się jednocześnie w przedziale 0,1% wokół obu celów. To fakt arytmetyczny o małych ułamkach, nie argument o zamiarze.</p>
+<p data-lang="en" hidden>One slope gives two values at once: 2B/h (near π) and S/A (near φ). Among fractions with denominator up to 20, only 11/7 falls inside the 0.1% window around both targets. This is an arithmetic fact about small fractions, not an argument about intent.</p>
+<div class="table-wrap"><table class="ratio-table"><thead><tr><th>B:H</th><th>2B/h</th><th><span data-lang="pl">błąd π</span><span data-lang="en" hidden>error π</span></th><th>S/A</th><th><span data-lang="pl">błąd φ</span><span data-lang="en" hidden>error φ</span></th></tr></thead><tbody id="ratioRows"></tbody></table></div>
+<p><span data-lang="pl">Kolejność według mianownika; to nie ranking. Wiersz bieżącego q jest liczony na żywo.</span><span data-lang="en" hidden>Ordered by denominator; not a ranking. The current-q row is computed live.</span></p>
+<details><summary><span data-lang="pl">Dowód i szczegóły</span><span data-lang="en" hidden>Proof and details</span></summary>
+<div data-lang="pl"><p>Dla q = B/h: 2B/h = 2q, a S/A = √(1 + 4/q²). Warunek 0,1% wokół π daje q ∈ [1,569225530, 1,572367123]; wokół φ: q ∈ [1,569763608, 1,574851708]. Wśród p/q′ z q′ ≤ 20 w obu przedziałach leży tylko 11/7. Ułamki łańcuchowe nachylenia t = h/A: cel φ wymaga t = √φ = [1; 3, 1, 2, 11, 3, …], cel π wymaga t = 4/π = [1; 3, 1, 1, 1, 15, …]. Redukt [1; 3, 1, 2] = [1; 3, 1, 1, 1] = 14/11 jest wspólny dla obu rozwinięć, a t = 14/11 odpowiada dokładnie B:h = 11:7. Następne wyrazy (11 oraz 15) są duże, dlatego to krótkie przybliżenie jest tak dobre. 11:7: 2B/h = 3,142857143 (0,0402% od π), S/A = 1,618590347 (0,0344% od φ).</p></div>
+<div data-lang="en" hidden><p>For q = B/h: 2B/h = 2q and S/A = √(1 + 4/q²). The 0.1% window around π gives q ∈ [1.569225530, 1.572367123]; around φ: q ∈ [1.569763608, 1.574851708]. Among p/q′ with q′ ≤ 20 only 11/7 lies in both windows. Continued fractions of the slope t = h/A: the φ target needs t = √φ = [1; 3, 1, 2, 11, 3, …], the π target needs t = 4/π = [1; 3, 1, 1, 1, 15, …]. The convergent [1; 3, 1, 2] = [1; 3, 1, 1, 1] = 14/11 is shared by both expansions, and t = 14/11 is exactly B:h = 11:7. The next terms (11 and 15) are large, which is why this short approximation is so good. 11:7: 2B/h = 3.142857143 (0.0402% from π), S/A = 1.618590347 (0.0344% from φ).</p></div></details>
+</section>
+
+<section class="panel"><h2>GeoGebra G6</h2>
+<p><span data-lang="pl">Nowy model G6 zawiera te same trzy lekcje z suwakami z₀, q i s, przełącznikami widoczności i przyciskiem resetu. Wartości sprawdzono w silniku GeoGebra względem tych samych danych odniesienia.</span><span data-lang="en" hidden>The new G6 model contains the same three lessons with z₀, q and s sliders, visibility toggles and a reset button. Its values were checked in the GeoGebra engine against the same reference data.</span></p>
+<p><a href="geogebra/g6/"><span data-lang="pl">Otwórz G6 online</span><span data-lang="en" hidden>Open G6 online</span></a> · <a href="geogebra/g6/piramida-11-7-G6.ggb" download><span data-lang="pl">Pobierz .ggb</span><span data-lang="en" hidden>Download .ggb</span></a> · <a href="geogebra/g6/VERIFICATION.md"><span data-lang="pl">Weryfikacja</span><span data-lang="en" hidden>Verification</span></a> · <a href="https://michaelzp.github.io/great-pyramid-11-7-lab/#ext=egg-limit" target="_blank" rel="noopener noreferrer"><span data-lang="pl">Aplikacja · lekcje 3D</span><span data-lang="en" hidden>App · 3D lessons</span></a> · <a href="https://github.com/MichaelZP/great-pyramid-11-7-lab-edu" target="_blank" rel="noopener noreferrer">GitHub</a></p></section>
+<footer>Koncepcja projektu: Michał Przybylski — <a href="https://prylski.dev/">prylski.dev</a>. GitHub: <a href="https://github.com/MichaelZP/">MichaelZP</a>.</footer>
+</main>
+<script src="extensions.js"></script><script src="extensions-page.js"></script></body></html>

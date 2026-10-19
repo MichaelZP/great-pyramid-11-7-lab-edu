@@ -1,0 +1,6 @@
+.lesson-nav{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}.lesson-nav a{border:1px solid #5c7684;border-radius:7px;padding:8px 14px;text-decoration:none}
+.lesson-svg{display:block;width:100%;max-height:420px;background:#0e202b;border-radius:8px}
+.ratio-table{border-collapse:collapse;font-variant-numeric:tabular-nums;width:100%;max-width:640px}.ratio-table th,.ratio-table td{border-bottom:1px solid #36505e;padding:6px 10px;text-align:right}.ratio-table th:first-child,.ratio-table td:first-child{text-align:left}
+.ratio-table tr.current td{color:#70dfca}.ratio-table tr.main td{color:#d7b991;font-weight:600}
+button[aria-pressed=true]{background:#c8d2d8;color:#0f1b25}
+.table-wrap{overflow-x:auto;max-width:100%}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,"><title>Piramida 11:7 — GeoGebra G6 · rozszerzenia geometryczne</title>
+<style>
+body{margin:0;background:#f4f6fa;color:#172737;font:16px/1.5 system-ui,sans-serif}main{max-width:1440px;margin:auto;padding:16px}
+h1{font-size:clamp(24px,4vw,34px);line-height:1.2;margin:12px 0}p{max-width:950px}nav{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+nav a,button{display:inline-block;border:1px solid #bac8d6;border-radius:6px;padding:9px 14px;background:white;color:#172737;text-decoration:none;font:inherit;cursor:pointer}
+button:disabled{opacity:.5;cursor:wait}a{color:#175ea6}#status{padding:10px;background:#e7eef8;border-radius:6px}#ggb{background:white;overflow:auto;min-height:300px;margin-top:16px}
+details{max-width:950px;padding:16px 0}footer{border-top:1px solid #bac8d6;padding-top:16px;margin-top:20px}.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}code{word-break:break-all}
+</style></head>
+<body><main>
+<a href="../../rozszerzenia.html">← Lekcje / Lessons</a> · <a href="../../index.html">Pokaz edukacyjny / Educational show</a>
+<h1>Piramida 11:7 · GeoGebra G6 — rozszerzenia geometryczne</h1>
+<p><strong>G6</strong> to nowy, osobny model (G1, G2 i zatwierdzony G4 pozostają bez zmian). Trzy lekcje: granica proporcji złotego jaja, kula wpisana, dlaczego 11:7.<br><em>G6 is a new, separate model (G1, G2 and the approved G4 are unchanged). Three lessons: the golden egg ratio limit, the inscribed sphere, why 11:7.</em></p>
+<nav aria-label="Model i materiały"><a href="piramida-11-7-G6.ggb" download>Pobierz / Download G6 · .ggb</a><a href="README.md">Instrukcja / Guide</a><a href="VERIFICATION.md">Raport weryfikacji / Verification</a><a href="reference-values.json">reference-values.json</a></nav>
+<p>SHA-256 G6: <code>8f1c8385855fd1c845a7445686be0020aa3ed9412b5560df67d3c9d7fd3f361c</code></p>
+<div id="status" role="status">Ładowanie GeoGebra… Silnik wymaga połączenia z internetem. / Loading GeoGebra… requires an internet connection.</div>
+<div class="toolbar"><button id="reset" disabled>Reset 11:7</button><button id="egg" disabled>1 · Złote jajo / Golden egg</button><button id="sphere" disabled>2 · Kula wpisana / Inscribed sphere</button><button id="why" disabled>3 · Dlaczego / Why 11:7</button><label><input id="english" type="checkbox" disabled> English</label></div>
+<div id="ggb" aria-label="Interaktywny model GeoGebra G6"></div>
+<details><summary>Co pokazuje model / What the model shows</summary>
+<p><strong>1.</strong> Rzeczywisty przekrój powierzchni z·√(x²+y²)=1 płaszczyzną z=z₀+t·x, t=h/A, w jego własnej płaszczyźnie i jednej skali (bez elipsy). Suwak z₀; dla z₀² ≤ 4t owalu nie ma. L/W maleje ku S/A=√(1+t²); linia przerywana ma długość L/(S/A). / The true section in its own plane, one uniform scale, no ellipse. For z₀² ≤ 4t there is no oval. L/W decreases toward S/A; the dashed line has length L/(S/A).</p>
+<p><strong>2.</strong> Kula wpisana: r = A·h/(A+S), środek I, punkt styczności T na apotemie MV. VI/OI = S/A, MT = A, VT = S−A. / Inscribed sphere: centre I, tangency point T on the apothem MV.</p>
+<p><strong>3.</strong> 2B/h i S/A dla 3:2, 8:5, 11:7, 14:9, 19:12, 25:16 — ten sam błąd |R−c|/|c|. / The same relative error for six small ratios; ordered by denominator, not a ranking.</p>
+<p>Model matematyczny; zgodności liczbowe nie dowodzą intencji budowniczych. / A mathematical model; numerical agreements do not establish builders' intent.</p></details>
+<footer>Koncepcja projektu: Michał Przybylski — <a href="https://prylski.dev/">prylski.dev</a><br>GitHub: <a href="https://github.com/MichaelZP/">MichaelZP</a> · Silnik / engine: <a href="https://www.geogebra.org/">GeoGebra</a></footer>
+</main>
+<script src="https://www.geogebra.org/apps/deployggb.js" onerror="document.getElementById('status').textContent='Nie załadowano GeoGebra. / GeoGebra did not load.'"></script>
+<script type="module" src="viewer.mjs"></script>
+</body></html>
